@@ -1,0 +1,1 @@
+"""Componentes de lectura y validacion de movimientos."""

@@ -1,57 +1,52 @@
-# Modelado del ciclo demográfico de la población utilizando técnicas de analítica de datos aplicadas a registros de nacimientos, matrimonios y defunciones
+# Modelado del ciclo demográfico
 
-> **Los registros cuentan lo que ocurrió. La analítica de datos nos ayuda a comprender lo que podría venir.**
+Trabajo Final de Graduación de la Universidad Nacional de Costa Rica sobre nacimientos, matrimonios y defunciones de Costa Rica.
 
-Este repositorio contiene el desarrollo de mi Trabajo Final de Graduación para la Licenciatura en Ingeniería en Sistemas de Información con énfasis en Sistemas Web de la Universidad Nacional de Costa Rica.
+## DAT-01
 
-El proyecto busca analizar la evolución del ciclo demográfico de la población mediante registros de **nacimientos, matrimonios y defunciones**. Para ello se aplicarán técnicas de procesamiento de datos, análisis estadístico, visualización y modelado de series temporales.
+DAT-01 implementa la primera etapa RAW: abre ZIP del TSE directamente, localiza el TXT, calcula hashes SHA-256, valida registros de ancho fijo y guarda únicamente un resumen técnico en SQLite. No reconstruye la capa canónica ni interpreta acontecimientos individuales.
 
-El resultado será una plataforma web que transforme datos demográficos en información visual, comprensible y útil para estudiar tendencias históricas y generar estimaciones.
+Las longitudes verificadas son nacimientos `281`, matrimonios `328` y defunciones `191`. La fecha del nombre del ZIP representa el periodo del movimiento, no necesariamente la fecha del acontecimiento.
 
-## Del registro al conocimiento
+## Arquitectura
 
-```text
-Fuentes oficiales
-       ↓
-Procesamiento y validación
-       ↓
-Construcción de series demográficas
-       ↓
-Análisis y modelos predictivos
-       ↓
-Plataforma web interactiva
+`src/tfg_demografia/` separa modelos, carga de esquemas, lectura de archivos, validación, clasificación configurable, procesamiento y persistencia SQLite. Los tres JSON en `schemas/` contienen las longitudes, codificación `latin-1` y campos preparados para crecer.
+
+Los ZIP originales de `data/raw/tse/` permanecen intactos. `data/db/imports.sqlite` contiene `import_runs` e `import_issues`; no existen columnas para nombres, apellidos, cédulas, identificaciones, líneas RAW o valores RAW. Las incidencias se limitan a 100 por ejecución y no incluyen el valor problemático.
+
+## Instalación en Windows PowerShell
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[test]"
 ```
 
-## ¿Qué permitirá hacer?
+Si PowerShell bloquea la activación, ejecute `Set-ExecutionPolicy -Scope Process Bypass` en esa terminal.
 
-- Explorar indicadores demográficos agregados.
-- Analizar nacimientos, matrimonios y defunciones a través del tiempo.
-- Comparar resultados por periodo y ubicación geográfica.
-- Identificar tendencias, cambios y comportamientos atípicos.
-- Consultar estimaciones con métricas e intervalos de confianza.
-- Conocer la procedencia y cobertura de los datos utilizados.
+## Uso
 
-## Tecnologías previstas
+```powershell
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite
+python -m tfg_demografia history --db data/db/imports.sqlite
+python -m pytest -q
+```
 
-- **Python y pandas:** procesamiento y análisis de datos.
-- **FastAPI:** construcción de los servicios y la API.
-- **PostgreSQL:** almacenamiento de los datos procesados.
-- **React:** desarrollo de la interfaz web.
-- **GitHub:** control de versiones y documentación del proyecto.
+También se acepta un TXT directo para desarrollo y pruebas. Agregue `--json` para evidencia reproducible. `--require-movement-config` marca la ejecución como `INCOMPLETE_CONFIG` mientras no exista evidencia oficial de la posición y códigos de movimiento.
 
-## Datos con responsabilidad
+## Clasificación de movimientos
 
-El estudio utiliza información procedente de fuentes oficiales, principalmente del **Tribunal Supremo de Elecciones (TSE)**.
+No se encontró diccionario oficial en este workspace. Por eso los esquemas no inventan posiciones ni códigos: inclusión, cambio y exclusión se muestran como `NO CONFIGURADO`. El motor sí soporta `INCLUSION`, `CHANGE`, `EXCLUSION` y `UNKNOWN` cuando el esquema reciba una configuración documentada.
 
-El sistema trabajará con información agregada. El repositorio no almacenará ni expondrá nombres, números de identificación u otros datos personales. Las estimaciones generadas serán resultados académicos y no proyecciones oficiales.
+## Alcance y privacidad
 
-## Estado del proyecto
+RAW conserva las fuentes originales. DAT-01 solo produce conteos, metadatos de trazabilidad, hashes, estados e incidencias técnicas seguras. La capa canónica, anonimización analítica, PostgreSQL, API, frontend y pronósticos pertenecen a etapas posteriores.
 
-🚧 **En desarrollo**
+## Evidencia Jira
 
-Actualmente se trabaja en la recopilación y caracterización de las fuentes, organización de archivos, definición de requerimientos y construcción del primer proceso de lectura y almacenamiento de datos.
-
----
+Para capturar la salida, ejecute un comando `read` de los ejemplos anteriores en una terminal maximizada. La base SQLite se genera automáticamente. No copie registros ni contenido de los TXT a documentación o logs.
 
 **Autor:** Isaac Felipe Brenes Calderón  
 **Carrera:** Ingeniería en Sistemas de Información con énfasis en Sistemas Web  

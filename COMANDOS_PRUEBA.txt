@@ -1,0 +1,163 @@
+COMANDOS DE PRUEBA DISPONIBLES - DAT-01
+========================================
+
+Todos los comandos se ejecutan desde la raiz del repositorio:
+
+C:\Users\isaac\OneDrive\Documents\GitHub\modelado-del-ciclo-demografico-tfg-una
+
+
+1. CREAR Y ACTIVAR EL ENTORNO VIRTUAL
+--------------------------------------
+
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+Si PowerShell bloquea la activacion:
+
+Set-ExecutionPolicy -Scope Process Bypass
+.\.venv\Scripts\Activate.ps1
+
+
+2. INSTALAR EL PROYECTO
+-----------------------
+
+python -m pip install -e ".[test]"
+
+Comprobar la version de Python:
+
+python --version
+
+Comprobar que pytest esta disponible:
+
+python -m pytest --version
+
+
+3. EJECUTAR TODAS LAS PRUEBAS
+-----------------------------
+
+python -m pytest -q
+
+Ejecutar las pruebas con mayor detalle:
+
+python -m pytest -v
+
+Ejecutar un archivo especifico de pruebas:
+
+python -m pytest tests/test_dat01.py -v
+
+
+4. COMPROBAR LA SINTAXIS
+------------------------
+
+python -m compileall -q src tests
+
+
+5. PROCESAR LOS TRES ZIP REALES
+-------------------------------
+
+Nacimientos:
+
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite
+
+Matrimonios:
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite
+
+Defunciones:
+
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite
+
+
+6. PROCESAR CON SALIDA JSON
+---------------------------
+
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite --json
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite --json
+
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite --json
+
+
+7. MODO ESTRICTO DE MOVIMIENTOS
+-------------------------------
+
+Este comando debe devolver INCOMPLETE_CONFIG porque aun no existe el diccionario
+oficial de posicion y codigos de movimiento:
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/work/strict-check.sqlite --require-movement-config
+
+
+8. CONSULTAR EL HISTORIAL
+-------------------------
+
+python -m tfg_demografia history --db data/db/imports.sqlite
+
+Consultar el historial en JSON:
+
+python -m tfg_demografia history --db data/db/imports.sqlite --json
+
+
+9. PROBAR UN TXT DIRECTAMENTE
+-----------------------------
+
+El lector acepta un TXT directo. Use un archivo sintetico de prueba con registros
+de la longitud definida por su esquema. Ejemplo para nacimientos:
+
+python -m tfg_demografia read --source "ruta\a\archivo_sintetico.txt" --dataset nacimientos --db data/db/imports.sqlite
+
+
+10. GENERAR EVIDENCIAS JSON
+---------------------------
+
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_nacimientos.txt
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_matrimonios.txt
+
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_defunciones.txt
+
+python -m tfg_demografia history --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/resumen_sqlite.txt
+
+
+11. REVISAR ESTRUCTURA DEL PROYECTO
+------------------------------------
+
+Get-ChildItem -Path src,tests,docs,data/db -Recurse -File | Where-Object { $_.FullName -notmatch '__pycache__|egg-info' } | ForEach-Object { $_.FullName.Substring((Get-Location).Path.Length + 1) }
+
+
+12. COMPROBAR QUE RAW NO TENGA CAMBIOS
+--------------------------------------
+
+git status --short -- data/raw/tse
+
+La salida debe estar vacia si ningun archivo RAW fue modificado.
+
+
+13. REVISAR ARCHIVOS IGNORADOS Y CAMBIOS
+----------------------------------------
+
+git status --short --ignored
+
+git diff -- README.md pyproject.toml .gitignore
+
+
+14. CAPTURA PARA JIRA
+---------------------
+
+Ejecute este comando en una terminal maximizada y capture la salida:
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite
+
+
+RESULTADOS ESPERADOS
+====================
+
+pytest: todas las pruebas pasan.
+
+nacimientos: longitud esperada 281.
+matrimonios: longitud esperada 328.
+defunciones: longitud esperada 191.
+
+En las muestras actuales, la clasificacion de inclusiones, cambios y exclusiones
+debe mostrar NO CONFIGURADO. No deben inferirse codigos sin el diccionario oficial.
+
+No imprimir, copiar ni guardar lineas completas de los TXT reales.
