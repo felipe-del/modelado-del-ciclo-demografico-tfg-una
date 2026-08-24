@@ -1,6 +1,6 @@
 # Estándar de mensajes de commit
 
-Este proyecto utiliza una convención basada en **Conventional Commits**, adaptada al idioma español y al contexto del TFG. El objetivo es que cada commit explique con claridad qué cambió y por qué, facilite el historial del proyecto y permita identificar rápidamente el alcance de cada modificación.
+Este proyecto utiliza una convención basada en **Conventional Commits**, adaptada al idioma español y al contexto del TFG. Este estándar se aplica a todos los commits futuros del repositorio. El objetivo es que cada commit explique con claridad qué cambió, por qué cambió y cómo fue validado, para facilitar el historial del proyecto y permitir identificar rápidamente el alcance de cada modificación.
 
 ## Formato general
 
@@ -30,7 +30,7 @@ La implementación no almacena líneas RAW ni datos personales.
 3. Escribir el resumen en una sola línea.
 4. Mantener el resumen preferiblemente por debajo de 72 caracteres.
 5. Usar verbos en infinitivo en el resumen: `agregar`, `corregir`, `documentar`, `actualizar`, `refactorizar`.
-6. Explicar en el cuerpo qué se modificó y cuál fue el motivo.
+6. Explicar en el cuerpo qué se modificó, cuál fue el motivo y cuál es el efecto esperado.
 7. Mencionar pruebas ejecutadas cuando el cambio incluya código.
 8. Mencionar limitaciones o decisiones metodológicas relevantes.
 9. No incluir nombres, cédulas, líneas RAW, secretos, tokens ni datos personales.
