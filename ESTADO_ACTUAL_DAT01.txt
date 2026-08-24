@@ -25,6 +25,7 @@ El sistema puede:
 - consultar el historial de importaciones;
 - generar salida normal o JSON;
 - ejecutar el modo estricto de configuración de movimientos;
+- ejecutar `verify-dat01` para validar las tres muestras conocidas;
 - ejecutar pruebas automatizadas con pytest.
 
 Todavía no reconstruye la capa canónica ni almacena registros individuales.
@@ -177,7 +178,7 @@ PRUEBAS AUTOMATIZADAS
 
 Último resultado:
 
-7 passed
+9 passed
 
 Las pruebas verifican:
 
@@ -198,13 +199,15 @@ Las pruebas verifican:
 - persistencia e historial SQLite;
 - ausencia de columnas personales;
 - ausencia de líneas RAW en incidencias;
-- modo estricto e importación INCOMPLETE_CONFIG.
+- modo estricto e importación INCOMPLETE_CONFIG;
+- verificación final de las tres muestras sin modificación de RAW.
 
 VALIDACIONES FINALES
 ====================
 
 - python -m compileall -q src tests: correcto.
-- python -m pytest -v: 7 pruebas aprobadas.
+- python -m pytest -v: 9 pruebas aprobadas.
+- python -m tfg_demografia verify-dat01: tres muestras OK, privacidad OK y RAW sin cambios.
 - Errores del proyecto: ninguno.
 - ZIP reales procesados: nacimientos, matrimonios y defunciones.
 - Archivos RAW modificados: ninguno.
@@ -238,6 +241,10 @@ python -m compileall -q src tests
 Probar:
 
 python -m pytest -v
+
+Verificar DAT-01:
+
+python -m tfg_demografia verify-dat01
 
 Leer nacimientos:
 

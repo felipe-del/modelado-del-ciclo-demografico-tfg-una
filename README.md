@@ -2,7 +2,7 @@
 
 Trabajo Final de Graduación de la Universidad Nacional de Costa Rica sobre nacimientos, matrimonios y defunciones de Costa Rica.
 
-## DAT-01
+## DAT-01 — Estado de implementación
 
 DAT-01 implementa la primera etapa RAW: abre ZIP del TSE directamente, localiza el TXT, calcula hashes SHA-256, valida registros de ancho fijo y guarda únicamente un resumen técnico en SQLite. No reconstruye la capa canónica ni interpreta acontecimientos individuales.
 
@@ -36,6 +36,14 @@ python -m pytest -q
 
 También se acepta un TXT directo para desarrollo y pruebas. Agregue `--json` para evidencia reproducible. `--require-movement-config` marca la ejecución como `INCOMPLETE_CONFIG` mientras no exista evidencia oficial de la posición y códigos de movimiento.
 
+La verificación final de las tres muestras conocidas se ejecuta con:
+
+```powershell
+python -m tfg_demografia verify-dat01
+```
+
+Este comando orquesta la lectura existente, muestra conteos, comprueba el esquema SQLite y verifica que Git no reporte modificaciones bajo `data/raw/tse/`. La evidencia de aceptación está en `docs/evidencias/criterios_aceptacion_dat01.md`.
+
 Cuando exista el diccionario oficial, cada esquema podrá configurar `movement.field` con `name`, `start`, `end` y opcionalmente `type`/`required`, junto con `movement.codes.inclusion_codes`, `change_codes` y `exclusion_codes`. Los códigos deben estar respaldados por documentación verificable y no se deben inferir desde los registros.
 
 ## Clasificación de movimientos
@@ -48,7 +56,7 @@ RAW conserva las fuentes originales. DAT-01 solo produce conteos, metadatos de t
 
 ## Evidencia Jira
 
-Para capturar la salida, ejecute un comando `read` de los ejemplos anteriores en una terminal maximizada. La base SQLite se genera automáticamente. No copie registros ni contenido de los TXT a documentación o logs.
+Para capturar la salida, ejecute `python -m tfg_demografia verify-dat01` en una terminal maximizada. La base SQLite se genera automáticamente. No copie registros ni contenido de los TXT a documentación o logs.
 
 **Autor:** Isaac Felipe Brenes Calderón  
 **Carrera:** Ingeniería en Sistemas de Información con énfasis en Sistemas Web  

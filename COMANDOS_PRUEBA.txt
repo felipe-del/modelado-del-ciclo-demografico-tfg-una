@@ -97,7 +97,16 @@ Consultar el historial en JSON:
 python -m tfg_demografia history --db data/db/imports.sqlite --json
 
 
-9. PROBAR UN TXT DIRECTAMENTE
+9. VERIFICACION FINAL DAT-01
+----------------------------
+
+Ejecuta las tres muestras reales, comprueba privacidad y verifica que RAW no
+registre cambios:
+
+python -m tfg_demografia verify-dat01
+
+
+10. PROBAR UN TXT DIRECTAMENTE
 -----------------------------
 
 El lector acepta un TXT directo. Use un archivo sintetico de prueba con registros
@@ -106,7 +115,7 @@ de la longitud definida por su esquema. Ejemplo para nacimientos:
 python -m tfg_demografia read --source "ruta\a\archivo_sintetico.txt" --dataset nacimientos --db data/db/imports.sqlite
 
 
-10. GENERAR EVIDENCIAS JSON
+11. GENERAR EVIDENCIAS JSON
 ---------------------------
 
 python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_nacimientos.json
@@ -118,13 +127,13 @@ python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/202
 python -m tfg_demografia history --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/resumen_sqlite.txt
 
 
-11. REVISAR ESTRUCTURA DEL PROYECTO
+12. REVISAR ESTRUCTURA DEL PROYECTO
 ------------------------------------
 
 Get-ChildItem -Path src,tests,docs,data/db -Recurse -File | Where-Object { $_.FullName -notmatch '__pycache__|egg-info' } | ForEach-Object { $_.FullName.Substring((Get-Location).Path.Length + 1) }
 
 
-12. COMPROBAR QUE RAW NO TENGA CAMBIOS
+13. COMPROBAR QUE RAW NO TENGA CAMBIOS
 --------------------------------------
 
 git status --short -- data/raw/tse
@@ -132,7 +141,7 @@ git status --short -- data/raw/tse
 La salida debe estar vacia si ningun archivo RAW fue modificado.
 
 
-13. REVISAR ARCHIVOS IGNORADOS Y CAMBIOS
+14. REVISAR ARCHIVOS IGNORADOS Y CAMBIOS
 ----------------------------------------
 
 git status --short --ignored
@@ -140,18 +149,18 @@ git status --short --ignored
 git diff -- README.md pyproject.toml .gitignore
 
 
-14. CAPTURA PARA JIRA
+15. CAPTURA PARA JIRA
 ---------------------
 
 Ejecute este comando en una terminal maximizada y capture la salida:
 
-python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite
+python -m tfg_demografia verify-dat01
 
 
 RESULTADOS ESPERADOS
 ====================
 
-pytest: todas las pruebas pasan.
+pytest: todas las pruebas pasan (9 pruebas).
 
 nacimientos: longitud esperada 281.
 matrimonios: longitud esperada 328.

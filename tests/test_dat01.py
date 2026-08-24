@@ -12,6 +12,7 @@ from tfg_demografia.ingestion.movement_classifier import classify
 from tfg_demografia.ingestion.processor import process
 from tfg_demografia.models import FieldSpec, Movement, Schema
 from tfg_demografia.persistence.sqlite import connect, history, save_summary
+from tfg_demografia.cli import verify_dat01
 from tfg_demografia.schema_loader import load_schema
 
 
@@ -107,3 +108,28 @@ def test_sqlite_has_summary_only_and_history(tmp_path):
     forbidden = {"nombre", "apellido", "cedula", "identificacion", "raw_line", "raw_value"}
     assert not columns & forbidden
     connection.close()
+
+
+def test_sqlite_stores_null_and_issue_excludes_raw_content(tmp_path):
+    connection = connect(tmp_path / "imports.sqlite")
+    from datetime import datetime, timezone
+    from tfg_demografia.models import ImportSummary
+    summary = ImportSummary("sintetico", "1.0", "sample.txt", "sample.txt", "a" * 64, "b" * 64, datetime.now(timezone.utc).isoformat(), 10, total_rows=1, invalid_rows=1, length_errors=1, issues=[{"line_number": 1, "error_code": "INVALID_RECORD_LENGTH", "field_name": None, "message": "La longitud no coincide."}])
+    save_summary(connection, summary)
+    row = connection.execute("SELECT inclusions, changes, exclusions FROM import_runs").fetchone()
+    assert row == (None, None, None)
+    issue = connection.execute("SELECT message FROM import_issues").fetchone()[0]
+    assert "sample" not in issue
+    assert "raw" not in issue.lower()
+    connection.close()
+
+
+def test_verify_command_uses_real_samples_without_raw_changes(tmp_path, monkeypatch):
+    monkeypatch.chdir(Path(__file__).parents[1])
+    output = verify_dat01(tmp_path / "verification.sqlite")
+    assert "NACIMIENTOS" in output
+    assert "MATRIMONIOS" in output
+    assert "DEFUNCIONES" in output
+    assert "Datos personales almacenados : NO" in output
+    assert "Lineas RAW almacenadas        : NO" in output
+    assert "RAW modificado               : NO" in output
