@@ -2,6 +2,9 @@ ESTADO ACTUAL DEL PROYECTO DAT-01
 
 Fecha de actualización: 2026-08-23
 
+Última revisión de cierre: compilación correcta, 9 pruebas aprobadas y
+verificación real de las tres muestras mediante `verify-dat01`.
+
 DAT-01 implementa una primera etapa modular de lectura, validación, trazabilidad y resumen de archivos de movimientos registrales publicados por el TSE.
 
 OBJETIVO Y ALCANCE
@@ -27,6 +30,9 @@ El sistema puede:
 - ejecutar el modo estricto de configuración de movimientos;
 - ejecutar `verify-dat01` para validar las tres muestras conocidas;
 - ejecutar pruebas automatizadas con pytest.
+
+El comando `verify-dat01` también comprueba que el esquema SQLite no contenga
+columnas sensibles y que Git no reporte modificaciones bajo `data/raw/tse/`.
 
 Todavía no reconstruye la capa canónica ni almacena registros individuales.
 
@@ -65,6 +71,9 @@ DEFUNCIONES
 
 Los tres ZIP reales fueron abiertos y procesados sin modificar los archivos de data/raw/tse/.
 
+El repositorio contiene actualmente 93 archivos ZIP RAW distribuidos entre los
+tres datasets. La estructura RAW se conserva sin renombrar, mover ni modificar.
+
 ESTRUCTURA IMPLEMENTADA
 =======================
 
@@ -73,6 +82,10 @@ ESTRUCTURA IMPLEMENTADA
 - README.md: documentación del proyecto y DAT-01.
 - COMANDOS_PRUEBA.txt: comandos reproducibles disponibles.
 - ESTADO_ACTUAL_DAT01.txt: este informe actualizado.
+- docs/ESTANDAR_COMMITS.md: estándar de mensajes de commit en español.
+- .github/copilot-instructions.md: instrucciones para aplicar el estándar de commits.
+- docs/evidencias/criterios_aceptacion_dat01.md: matriz de criterios Jira y evidencia.
+- docs/evidencias/README.md: reglas de seguridad para evidencias.
 - src/tfg_demografia/__init__.py: paquete Python.
 - src/tfg_demografia/__main__.py: ejecución mediante python -m tfg_demografia.
 - src/tfg_demografia/cli.py: comandos read y history.
@@ -202,12 +215,22 @@ Las pruebas verifican:
 - modo estricto e importación INCOMPLETE_CONFIG;
 - verificación final de las tres muestras sin modificación de RAW.
 
+El comando `verify-dat01` demostró en la última ejecución:
+
+- nacimientos: 1469 filas, 1469 válidas, 0 inválidas, longitud 281;
+- matrimonios: 697 filas, 697 válidas, 0 inválidas, longitud 328;
+- defunciones: 502 filas, 502 válidas, 0 inválidas, longitud 191;
+- datos personales almacenados: NO;
+- líneas RAW almacenadas: NO;
+- RAW modificado: NO.
+
 VALIDACIONES FINALES
 ====================
 
 - python -m compileall -q src tests: correcto.
 - python -m pytest -v: 9 pruebas aprobadas.
 - python -m tfg_demografia verify-dat01: tres muestras OK, privacidad OK y RAW sin cambios.
+- docs/evidencias/criterios_aceptacion_dat01.md: matriz de aceptación Jira actualizada.
 - Errores del proyecto: ninguno.
 - ZIP reales procesados: nacimientos, matrimonios y defunciones.
 - Archivos RAW modificados: ninguno.
