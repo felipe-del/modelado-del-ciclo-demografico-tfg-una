@@ -65,6 +65,20 @@ def test_movement_states():
     assert classify("I         ", schema()) == Movement.NOT_CONFIGURED
 
 
+def test_strict_mode_and_documented_movement_shape(tmp_path):
+    source = tmp_path / "records.txt"
+    source.write_text("I         \n", encoding="utf-8")
+    configured_path = tmp_path / "configured.json"
+    configured_path.write_text(json.dumps({"dataset": "sintetico", "schema_version": "1.0", "expected_record_length": 10, "encoding": "utf-8", "movement": {"configured": True, "field": {"name": "movement", "start": 1, "end": 1}, "codes": {"inclusion_codes": ["I"], "change_codes": ["C"], "exclusion_codes": ["E"]}}, "fields": []}), encoding="utf-8")
+    configured = load_schema(configured_path)
+    assert classify("I         ", configured) == Movement.INCLUSION
+    strict = process(source, Schema("sintetico", "1.0", 10, "utf-8", {"configured": False}, ()), require_movement_config=True)
+    assert strict.status == "INCOMPLETE_CONFIG"
+    assert strict.inclusions is None
+    assert strict.changes is None
+    assert strict.exclusions is None
+
+
 def test_schema_validation_and_real_lengths():
     root = Path(__file__).parents[1] / "src/tfg_demografia/schemas"
     assert load_schema(root / "nacimientos.json").expected_record_length == 281

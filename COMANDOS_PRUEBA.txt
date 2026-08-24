@@ -109,11 +109,11 @@ python -m tfg_demografia read --source "ruta\a\archivo_sintetico.txt" --dataset 
 10. GENERAR EVIDENCIAS JSON
 ---------------------------
 
-python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_nacimientos.txt
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_nacimientos.json
 
-python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_matrimonios.txt
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_matrimonios.json
 
-python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_defunciones.txt
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/ejecucion_defunciones.json
 
 python -m tfg_demografia history --db data/db/imports.sqlite --json | Out-File -Encoding utf8 docs/evidencias/resumen_sqlite.txt
 

@@ -23,7 +23,11 @@ def load_schema(path: Path) -> Schema:
     configured = movement.get("configured", False)
     if not isinstance(configured, bool):
         raise SchemaError("movement.configured debe ser booleano")
-    codes = {key: movement.get(key, []) for key in ("inclusion", "change", "exclusion")}
+    code_config = movement.get("codes", movement)
+    if not isinstance(code_config, dict):
+        raise SchemaError("movement.codes debe ser un objeto")
+    code_names = {"inclusion": "inclusion_codes", "change": "change_codes", "exclusion": "exclusion_codes"}
+    codes = {key: code_config.get(code_names[key], code_config.get(key, [])) for key in code_names}
     if any(not isinstance(value, list) for value in codes.values()):
         raise SchemaError("Los codigos de movimiento deben ser listas")
     code_sets = [set(map(str, value)) for value in codes.values()]
@@ -39,6 +43,15 @@ def load_schema(path: Path) -> Schema:
         if not isinstance(start, int) or not isinstance(end, int) or start < 1 or end < start or end > length:
             raise SchemaError("Rango de campo fuera del registro")
         fields.append(FieldSpec(raw["name"], start, end, bool(raw.get("required", False)), raw.get("type"), raw.get("enum")))
-    if configured and not isinstance(movement.get("field"), str):
-        raise SchemaError("Un movimiento configurado requiere el campo de clasificacion")
+    movement_field = movement.get("field")
+    if configured:
+        if isinstance(movement_field, dict):
+            if not {"name", "start", "end"} <= movement_field.keys():
+                raise SchemaError("El campo de movimiento requiere nombre y rango")
+            start, end = movement_field["start"], movement_field["end"]
+            if not isinstance(start, int) or not isinstance(end, int) or start < 1 or end < start or end > length:
+                raise SchemaError("Rango del campo de movimiento fuera del registro")
+            fields.append(FieldSpec(movement_field["name"], start, end, bool(movement_field.get("required", False)), movement_field.get("type"), movement_field.get("enum")))
+        elif not isinstance(movement_field, str):
+            raise SchemaError("Un movimiento configurado requiere el campo de clasificacion")
     return Schema(data["dataset"], str(data["schema_version"]), length, data["encoding"], movement, tuple(fields))

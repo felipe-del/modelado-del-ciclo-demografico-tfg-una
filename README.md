@@ -36,6 +36,8 @@ python -m pytest -q
 
 También se acepta un TXT directo para desarrollo y pruebas. Agregue `--json` para evidencia reproducible. `--require-movement-config` marca la ejecución como `INCOMPLETE_CONFIG` mientras no exista evidencia oficial de la posición y códigos de movimiento.
 
+Cuando exista el diccionario oficial, cada esquema podrá configurar `movement.field` con `name`, `start`, `end` y opcionalmente `type`/`required`, junto con `movement.codes.inclusion_codes`, `change_codes` y `exclusion_codes`. Los códigos deben estar respaldados por documentación verificable y no se deben inferir desde los registros.
+
 ## Clasificación de movimientos
 
 No se encontró diccionario oficial en este workspace. Por eso los esquemas no inventan posiciones ni códigos: inclusión, cambio y exclusión se muestran como `NO CONFIGURADO`. El motor sí soporta `INCLUSION`, `CHANGE`, `EXCLUSION` y `UNKNOWN` cuando el esquema reciba una configuración documentada.

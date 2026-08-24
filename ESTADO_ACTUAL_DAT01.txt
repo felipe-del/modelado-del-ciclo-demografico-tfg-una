@@ -1,0 +1,286 @@
+ESTADO ACTUAL DEL PROYECTO DAT-01
+
+Fecha de actualización: 2026-08-23
+
+DAT-01 implementa una primera etapa modular de lectura, validación, trazabilidad y resumen de archivos de movimientos registrales publicados por el TSE.
+
+OBJETIVO Y ALCANCE
+==================
+
+La implementación cubre únicamente RAW / INGESTA / VALIDACIÓN.
+
+El sistema puede:
+
+- abrir archivos ZIP directamente sin descompresión manual;
+- localizar automáticamente el TXT interno;
+- ignorar archivos auxiliares del ZIP, como DOCX;
+- aceptar un TXT directo para desarrollo y pruebas;
+- calcular SHA-256 del ZIP y del TXT;
+- leer registros de ancho fijo preservando espacios;
+- validar registros vacíos, cortos y largos;
+- validar campos obligatorios, tipos numéricos, fechas y enumeraciones configuradas;
+- contar filas totales, válidas e inválidas;
+- registrar errores técnicos sin exponer datos personales;
+- guardar un resumen de la importación en SQLite;
+- consultar el historial de importaciones;
+- generar salida normal o JSON;
+- ejecutar el modo estricto de configuración de movimientos;
+- ejecutar pruebas automatizadas con pytest.
+
+Todavía no reconstruye la capa canónica ni almacena registros individuales.
+
+DATASETS SOPORTADOS
+===================
+
+NACIMIENTOS
+- Esquema: src/tfg_demografia/schemas/nacimientos.json
+- TXT interno real: MOVWEBNAC.txt
+- Longitud esperada: 281 caracteres
+- ZIP probado: nac_agosto2026_01_06.zip
+- Filas totales: 1469
+- Filas válidas: 1469
+- Filas inválidas: 0
+- Errores de longitud: 0
+
+MATRIMONIOS
+- Esquema: src/tfg_demografia/schemas/matrimonios.json
+- TXT interno real: MOVWEBMAT.txt
+- Longitud esperada: 328 caracteres
+- ZIP probado: mat_agosto2026_01_06.zip
+- Filas totales: 697
+- Filas válidas: 697
+- Filas inválidas: 0
+- Errores de longitud: 0
+
+DEFUNCIONES
+- Esquema: src/tfg_demografia/schemas/defunciones.json
+- TXT interno real: MOVWEBDEF.txt
+- Longitud esperada: 191 caracteres
+- ZIP probado: def_agosto2026_01_06.zip
+- Filas totales: 502
+- Filas válidas: 502
+- Filas inválidas: 0
+- Errores de longitud: 0
+
+Los tres ZIP reales fueron abiertos y procesados sin modificar los archivos de data/raw/tse/.
+
+ESTRUCTURA IMPLEMENTADA
+=======================
+
+- pyproject.toml: configuración, instalación editable y comando CLI.
+- .gitignore: exclusión de entornos, bases locales y nuevos RAW sensibles.
+- README.md: documentación del proyecto y DAT-01.
+- COMANDOS_PRUEBA.txt: comandos reproducibles disponibles.
+- ESTADO_ACTUAL_DAT01.txt: este informe actualizado.
+- src/tfg_demografia/__init__.py: paquete Python.
+- src/tfg_demografia/__main__.py: ejecución mediante python -m tfg_demografia.
+- src/tfg_demografia/cli.py: comandos read y history.
+- src/tfg_demografia/errors.py: errores controlados.
+- src/tfg_demografia/models.py: modelos tipados y resumen de importación.
+- src/tfg_demografia/schema_loader.py: carga y validación de esquemas JSON.
+- src/tfg_demografia/ingestion/archive_reader.py: lectura ZIP/TXT y hashes.
+- src/tfg_demografia/ingestion/fixed_width_reader.py: extracción por posiciones 1-based.
+- src/tfg_demografia/ingestion/movement_classifier.py: clasificación configurable.
+- src/tfg_demografia/ingestion/validator.py: validaciones estructurales y de campos.
+- src/tfg_demografia/ingestion/processor.py: coordinación del procesamiento.
+- src/tfg_demografia/persistence/schema.sql: tablas SQLite.
+- src/tfg_demografia/persistence/sqlite.py: persistencia de resúmenes e incidencias.
+- src/tfg_demografia/schemas/*.json: esquemas de los tres datasets.
+- tests/test_dat01.py: pruebas sintéticas de DAT-01.
+
+BASE DE DATOS SQLITE
+====================
+
+La base local es data/db/imports.sqlite.
+
+Tablas:
+
+- import_runs: resumen técnico de cada ejecución.
+- import_issues: incidencias técnicas limitadas a 100 por ejecución.
+
+Se almacenan:
+
+- dataset;
+- nombre del ZIP fuente;
+- nombre del TXT interno;
+- SHA-256 del ZIP;
+- SHA-256 del TXT;
+- fecha y hora UTC;
+- versión del esquema;
+- longitud esperada;
+- filas totales, válidas e inválidas;
+- conteos de movimientos cuando existe configuración;
+- errores de longitud, estructura y campos;
+- estado;
+- observaciones técnicas.
+
+No se almacenan:
+
+- nombres;
+- apellidos;
+- cédulas;
+- identificaciones;
+- nombres de padres, madres o cónyuges;
+- líneas completas;
+- valores RAW;
+- registros individuales.
+
+SQLite funciona como bitácora de importaciones, no como base de datos de personas.
+
+CLASIFICACIÓN DE MOVIMIENTOS
+============================
+
+El motor soporta:
+
+- INCLUSION;
+- CHANGE;
+- EXCLUSION;
+- UNKNOWN;
+- NOT_CONFIGURED.
+
+Se buscó documentación en todo el repositorio y no se encontró un diccionario oficial que defina:
+
+- posición exacta del campo de movimiento;
+- longitud del campo;
+- código oficial de inclusión;
+- código oficial de cambio;
+- código oficial de exclusión.
+
+Por lo tanto, no se infieren códigos a partir de nombres, cédulas, patrones o registros reales.
+
+Actualmente los tres esquemas tienen el movimiento no configurado y la consola muestra:
+
+- Inclusiones: NO CONFIGURADO
+- Cambios: NO CONFIGURADO
+- Exclusiones: NO CONFIGURADO
+
+Los valores SQLite correspondientes son NULL, no cero.
+
+El sistema acepta la siguiente configuración cuando exista documentación oficial verificable:
+
+movement.field:
+- name
+- start
+- end
+- type opcional
+- required opcional
+
+movement.codes:
+- inclusion_codes
+- change_codes
+- exclusion_codes
+
+El parámetro --require-movement-config produce INCOMPLETE_CONFIG cuando falta la configuración oficial.
+
+PRUEBAS AUTOMATIZADAS
+=====================
+
+Último resultado:
+
+7 passed
+
+Las pruebas verifican:
+
+- lectura de TXT;
+- lectura de ZIP;
+- TXT dentro de subcarpeta del ZIP;
+- ZIP sin TXT;
+- ZIP inválido;
+- archivo inexistente;
+- preservación de espacios;
+- registros válidos, cortos y largos;
+- inclusión, cambio y exclusión sintéticos;
+- movimiento desconocido;
+- movimiento no configurado;
+- carga del formato JSON documentado;
+- validación de esquemas y rangos;
+- longitudes 281, 328 y 191;
+- persistencia e historial SQLite;
+- ausencia de columnas personales;
+- ausencia de líneas RAW en incidencias;
+- modo estricto e importación INCOMPLETE_CONFIG.
+
+VALIDACIONES FINALES
+====================
+
+- python -m compileall -q src tests: correcto.
+- python -m pytest -v: 7 pruebas aprobadas.
+- Errores del proyecto: ninguno.
+- ZIP reales procesados: nacimientos, matrimonios y defunciones.
+- Archivos RAW modificados: ninguno.
+- Datos personales impresos o persistidos: ninguno.
+
+EVIDENCIAS
+==========
+
+Se generaron los siguientes archivos sin datos personales:
+
+- docs/evidencias/ejecucion_nacimientos.json
+- docs/evidencias/ejecucion_matrimonios.json
+- docs/evidencias/ejecucion_defunciones.json
+- docs/evidencias/resumen_sqlite.txt
+
+La base de evidencia es:
+
+- data/db/imports.sqlite
+
+COMANDOS PRINCIPALES
+====================
+
+Instalar:
+
+python -m pip install -e ".[test]"
+
+Compilar:
+
+python -m compileall -q src tests
+
+Probar:
+
+python -m pytest -v
+
+Leer nacimientos:
+
+python -m tfg_demografia read --source "data/raw/tse/nacimientos/movimientos/2026/08_agosto/01_06/nac_agosto2026_01_06.zip" --dataset nacimientos --db data/db/imports.sqlite
+
+Leer matrimonios:
+
+python -m tfg_demografia read --source "data/raw/tse/matrimonios/movimientos/2026/08_agosto/01_06/mat_agosto2026_01_06.zip" --dataset matrimonios --db data/db/imports.sqlite
+
+Leer defunciones:
+
+python -m tfg_demografia read --source "data/raw/tse/defunciones/movimientos/2026/08_agosto/01_06/def_agosto2026_01_06.zip" --dataset defunciones --db data/db/imports.sqlite
+
+Consultar historial:
+
+python -m tfg_demografia history --db data/db/imports.sqlite
+
+ESTADO DE DAT-01
+================
+
+Criterios cumplidos:
+
+- abrir ZIP real;
+- encontrar TXT interno;
+- validar longitudes;
+- informar filas;
+- informar errores;
+- generar hashes;
+- guardar resumen SQLite;
+- proteger datos personales;
+- documentar el procedimiento;
+- ejecutar pruebas automatizadas;
+- conservar RAW intacto.
+
+Criterios bloqueados por falta de documentación oficial:
+
+- conteo real de inclusiones;
+- conteo real de cambios;
+- conteo real de exclusiones.
+
+La captura de pantalla de Jira queda pendiente de realizar manualmente en la terminal.
+
+CONCLUSIÓN
+==========
+
+DAT-01 está técnicamente implementada. El único criterio funcional que no puede cerrarse con datos reales es el conteo de inclusiones, cambios y exclusiones, debido a que no existe en el workspace documentación oficial que identifique la posición y los códigos de movimiento. El sistema está preparado para recibir esa configuración sin modificar el motor de procesamiento.
