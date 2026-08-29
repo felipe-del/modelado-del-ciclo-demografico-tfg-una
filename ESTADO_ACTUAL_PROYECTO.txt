@@ -1,0 +1,301 @@
+==================================================
+ESTADO ACTUAL DEL PROYECTO TFG
+==================================================
+
+Proyecto:
+Modelado del ciclo demográfico de la población utilizando técnicas de analítica de datos aplicadas a registros de nacimientos, matrimonios y defunciones.
+
+Fuente de datos actual:
+Tribunal Supremo de Elecciones (TSE).
+
+Fecha de actualización:
+2026-08-29
+
+FUENTES DE VERIFICACIÓN DEL SNAPSHOT
+- Repositorio actual.
+- Pruebas automatizadas.
+- CLI de verificación.
+- Evidencias almacenadas en docs/evidencias/.
+- Fuentes oficiales TSE.
+- Jira únicamente cuando exista evidencia disponible o actualización manual verificable.
+
+--------------------------------------------------
+1. ESTADO GENERAL
+--------------------------------------------------
+
+Etapas ya construidas:
+- DAT-01: lectura segura de ZIP/TXT del TSE, validación de ancho fijo, cálculo de SHA-256, generación de estructuras SQLite técnicas y CLI de verificación.
+- FUE-02: inventario documental de fuentes TSE y diferenciación entre movimientos, documentos institucionales y archivos maestros potenciales.
+- FUE-03: investigación y artefactos documentales construidos; cierre pendiente de evidencia real de la gestión por correo ante el TSE.
+
+Etapas en desarrollo:
+- Producto 1 del TFG: análisis y caracterización de fuentes demográficas del TSE.
+- Producto 2 del TFG: dataset demográfico procesado y anonimizado.
+- Preparación técnica de la capa de modelado, web y validación integral.
+
+Pendientes reales:
+- documentación oficial TSE del archivo maestro;
+- diccionario oficial de movimientos y códigos;
+- cobertura histórica completa previa a 2026, si existe y es pública;
+- reconstrucción registral completa a partir de maestro inicial;
+- modelado analítico y predictivo;
+- sistema web funcional;
+- pruebas integrales del sistema.
+
+Principales bloqueos o dependencias externas:
+- ausencia de archivo maestro recibido oficialmente del TSE;
+- ausencia de diccionario oficial de inclusión/cambio/exclusión;
+- falta de confirmación institucional sobre la cobertura histórica completa y la relación formal maestro/movimientos.
+
+--------------------------------------------------
+2. TAREAS FINALIZADAS
+--------------------------------------------------
+
+Se registran únicamente tareas con evidencia verificable en el repositorio actual.
+
+- Jira: DAT-01
+  Nombre: Lectura, validación y trazabilidad técnica de movimientos TSE
+  Objetivo específico relacionado: Objetivo 2
+  Producto formal relacionado: Producto 2 (componente de ingesta y validación)
+  Evidencia principal: README.md; docs/evidencias/criterios_aceptacion_dat01.md; salida de `python -m tfg_demografia verify-dat01`; `python -m pytest -q`
+  Resultado logrado: lectura ZIP/TXT del TSE, validación de ancho fijo, metadatos SQLite, trazabilidad técnica y CLI verificado.
+  Limitaciones: inclusión/cambio/exclusión siguen NO CONFIGURADO mientras no exista diccionario oficial del TSE.
+
+- Jira: FUE-02
+  Nombre: Inventario de fuentes oficiales del TSE
+  Objetivo específico relacionado: Objetivo 1
+  Producto formal relacionado: Producto 1
+  Evidencia principal: docs/evidencias/FUE-02_resumen.md; docs/fuentes/README.md; docs/fuentes/matriz_fuentes_oficiales.md
+  Resultado logrado: inventario TSE, diferenciación entre movimientos y documentación institucional, y limitación clara respecto a archivo maestro y diccionario oficial.
+  Limitaciones: no se documenta una fuente pública de archivo maestro ni el diccionario oficial.
+
+- Jira: FUE-03
+  Estado real en la evidencia disponible: FUE-03 = NO FINALIZADA, porque no existe evidencia real de envío del correo TSE en el repositorio actual.
+  Evidencia principal: docs/evidencias/FUE-03_resumen.md; docs/evidencias/FUE-03_consulta_TSE.md; docs/evidencias/FUE-03_aporte_documento18.md; docs/evidencias/FUE-03_fuentes_historicas.csv
+  Resultado verificado: análisis de cobertura pública TSE, identificación de movimientos y relación maestro/movimientos documentada.
+  Limitaciones: no existe evidencia real de envío del correo a TSE en este workspace; la respuesta institucional sigue pendiente; el diccionario oficial sigue pendiente.
+
+No se evidencian con verificación real en este repositorio: GES-01, GES-02, DOC-01, WEB-01, WEB-02, WEB-03, FUE-01 y FUE-03 como cerrada.
+
+--------------------------------------------------
+3. DAT-01
+--------------------------------------------------
+
+Estado verificado:
+- lectura ZIP/TXT: OK
+- detección automática TXT: OK
+- SHA-256: OK
+- validación ancho fijo: OK
+- SQLite técnico: OK
+- privacidad: OK
+- CLI: OK
+- verify-dat01: OK
+- pytest: OK
+
+Resultados actuales:
+NACIMIENTOS:
+- 1469 registros válidos;
+- 0 inválidos;
+- longitud esperada 281.
+
+MATRIMONIOS:
+- 697 válidos;
+- 0 inválidos;
+- longitud esperada 328.
+
+DEFUNCIONES:
+- 502 válidos;
+- 0 inválidos;
+- longitud esperada 191.
+
+Privacidad:
+- no nombres;
+- no cédulas;
+- no líneas RAW almacenadas;
+- RAW sin modificaciones.
+
+Pruebas:
+- 9 pruebas aprobadas;
+- `verify-dat01 = OK`.
+
+Limitación:
+- inclusión/cambio/exclusión continúa NO CONFIGURADO mientras no exista diccionario oficial TSE.
+
+--------------------------------------------------
+4. FUE-03
+--------------------------------------------------
+
+Fuente:
+TSE exclusivamente.
+
+Cobertura pública actualmente verificada:
+- nacimientos: febrero-agosto 2026;
+- matrimonios: febrero-agosto 2026;
+- defunciones: febrero-agosto 2026.
+
+Resultado:
+- los archivos públicos corresponden a movimientos;
+- los movimientos se utilizan para actualizar archivos maestros;
+- no se encontró archivo maestro públicamente descargable;
+- no se encontró cobertura histórica completa previa documentada públicamente.
+
+Conclusión:
+REQUIERE_MAESTRO_INICIAL
+
+Explicación breve:
+Para reconstruir un estado registral completo utilizando la cobertura pública identificada se requiere un archivo maestro o estado inicial sobre el cual aplicar posteriormente los movimientos.
+
+Estado consulta TSE:
+- no verificado como ENVIADO en el repositorio actual; no existe evidencia real del correo adjunto (`FUE-03_correo_TSE_enviado.pdf`) en este workspace.
+- La trazabilidad documental y el borrador de consulta existen, pero no la prueba material del envío.
+
+Limitaciones:
+- respuesta TSE pendiente, si procede;
+- diccionario oficial pendiente;
+- códigos de movimientos pendientes.
+
+--------------------------------------------------
+5. PRODUCTOS FORMALES DEL TFG
+--------------------------------------------------
+
+Producto 1:
+Informe de análisis de fuentes de datos demográficos.
+Estado: EN DESARROLLO / AVANZADO.
+Tareas que contribuyen: FUE-02 y FUE-03.
+Evidencia: documentos en docs/evidencias/ y docs/fuentes/.
+
+Producto 2:
+Dataset demográfico procesado y anonimizado.
+Estado: EN DESARROLLO.
+Observación: DAT-01 es un componente terminado, no el producto completo.
+
+Producto 3:
+Documento técnico del modelo de análisis y predicción.
+Estado: PENDIENTE.
+Observación: base teórica no consolidada como producto formal terminado.
+
+Producto 4:
+Sistema web funcional.
+Estado: DISEÑO Y PREPARACIÓN TÉCNICA DOCUMENTADOS; implementación funcional pendiente.
+Observación: WEB-01, WEB-02 y WEB-03 no equivalen al sistema final.
+
+Producto 5:
+Informe de pruebas del sistema web.
+Estado: PENDIENTE.
+Observación: las pruebas DAT-01 son pruebas de componente y no equivalen a las pruebas integrales del sistema.
+
+--------------------------------------------------
+6. OBJETIVOS ESPECÍFICOS
+--------------------------------------------------
+
+Objetivo 1: Fuentes oficiales TSE.
+Estado: AVANZADO.
+Tareas completadas: FUE-02 y análisis documental de FUE-03.
+Tareas pendientes: cierre documental de la gestión institucional TSE y validación de archivo maestro/diccionario oficial.
+Evidencia disponible: documentos de FUE-02 y FUE-03, inventarios TSE y evidencias de DAT-01.
+Dependencia principal: respuesta institucional del TSE o documentación oficial equivalente.
+
+Objetivo 2: Procesamiento y preparación de datos.
+Estado: EN DESARROLLO. Primer incremento técnico (DAT-01) completado y verificado.
+Tareas completadas: DAT-01.
+Tareas pendientes: automatización complementaria, limpieza, reconstrucción registral y series.
+Evidencia disponible: CLI, SQLite, pruebas y verificación DAT-01.
+Dependencia principal: diccionario oficial y archivo maestro.
+
+Objetivo 3: Modelos analíticos/predictivos.
+Estado: PENDIENTE.
+Tareas completadas: ninguna con evidencia robusta del repositorio actual.
+Tareas pendientes: definición del modelo, preparación de series y validación estadística.
+Dependencia principal: fuente histórica final y series reconstruidas.
+
+Objetivo 4: Sistema web.
+Estado: EN DESARROLLO / PREPARACIÓN.
+Tareas completadas: no verificadas como sistema operativo final.
+Tareas pendientes: arquitectura web, interfaz, APIs y despliegue.
+Dependencia principal: producto de datos y diseño de la capa de negocio.
+
+Objetivo 5: Pruebas y evaluación.
+Estado: PARCIAL.
+Tareas completadas: pruebas de componente DAT-01.
+Tareas pendientes: pruebas integrales del sistema y validación de modelos.
+Dependencia principal: componentes funcionales completos y resultados de análisis.
+
+--------------------------------------------------
+7. PRÓXIMAS TAREAS
+--------------------------------------------------
+
+Las tareas reales pendientes para el proyecto se limitan a lo que tiene evidencia verificable y a la lógica del alcance actual.
+
+- FUE-04 / FUE-05
+  → caracterización y selección definitiva de fuentes.
+  → dependencia: documentación oficial del TSE y criterios de selección del flujo registral.
+
+- DAT-02 en adelante
+  → automatización, limpieza, anonimización, reconstrucción y series.
+  → dependencia: archivo maestro oficial y diccionario técnico TSE.
+
+- MOD
+  → análisis y modelado.
+  → dependencia: series consolidadas y validación estadística.
+
+- WEB
+  → sistema.
+  → dependencia: datos finales y diseño funcional.
+
+- PRU
+  → validación.
+  → dependencia: integración del sistema y evidencia funcional.
+
+No se documentan en este repositorio prioridades formales adicionales distintas a las indicadas para el backlog actual.
+
+--------------------------------------------------
+8. BLOQUEOS Y RIESGOS ACTUALES
+--------------------------------------------------
+
+Riesgos reales y vigentes:
+- ausencia de archivo maestro recibido del TSE;
+- ausencia de diccionario oficial de movimientos;
+- cobertura histórica completa todavía no confirmada;
+- dependencia de información institucional para reconstrucción registral.
+
+No se debe clasificar como fallo técnico de DAT-01 algo que depende de documentación externa o de la institución fuente.
+
+--------------------------------------------------
+9. TRAZABILIDAD
+--------------------------------------------------
+
+- DAT-01
+  → Objetivo 2
+  → Producto 2
+  → Evidencia: README.md, docs/evidencias/criterios_aceptacion_dat01.md, salida CLI, pruebas pytest
+  → Documento 18: cap. III / IV, según el contenido del proyecto
+
+- FUE-02
+  → Objetivo 1
+  → Producto 1
+  → Evidencia: docs/evidencias/FUE-02_resumen.md, docs/fuentes/README.md
+  → Documento 18: análisis de fuentes y delimitación del alcance TSE
+
+- FUE-03
+  → Objetivo 1
+  → Producto 1
+  → Evidencia: docs/evidencias/FUE-03_resumen.md, docs/evidencias/FUE-03_fuentes_historicas.csv, docs/evidencias/FUE-03_consulta_TSE.md
+  → Documento 18: documentación de cobertura pública, disponibilidad histórica y relación maestro/movimientos
+  → Estado real: no cerrada como tarea finalizada, porque no hay evidencia verificable del envío real del correo TSE en el workspace
+
+--------------------------------------------------
+10. REGLA DE ACTUALIZACIÓN
+--------------------------------------------------
+
+Este archivo debe actualizarse después de cada tarea relevante finalizada.
+
+No borrar el historial conceptual del proyecto.
+Actualizar el estado presente.
+
+Toda afirmación debe ser verificable mediante:
+- código;
+- pruebas;
+- evidencia;
+- documentos;
+- Jira;
+- fuentes oficiales.
