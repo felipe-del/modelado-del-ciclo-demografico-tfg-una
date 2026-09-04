@@ -25,6 +25,7 @@ FUENTES DE VERIFICACIÓN DEL SNAPSHOT
 
 Etapas ya construidas:
 - DAT-01: lectura segura de ZIP/TXT del TSE, validación de ancho fijo, cálculo de SHA-256, generación de estructuras SQLite técnicas y CLI de verificación.
+- DAT-02: ingesta automática por lote de ZIP/TXT del TSE, extracción aislada por archivo, detección de codificación, cálculo de hash, manifest JSONL, generación de reporte y verificación final del lote.
 - FUE-02: inventario documental de fuentes TSE y diferenciación entre movimientos, documentos institucionales y archivos maestros potenciales.
 - FUE-03: investigación y artefactos documentales construidos; cierre pendiente de evidencia real de la gestión por correo ante el TSE.
 
@@ -60,6 +61,14 @@ Se registran únicamente tareas con evidencia verificable en el repositorio actu
   Evidencia principal: README.md; docs/evidencias/criterios_aceptacion_dat01.md; salida de `python -m tfg_demografia verify-dat01`; `python -m pytest -q`
   Resultado logrado: lectura ZIP/TXT del TSE, validación de ancho fijo, metadatos SQLite, trazabilidad técnica y CLI verificado.
   Limitaciones: inclusión/cambio/exclusión siguen NO CONFIGURADO mientras no exista diccionario oficial del TSE.
+
+- Jira: DAT-02
+  Nombre: Automatización de ingesta y verificación de lotes TSE
+  Objetivo específico relacionado: Objetivo 2
+  Producto formal relacionado: Producto 2 (componente de ingesta por lote)
+  Evidencia principal: `python -m pytest -q`; `python -m tfg_demografia verify-dat02`; `docs/evidencias/DAT-02_reporte_ingesta.md`; `data/work/dat02_manifest.jsonl`
+  Resultado logrado: procesamiento automático de ZIP del TSE con extracción aislada, validación de estructura, cálculo de SHA-256, detección de codificación, manifest JSONL y verificación final de lote.
+  Limitaciones: no se almacenan líneas RAW ni datos personales; la reconstrucción histórica y el diccionario oficial siguen fuera del alcance de este incremento técnico.
 
 - Jira: FUE-02
   Nombre: Inventario de fuentes oficiales del TSE
@@ -122,7 +131,30 @@ Limitación:
 - inclusión/cambio/exclusión continúa NO CONFIGURADO mientras no exista diccionario oficial TSE.
 
 --------------------------------------------------
-4. FUE-03
+4. DAT-02
+--------------------------------------------------
+
+Estado verificado:
+- ingesta automática por lote: OK
+- extracción aislada por ZIP: OK
+- SHA-256 ZIP/TXT: OK
+- detección de codificación: OK
+- manifest JSONL: OK
+- reporte de lote: OK
+- CLI de verificación: OK
+- pytest: OK
+
+Resultados actuales:
+- lote TSE procesado en `data/raw/tse` sin almacenamiento de líneas personales;
+- cada ZIP se extrae a su carpeta propia bajo `data/extracted/tse`;
+- cada archivo mantiene una trazabilidad técnica basada en SHA-256 y metadatos de período.
+
+Pruebas:
+- 17 pruebas aprobadas;
+- `verify-dat02 = OK`.
+
+--------------------------------------------------
+5. FUE-03
 --------------------------------------------------
 
 Fuente:
@@ -155,7 +187,7 @@ Limitaciones:
 - códigos de movimientos pendientes.
 
 --------------------------------------------------
-5. PRODUCTOS FORMALES DEL TFG
+6. PRODUCTOS FORMALES DEL TFG
 --------------------------------------------------
 
 Producto 1:
@@ -185,7 +217,7 @@ Estado: PENDIENTE.
 Observación: las pruebas DAT-01 son pruebas de componente y no equivalen a las pruebas integrales del sistema.
 
 --------------------------------------------------
-6. OBJETIVOS ESPECÍFICOS
+7. OBJETIVOS ESPECÍFICOS
 --------------------------------------------------
 
 Objetivo 1: Fuentes oficiales TSE.
@@ -196,10 +228,10 @@ Evidencia disponible: documentos de FUE-02 y FUE-03, inventarios TSE y evidencia
 Dependencia principal: respuesta institucional del TSE o documentación oficial equivalente.
 
 Objetivo 2: Procesamiento y preparación de datos.
-Estado: EN DESARROLLO. Primer incremento técnico (DAT-01) completado y verificado.
-Tareas completadas: DAT-01.
-Tareas pendientes: automatización complementaria, limpieza, reconstrucción registral y series.
-Evidencia disponible: CLI, SQLite, pruebas y verificación DAT-01.
+Estado: EN DESARROLLO. Primeros incrementos técnicos (DAT-01 y DAT-02) completados y verificados.
+Tareas completadas: DAT-01, DAT-02.
+Tareas pendientes: limpieza, reconstrucción registral y series.
+Evidencia disponible: CLI, SQLite, pruebas, verificación DAT-01 y DAT-02, manifest y reporte de ingesta.
 Dependencia principal: diccionario oficial y archivo maestro.
 
 Objetivo 3: Modelos analíticos/predictivos.
@@ -221,7 +253,7 @@ Tareas pendientes: pruebas integrales del sistema y validación de modelos.
 Dependencia principal: componentes funcionales completos y resultados de análisis.
 
 --------------------------------------------------
-7. PRÓXIMAS TAREAS
+8. PRÓXIMAS TAREAS
 --------------------------------------------------
 
 Las tareas reales pendientes para el proyecto se limitan a lo que tiene evidencia verificable y a la lógica del alcance actual.
@@ -249,7 +281,7 @@ Las tareas reales pendientes para el proyecto se limitan a lo que tiene evidenci
 No se documentan en este repositorio prioridades formales adicionales distintas a las indicadas para el backlog actual.
 
 --------------------------------------------------
-8. BLOQUEOS Y RIESGOS ACTUALES
+9. BLOQUEOS Y RIESGOS ACTUALES
 --------------------------------------------------
 
 Riesgos reales y vigentes:
@@ -261,7 +293,7 @@ Riesgos reales y vigentes:
 No se debe clasificar como fallo técnico de DAT-01 algo que depende de documentación externa o de la institución fuente.
 
 --------------------------------------------------
-9. TRAZABILIDAD
+10. TRAZABILIDAD
 --------------------------------------------------
 
 - DAT-01
@@ -284,7 +316,7 @@ No se debe clasificar como fallo técnico de DAT-01 algo que depende de document
   → Estado real: no cerrada como tarea finalizada, porque no hay evidencia verificable del envío real del correo TSE en el workspace
 
 --------------------------------------------------
-10. REGLA DE ACTUALIZACIÓN
+11. REGLA DE ACTUALIZACIÓN
 --------------------------------------------------
 
 Este archivo debe actualizarse después de cada tarea relevante finalizada.

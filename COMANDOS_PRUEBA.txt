@@ -157,14 +157,32 @@ Ejecute este comando en una terminal maximizada y capture la salida:
 python -m tfg_demografia verify-dat01
 
 
+16. VALIDAR EL BATCH DE INGESTA TSE (DAT-02)
+---------------------------------------------
+
+Procesar todos los ZIP de la fuente TSE:
+
+python -m tfg_demografia ingest-batch --source-root "data/raw/tse" --extraction-root "data/extracted/tse" --manifest "data/work/dat02_manifest.jsonl" --report "docs/evidencias/DAT-02_reporte_ingesta.md"
+
+Verificar el lote completo:
+
+python -m tfg_demografia verify-dat02 --source-root "data/raw/tse" --extraction-root "data/extracted/tse" --manifest "data/work/dat02_manifest.jsonl" --report "docs/evidencias/DAT-02_reporte_ingesta.md"
+
 RESULTADOS ESPERADOS
 ====================
 
-pytest: todas las pruebas pasan (9 pruebas).
+pytest: todas las pruebas pasan (17 pruebas en la suite actual de DAT-01 y DAT-02).
 
-nacimientos: longitud esperada 281.
-matrimonios: longitud esperada 328.
-defunciones: longitud esperada 191.
+DAT-01:
+- nacimientos: longitud esperada 281.
+- matrimonios: longitud esperada 328.
+- defunciones: longitud esperada 191.
+
+DAT-02:
+- verificacion final: DAT-02 = OK
+- manifest JSONL generado en data/work/dat02_manifest.jsonl
+- reporte generado en docs/evidencias/DAT-02_reporte_ingesta.md
+- RAW sin modificaciones y sin almacenamiento de líneas personales.
 
 En las muestras actuales, la clasificacion de inclusiones, cambios y exclusiones
 debe mostrar NO CONFIGURADO. No deben inferirse codigos sin el diccionario oficial.
