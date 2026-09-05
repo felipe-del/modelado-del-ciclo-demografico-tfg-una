@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .errors import TSEError
 from .ingestion.processor import process
+from .ingestion.tse_sync import DATASETS, DEFAULT_SOURCE_PAGE, sync_tse
 from .persistence.sqlite import connect, history, save_summary
 from .schema_loader import load_schema
 
@@ -55,6 +56,13 @@ def main() -> None:
     hist.add_argument("--db", type=Path, default=Path("data/db/imports.sqlite"))
     hist.add_argument("--json", action="store_true")
     subparsers.add_parser("verify-dat01")
+    sync = subparsers.add_parser("sync-tse")
+    sync.add_argument("--dataset", choices=[*DATASETS, "all"], default="all")
+    sync.add_argument("--dry-run", action="store_true")
+    sync.add_argument("--local-only", action="store_true")
+    sync.add_argument("--manifest", type=Path, default=Path("data/manifests/tse_manifest.csv"))
+    sync.add_argument("--report", type=Path, default=Path("docs/evidencias/DAT-02_reporte.md"))
+    sync.add_argument("--source-page", default=DEFAULT_SOURCE_PAGE)
     args = parser.parse_args()
     try:
         if args.command == "read":
@@ -62,6 +70,10 @@ def main() -> None:
             with connect(args.db) as database:
                 save_summary(database, summary)
             print(json.dumps(summary.__dict__, ensure_ascii=False, indent=2) if args.json else format_summary(summary))
+        elif args.command == "sync-tse":
+            datasets = DATASETS if args.dataset == "all" else (args.dataset,)
+            results = sync_tse(PROJECT_ROOT / "data/raw/tse", PROJECT_ROOT / "data/work/extracted/tse", PROJECT_ROOT / args.manifest, PROJECT_ROOT / args.report, ROOT / "schemas", datasets, args.source_page, args.dry_run, args.local_only)
+            print("\n".join(f"{row['dataset']}: {row['zip_filename']} {row['download_status']}" for row in results))
         else:
             if args.command == "verify-dat01":
                 print(verify_dat01(Path("data/db/imports.sqlite")))

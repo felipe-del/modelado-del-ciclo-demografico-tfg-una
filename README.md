@@ -50,6 +50,22 @@ Cuando exista el diccionario oficial, cada esquema podrá configurar `movement.f
 
 No se encontró diccionario oficial en este workspace. Por eso los esquemas no inventan posiciones ni códigos: inclusión, cambio y exclusión se muestran como `NO CONFIGURADO`. El motor sí soporta `INCLUSION`, `CHANGE`, `EXCLUSION` y `UNKNOWN` cuando el esquema reciba una configuración documentada.
 
+## DAT-02 — Descarga, extracción e inspección
+
+DAT-02 amplía DAT-01 en la capa `FUENTE -> RAW -> INGESTA -> INSPECCIÓN`. El comando `sync-tse` descubre enlaces ZIP desde la página oficial del TSE mediante sus atributos `href`, filtrando los patrones `nac_*.zip`, `mat_*.zip` y `def_*.zip`. También permite procesar solo el inventario RAW local con `--local-only`.
+
+Los ZIP originales se conservan bajo `data/raw/tse/`; los TXT se extraen exclusivamente en `data/work/extracted/tse/<dataset>/<nombre-del-zip>/`, directorio ignorado por Git. La extracción rechaza rutas absolutas y traversal. Un ZIP ya existente no se sobrescribe; si el mismo nombre aparece en el manifiesto con otro hash se registra `HASH_CONFLICT`.
+
+La inspección detecta BOM, intenta UTF-8 estricto y usa la codificación del esquema como respaldo. Registra hashes, período derivado del nombre, estadísticas de longitud y estados, sin almacenar registros ni valores RAW. El manifiesto CSV idempotente se genera en `data/manifests/tse_manifest.csv` y el reporte derivado en `docs/evidencias/DAT-02_reporte.md`.
+
+```powershell
+python -m tfg_demografia sync-tse --dry-run
+python -m tfg_demografia sync-tse --local-only
+python -m tfg_demografia sync-tse --dataset nacimientos --local-only
+```
+
+DAT-02 no reconstruye registros, no interpreta códigos de movimiento y no genera un dataset analítico o anonimizado definitivo.
+
 ## Alcance y privacidad
 
 RAW conserva las fuentes originales. DAT-01 solo produce conteos, metadatos de trazabilidad, hashes, estados e incidencias técnicas seguras. La capa canónica, anonimización analítica, PostgreSQL, API, frontend y pronósticos pertenecen a etapas posteriores.

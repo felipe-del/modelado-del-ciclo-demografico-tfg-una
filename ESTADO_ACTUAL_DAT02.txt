@@ -1,0 +1,28 @@
+ESTADO ACTUAL DEL PROYECTO DAT-02
+
+Fecha de actualización: 2026-09-05
+
+DAT-02 implementa automatización reproducible de descubrimiento, descarga, extracción e inspección técnica de movimientos TSE. Su alcance es FUENTE -> RAW -> INGESTA -> INSPECCIÓN; no reconstruye registros, no clasifica movimientos sin diccionario oficial y no genera el dataset analítico.
+
+El comando `python -m tfg_demografia sync-tse` descubre ZIP oficiales por atributos href y patrones nac_, mat_ y def_. `--dry-run` no escribe archivos y `--local-only` procesa el inventario RAW existente sin usar red.
+
+Los ZIP permanecen inalterados en data/raw/tse. Los TXT se extraen de forma segura en data/work/extracted/tse, directorio ignorado por Git. La extracción rechaza Zip Slip y no sobrescribe una carpeta sin un marcador hash coincidente.
+
+La inspección registra SHA-256, archivo, período, codificación detectada, longitudes mínima/máxima, conteos de filas y estados. La codificación se decide por BOM, UTF-8 estricto o fallback configurado en el esquema. No se persisten líneas ni valores RAW.
+
+El manifiesto CSV idempotente se encuentra en data/manifests/tse_manifest.csv y el reporte automático en docs/evidencias/DAT-02_reporte.md. La identidad de una fila es dataset + nombre ZIP + SHA-256.
+
+VALIDACION VERIFICADA
+=====================
+
+- `python -m compileall -q src tests`: correcto.
+- `python -m pytest -v`: 15 pruebas aprobadas; 9 de DAT-01 y 6 de DAT-02.
+- `python -m tfg_demografia verify-dat01`: OK; privacidad y RAW intactos.
+- `python -m tfg_demografia sync-tse --dry-run`: fuente oficial consultada sin escrituras.
+- `python -m tfg_demografia sync-tse --local-only`: 93 ZIP RAW inspeccionados, 31 por dataset, sin descargas ni sobrescrituras.
+- Períodos detectados: 2026-02-01 a 2026-08-01 para los tres datasets.
+- Longitudes esperadas y observadas: nacimientos 281, matrimonios 328 y defunciones 191; cero errores de longitud.
+- Codificaciones detectadas: nacimientos y matrimonios `latin-1` y `utf-8`; defunciones `latin-1`.
+- Conflictos de hash: 0. Archivos RAW modificados: 0.
+
+Limitación vigente: la verificación de descarga contra la página oficial depende de la conectividad y disponibilidad institucional. DAT-02 no resuelve la ausencia del diccionario oficial de movimientos ni del archivo maestro TSE.

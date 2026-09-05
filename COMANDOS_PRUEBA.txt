@@ -157,6 +157,27 @@ Ejecute este comando en una terminal maximizada y capture la salida:
 python -m tfg_demografia verify-dat01
 
 
+16. SINCRONIZACION DAT-02
+-------------------------
+
+Inspeccionar la fuente oficial sin modificar archivos:
+
+python -m tfg_demografia sync-tse --dry-run
+
+Procesar de forma reproducible los ZIP RAW locales, extraerlos en data/work,
+actualizar el manifiesto y generar el reporte:
+
+python -m tfg_demografia sync-tse --local-only
+
+Procesar un unico dataset local:
+
+python -m tfg_demografia sync-tse --dataset nacimientos --local-only
+
+El manifiesto se escribe en data/manifests/tse_manifest.csv y el reporte en
+docs/evidencias/DAT-02_reporte.md. Los TXT extraidos quedan bajo data/work/ y
+no deben versionarse.
+
+
 RESULTADOS ESPERADOS
 ====================
 
