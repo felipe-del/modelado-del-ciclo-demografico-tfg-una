@@ -7,3 +7,4 @@ data/db/*.sqlite-*
 data/work/
 data/raw/tse/**/*.zip
 data/raw/tse/**/*.txt
+data/extracted/tse/**/*.txt
