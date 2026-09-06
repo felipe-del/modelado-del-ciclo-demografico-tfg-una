@@ -1,6 +1,6 @@
 # DAT-02 — Reporte de ingesta TSE
 
-Fecha de ejecución: 2026-09-06T01:43:13.063601+00:00
+Fecha de ejecución: 2026-09-06T02:00:54.574506+00:00
 
 ## Resumen global
 
