@@ -1,0 +1,826 @@
+01107050480095                    024012026MIGUEL ANGEL                                      UMAÑA                     MENDOZA                                                                 
+02104112460492                    018041997MARIA LUISA                                       GAMEZ                     MEJICANO                                                                
+02104571170233                    016052004SEVERO                                            DE LIBERATO               POTENZA                                                                 
+02106480650129                    015062021LUCIA                                             MELENDEZ                  ESPINOZA                                                                
+02400980380076                    016122011CARLOS MANUEL                                     SANCHEZ                   ROSTRAN                                                                 
+02601524810962                    000112025ALEJANDRO                                         SANTOS                    SERRANO                                                                 
+02701082540507                    002012026DINA REBECA                                       ROMERO                    LAINEZ                                                                  
+03101591300260                    031071939JORGE                                             VON STORREN               HAGEMANN                                                                
+03107052820563                    023102012CESAR AUGUSTO                                     PAZ                       HERNANDEZ                                                               
+03107052850570                    030012026ENGELS ALEXANDER                                  GONZALEZ                  LOPEZ                                                                   
+03107053150629                    021052009FATIMA RAMONA                                     GONZALEZ                  LOPEZ                                                                   
+03107053150630                    017122024GUADALUPE                                         LOPEZ                     GONZALEZ                                                                
+03107053160632                    029012026WENDY                                             MERCADO                   MENDOZA                                                                 
+03107053180636                    003022026VALERIA DEL CARMEN                                REYES                     VELASQUEZ                                                               
+03107053250649                    004022026MARIA AUXILIADORA                                 BERBIZ                    RAMIREZ                                                                 
+03107053250650                    005022026VIRGILIO                                          SALINAS                   MONTEZUMA                                                               
+03107053260651                    006022026GUSTAVO ADOLFO                                    RODRIGUEZ                 ALVARADO                                                                
+03107053260652                    006022026WALTER                                            GRANADOS                  ROMERO                                                                  
+03107053490697                    007022026ALEJANDO ENRIQUE                                  GOMEZ                     NO INDICA                                                               
+03107054000800                    015022026NO INDICA                                         NO INDICA                 NO INDICA                                                               
+03201450570170                    027121958ANTONIO                                           RETANA                    CERVANTES                                                               
+03203032630526                    023012026ROSALIO                                           AGUILAR                   MAIRENA                                                                 
+03203032660532                    004022026PAUBLO ALFONSO                                    GONZALEZ                  SOLIS                                                                   
+03203032670533                    008022026VICENTA DEL CARMEN                                GONZALEZ                  OBANDO                                                                  
+03301183160632                    019101963INNOMINADA                                        GOMEZ                     BRENES                                                                  
+03401303560711                    008022026CESAR JUAN                                        RAFFO                     PEZO                                                                    
+03501412910582                    002012026MARIA CRISTINA                                    PADILLA                   OCON                                                                    
+03501412970593                    004022026BRIGITTE URSULA                                   ROMIR                     NO INDICA                                                               
+03501412980595                    007022026ANGEL ROSARIO                                     CARSIN                    CASTELLANOS                                                             
+03501412980596                    008022026RIGOBERTO                                         CHOW                      GUTIERREZ                                                               
+03501413020603                    011022026LAZARO EDUARDO                                    RODRIGUEZ                 GUEVARA                                                                 
+03501413080616                    030012026VICTORIA                                          NIELSEN                   NO INDICA                                                               
+03501413090617                    022012026FRANCISCO DE JESUS                                CARRILLO                  CRUZ                                                                    
+03601530880176                    020012026JULIO                                             SERRATO                   SANCHEZ                                                                 
+03601530890177                    025012026MARIA DE LA CRUZ                                  TOVAL                     TOVAL                                                                   
+03701083890777                    007022026DANILO                                            LEON                      NO INDICA                                                               
+03701084110821                    022012026ETELVINA                                          PALACIOS                  GUTIERREZ                                                               
+03103120830166100440914           007031976DANIEL GREGORIO DEL SOCORRO                       MARIN                     MORA                                                                    
+01103170000630100552977           002111977BENJAMIN MARIA DE LOS DOLORES                     GUTIERREZ                 MORA                                                                    
+02103173150630100552977           002111977BENJAMIN MARIA DE LOS DOLORES                     GUTIERREZ                 MORA                                                                    
+03103900910181100664450           015091993FERNANDO RAMON                                    CENTENO                   GUELL                                                                   
+03103014770954100697530           007091973EVANGELINA DE LAS PIEDADES                        QUESADA                   ZAMORA                                                                  
+01102570000472100720318           022061964JOSE RECAREDO                                     HERNANDEZ                 HERNANDEZ                                                               
+03102572360472100720318           022061964JOSE RECAREDO                                     HERNANDEZ                 HERNANDEZ                 JOSE RECAREDO       MORA         HERNANDEZ    
+02104461550309100763671           008082002MARIA DE LA GUADALUPE FRANCISCA                   SAENZ                     JIMENEZ                                                                 
+03103592600520100908384           027101987OTTO EDWIN ANTONIO                                NAVARRO                   BOLANDI                                                                 
+02104144080816100975390           023111997MARIA TERESA SALVADORA                            DEL RIO                   QUESADA                                                                 
+02700551980396101031157           020101990ABDULIA DEL CARMEN                                PRADO                     MORA                      OBDULIA             PRADO        MORA         
+02103704010802101310638           013061989EMILIANO DE JESUS                                 JIMENEZ                   JIMENEZ                                                                 
+01102770000010101670080           017021968RAFAEL MISAEL                                     SANDI                     SEQUEIRA                                                                
+03102770050010101670080           017021968RAFAEL MISAEL                                     SANDI                     SEQUEIRA                                                                
+03107054000799101730893           015022026LIGIA                                             CASTILLO                  BARRANTES                                                               
+03107052920583101750730           011022026EDUARDO                                           SOLIS                     RIVERA                                                                  
+03701083910782101760967           011022026MARIA JOSEFA                                      GAMBOA                    GAMBOA                    MARIA JOSEFA        MORA         GAMBOA       
+03203032910582101820627           016022026MARIA EUGENIA                                     MOLINA                    GUZMAN                    MARUJA              MOLINA       GUZMAN       
+03107053840768101970357           028012026ELIETH                                            CAMACHO                   NARANJO                                                                 
+03107052900580102000232           011022026MARIA ALICIA                                      CHINCHILLA                CARRERA                                                                 
+03107054020803102010363           015022026CARMEN                                            ALVARADO                  MORA                                                                    
+03107053800760102030716           015022026ISABEL                                            VEGA                      MORALES                                                                 
+03107053320663102070561           011022026CLAUDIA                                           MENESES                   LEANDRO                                                                 
+03107052910581102080271           011022026HUGOLINA                                          NUÑEZ                     GONZALEZ                                                                
+03107054020804102120412           015022026MARTINA                                           CARBALLO                  CHAVES                                                                  
+02400802100419102130040           018081993WILLIAM MARIO DE LA TRINIDAD                      VARGAS                    VINDAS                                                                  
+03107053310661102150889           010022026JOSE ANTONIO                                      CHACON                    CHINCHILLA                                                              
+03107053780756102180978           014022026ELEUTERIO                                         GOMEZ                     GUERRERO                                                                
+03107054040808102190407           016022026MYRIAM                                            MARIN                     CASTAING                                                                
+03107054050809102190971           016022026NAPOLEON                                          MONTES                    LEON                                                                    
+03107054050810102220057           016022026ZOILA                                             UREÑA                     SOLIS                     ZELMIRA             UREÑA        SOLIS        
+03107054070813102270045           016022026ROSA                                              BARRANTES                 SOTO                                                                    
+03107054010801102270445           015022026MARIA EUGENIA                                     COTO                      GARCIA                                                                  
+03107053980796102270749           014022026CECILIA                                           CALVO                     GRANADOS                                                                
+03107053810762102270753           015022026MARIA EUGENIA                                     MORA                      DELGADO                                                                 
+03302161200239102330162           011022026HILDA MARIA DE LA TRINIDAD                        RAMIREZ                   CHAVARRIA                                                               
+03107053550710102370398           012022026VILMA                                             ANGULO                    GONZALEZ                                                                
+03107053970794102420272           014022026GUIDO                                             ARQUIN                    BRENES                                                                  
+03107054100819102420603           017022026NORMA                                             RIOS                      CALDERON                                                                
+03107053770754102470890           014022026ORLANDO ISIDRO                                    ESQUIVEL                  SANCHEZ                                                                 
+03107053550709102500646           012022026XINIA                                             GOMEZ                     ACOSTA                                                                  
+03203032910581102530949           015022026IRMA MARIA                                        FONSECA                   XIRINACHS                                                               
+03107053830766102560464           015022026MARIA CRISTINA                                    MASIS                     FUENTES                                                                 
+03601530930185102580349           011022026JUAN                                              CERDAS                    ALVARADO                                                                
+03107052910582102620164           011022026LUZMILDA                                          ZAMORA                    VASQUEZ                                                                 
+03107053990798102630011           014022026IRENE VIRGINIA                                    SOLIS                     MONGE                                                                   
+03107053750750102640458           013022026HORTENSIA                                         VALVERDE                  CHAVARRIA                                                               
+03107054100820102640915           017022026MARIA ELENA                                       AGUILAR                   RODRIGUEZ                                                               
+03107052930585102650158           012022026JOSE LUIS                                         GUEVARA                   OBANDO                                                                  
+03107053790757102650748           014022026JOAQUIN DE JESUS                                  ROJAS                     CHACON                                                                  
+03701084060811102660429           012022026DORILA                                            SEGURA                    ELIZONDO                                                                
+03401303570714102680633           011022026OSCAR EDUARDO                                     MORA                      ROJAS                                                                   
+03107053540707102700264           012022026FRANCISCO                                         ELIZONDO                  CUBILLO                                                                 
+03401303820763102700719           016022026JOSEFA AMELIA                                     LOPEZ                     DELGADO                                                                 
+03107052890578102770157           011022026FERNANDO                                          GUTIERREZ                 LEITON                                                                  
+03107054030805102790158           015022026GILBERTO                                          MONGE                     AZOFEIFA                                                                
+03401303750749102790758           012022026RICARDO                                           CAMPOS                    MORA                                                                    
+03401303560712102800861           011022026OLGA MARIA                                        SOLIS                     AGUILAR                                                                 
+03107053820763102820478           015022026CARLOS                                            VILLALTA                  ARIAS                                                                   
+03107052880576102820573           011022026WALTER                                            ALPIZAR                   MORA                                                                    
+03107053800759102830552           015022026GUILLERMO DAVID                                   HERNANDEZ                 FLORES                                                                  
+03107054110822102860688           017022026EMERITA                                           SEGURA                    VARGAS                                                                  
+03107054080815102870125           017022026ANGEL RAMON                                       VILLALTA                  BERROCAL                                                                
+03107054120824102890921           017022026ELVIRA                                            LOPEZ                     GAMBOA                                                                  
+03107053520704102900350           012022026LETICIA                                           MONTERO                   UREÑA                                                                   
+03107053820764102930874           014022026MARIA CECILIA                                     MADRIGAL                  SANCHEZ                                                                 
+01103300000178102970318           025011981MANUEL ANTONIO DE LA TRINIDAD                     TORRES                    MUÑOZ                                                                   
+03103300890178102970318           025011981MANUEL ANTONIO DE LA TRINIDAD                     TORRES                    MUÑOZ                                                                   
+03107054130826102980631           018022026FABIO                                             UMAÑA                     UMAÑA                                                                   
+03302161280255102980720           013022026ELIECER                                           HIDALGO                   TENCIO                                                                  
+01103560000789102990141           012051987RAMON ELADIO DE JESUS                             DURAN                     BADILLA                                                                 
+03103563950789102990141           012051987RAMON ELADIO DE JESUS                             DURAN                     BADILLA                                                                 
+03701084120824102990259           015022026RAMON GONZALO                                     FALLAS                    QUIROS                                                                  
+03107053320664103000427           011022026MARIA DEL SOCORRO ELSA                            GUZMAN                    SOLIS                                                                   
+03107052900579103020296           011022026ELIZABETH                                         ESCALANTE                 VARGAS                                                                  
+03107054120823103030116           017022026GEORGINA                                          CHINCHILLA                ARIAS                                                                   
+03107053560712103040869           013022026ADONAY                                            CASTILLO                  MEZA                                                                    
+03107053740748103050289           013022026ENRIQUE                                           CURLING                   ALVARADO                                                                
+03203032550510103050735           013022026MARTA                                             VALVERDE                  MORALES                                                                 
+03107053110621103060007           016022026OSCAR ARMANDO                                     NAVARRO                   JIMENEZ                                                                 
+03107052800560103070059           009072023FERNANDO                                          MORA                      SIBAJA                                                                  
+03107053170633103110294           031012026ISABEL                                            MARCHENA                  SEGREDA                                                                 
+03107053430685103110865           017022026LUIS GUILLERMO                                    CASTRO                    SAENZ                                                                   
+03107053000600103120093           014022026SERGIO                                            CARMONA                   ZAMORA                                                                  
+03107053670733103120645           017022026EDGAR                                             VARGAS                    FALLAS                                                                  
+03107052990597103130986           014022026MARTA ROSA                                        SILES                     AVALOS                                                                  
+03107053860771103140500           019022026ROSA                                              CHACON                    NAVARRO                                                                 
+03107053010601103140583           014022026JOSE ANTONIO                                      CASCANTE                  QUESADA                                                                 
+03107054130825103150387           018022026GUILLERMO                                         LANG                      ROSS                                                                    
+03107053720743103170231           018022026BIBIANO                                           PORRAS                    RAMIREZ                                                                 
+03107053690737103190236           017022026CARLOS ALFREDO                                    CARMONA                   GARITA                                                                  
+03302161360272103210068           019022026ELICINIO                                          MORA                      VALVERDE                                                                
+03107053090617103210645           015022026GERARDO ANTONIO                                   GRANADOS                  PIEDRA                                                                  
+03107053390677103210837           017022026ROSALITA                                          FONSECA                   LEIVA                                                                   
+03302161350270103220504           019022026SERGIO                                            CUBILLO                   BERMUDEZ                                                                
+03107053410681103250359           017022026OLGA MARTA                                        VINDAS                    BARQUERO                                                                
+03203032840567103250555           018022026MARIA DE LOS ANGELES                              PICADO                    QUESADA                   ANGELA PICADO QUESAD                          
+03203032670534103290887           010022026VERA ANTONIETA DE LOS ANGELES                     ALVARADO                  RODRIGUEZ                                                               
+03107053420684103320447           017022026RODRIGO                                           VILLALTA                  VARGAS                                                                  
+03107053340668103330619           016022026RODRIGO                                           CASTRO                    MONGE                                                                   
+03107053850769103340076           018022026GERARDO FILEMON                                   UMAÑA                     JIMENEZ                                                                 
+03107054010802103350288           015022026CECILIO                                           MENESES                   CAMACHO                   HUMBERTO CECILIO    MENESES      CAMACHO      
+03203032610522103350321           016022026ARTURO FRANCISCO                                  RENICK                    UREÑA                                                                   
+03107052740547103390010           012022026JOSE REYES                                        SOLIS                     ARIAS                                                                   
+03107053450690103430549           002022026GUILLERMA                                         DIAZ                      CHAVARRIA                                                               
+03107053140627103510565           016022026MANUEL GERARDO                                    CHAVES                    GONZALEZ                                                                
+01101960000376103510884           026121947BLANCA LUZ                                        SORIO                     PRADO                                                                   
+03101961880376103510884           026121947BLANCA LUZ                                        SORIO                     PRADO                                                                   
+03107053380675103520197           017022026CARLOS LUIS FERNANDO                              CHAVES                    VALVERDE                                                                
+03401303630725103520587           014022026JOSE MANUEL                                       VARGAS                    PEREZ                                                                   
+03107052940588103560301           013022026OLGA                                              PEREZ                     RAMIREZ                                                                 
+01102580000935103590219           028081964VICTOR HUGO DE LA TRINIDAD                        BRENES                    CONEJO                                                                  
+03102584680935103590219           028081964VICTOR HUGO DE LA TRINIDAD                        BRENES                    CONEJO                                                                  
+03107053390678103670643           017022026GERARDO                                           ABARCA                    DURAN                                                                   
+01102030000472103710647           030061949MARIO GERARDO JOSE                                MORA                      DEL RIO                                                                 
+03102032360472103710647           030061949MARIO GERARDO JOSE                                MORA                      DEL RIO                                                                 
+03302161340268103750784           017022026LIDIETH                                           RODRIGUEZ                 VALVERDE                                                                
+03107052760552103770074           013022026RAFAEL ANGEL                                      HERNANDEZ                 DELGADO                                                                 
+03107053070613103810776           015022026RAMON                                             MASIS                     MORA                                                                    
+03107053880776103870905           019022026OLGA MARTA                                        UREÑA                     SANDI                                                                   
+03107053710741103890727           018022026MANUEL ANTONIO                                    ZAMORA                    HIDALGO                                                                 
+03107052960592103970059           014022026MARIA DE LOS ANGELES                              ARIAS                     CESPEDES                                                                
+03107053700740104000413           018022026MARIA ELIZABETH                                   FALLAS                    DIAZ                                                                    
+03107053680736104081404           017022026LUZMILDA                                          FERRETO                   SANCHEZ                                                                 
+03107053060612104081481           015022026ALVARO                                            GARCIA                    VALVERDE                                                                
+03107053080615104100068           015022026CRUZ MARIA                                        CHAVES                    MORA                                                                    
+03107052920584104150556           011022026ADILIA MARIA                                      FERNANDEZ                 BROOK                                                                   
+03107054090818104151479           017022026JUAN MARIA                                        CHINCHILLA                MENA                                                                    
+03107052790557104161184           013022026HAGEN CHRISTIAN                                   GRUNWEDL                  BRENES                                                                  
+03107052980595104200683           014022026DORA VIRGINIA                                     CALVO                     VARGAS                                                                  
+03107053120623104210374           016022026GERARDO                                           JIMENEZ                   MENA                                                                    
+03302161110222104220621           013022026LIGIA MARIA DE LOS ANGELES                        VARGAS                    GRANADOS                                                                
+03401303610722104310057           014022026JOVITA                                            LOPEZ                     HIDALGO                                                                 
+03107053710742104390777           018022026GLADYS                                            SANCHEZ                   ROJAS                                                                   
+03107053590717104410082           004022026VICTOR MANUEL                                     AGUERO                    CEDEÑO                                                                  
+03107054060812104410477           016022026JAIME                                             SOTELA                    ARROYO                                                                  
+03601530780156104430212           004022026RONALD                                            RAMIREZ                   LORIA                                                                   
+03302161150230104520203           016022026FERNANDO GERARDO                                  MORA                      FERNANDEZ                                                               
+01102430000772104520588           030041961BLANCA ROSA GERARDINA                             GARRO                     GARRO                                                                   
+03102433860772104520588           030041961BLANCA ROSA GERARDINA                             GARRO                     GARRO                                                                   
+03107053580715104540419           004022026ROGER                                             ROJAS                     MARTINEZ                                                                
+03107053120624104550858           016022026JUAN LUIS                                         CABEZAS                   BARBOZA                                                                 
+02107024420883104620205           028112025FREDDY                                            ARIAS                     CHAVES                                                                  
+03107054070814104640442           016022026MARIA DE LOS ANGELES                              BRENES                    BERMUDEZ                                                                
+02107044430886104710098           000012026GERARDO ALBERTO                                   ALVARADO                  MORA                                                                    
+03107054160831104710726           018022026RODOLFO                                           MENA                      RIOS                                                                    
+03601530740147104770216           031012026XINIA                                             FERNANDEZ                 CHAN                                                                    
+03203032940587104810514           019022026ANA MARIA                                         VILCHEZ                   MATA                                                                    
+03601530870174104860851           017022026VICTOR JULIO                                      ARIAS                     BONILLA                                                                 
+03302161310262104870518           012022026ELIZABETH                                         ROJAS                     AGUILAR                                                                 
+03107052860571104880810           000012026JOSE LUIS                                         RUIZ                      MURILLO                                                                 
+03107053400679104990721           017022026JORGE ALBERTO                                     ESQUIVEL                  SOLANO                                                                  
+03107053000599105040602           014022026RODOLFO                                           VARGAS                    RAMIREZ                                                                 
+03107054170833105040637           019022026ADELA                                             ARTAVIA                   AGUILAR                                                                 
+03107053660732105160528           017022026ANA LORENA                                        ESQUIVEL                  SOLORZANO                                                               
+03107053630725105180261           007022026ANA ILEANA                                        RODRIGUEZ                 DELGADO                                                                 
+03107053100620105200395           016022026DENNIS DE LOS ANGELES                             LEIVA                     ANGULO                                                                  
+03107054040807105220637           015022026DELIA MARIA                                       PAEZ                      ORDOÑEZ                                                                 
+02104741380276105290991           006122006MIGUEL ANGEL                                      SEGURA                    PORTUGUEZ                                                               
+02302160550110105310178           027012026OSCAR ALFREDO DE JESUS                            GUTIERREZ                 GONZALEZ                                                                
+03107052810561105380986           019062012SILVIA ELENA                                      COLIS                     CALDERON                                                                
+03401303770754105570219           018022026MARIA DE LOS ANGELES                              GUERRERO                  ACUÑA                                                                   
+03107052780555105640301           013022026VICTOR IVAN                                       FILIPINI                  ARROYO                                                                  
+03107053670734105910377           017022026MARIA ELIZABETH MAYELA                            CEDEÑO                    MONTERO                                                                 
+03107053370673105940081           016022026MARTA LILLIANA                                    MONTERO                   LOBO                                                                    
+02107051510302105950179           005022026LIBIA DE LOS ANGELES                              RUMOROSO                  SOLIS                                                                   
+03107053400680105960051           017022026OSCAR EDUARDO DE LA TRINIDAD                      BARRIOS                   HERRERA                                                                 
+03107053870773106060052           019022026WALTER RICARDO                                    JIMENEZ                   ZUÑIGA                                                                  
+02107050680136106290296           024012026JORGE ARTURO                                      BARRANTES                 SOLIS                                                                   
+03203032730545106300919           017022026LUCIA MARIA AUXILIADORA                           NAVARRO                   FLORES                                                                  
+03107053410682106330894           017022026LEONOR EUGENIA DEL N                              HERRERA                   ULLOA                     LEONORA HERRERA ULLO                          
+02106922500499106620754           030012025HERNAN GUILLERMO DEL ROSARIO                      FALLAS                    ROJAS                                                                   
+03107053080616106670073           015022026MARIA TERESA DEL CAR                              JIMENEZ                   MORA                                                                    
+02401302850570106720719           019012026JESUS MARIA DE JESUS                              AVALOS                    CARDENAS                                                                
+03401303600719106760051           013022026LUIS ALBERTO                                      ROJAS                     UMAÑA                                                                   
+03601530760151106780421           002022026MARCOS TULIO ANTONIO                              ARIAS                     MORA                                                                    
+03107053720744106910268           018022026MARGARITA MARIA DE JESUS                          GUZMAN                    GOMEZ                                                                   
+03107053050610106940016           015022026LUIS PAULINO                                      PADILLA                   MONGE                                                                   
+03107053420683106950373           017022026CARLOS ALBERTO                                    SANCHEZ                   PORTUGUEZ                                                               
+02701083360672106980461           019012026MARIA ESTRELLA DE JE                              VALVERDE                  VALVERDE                                                                
+03107052750550107130018           013022026HANNIA MAYELA                                     FALLAS                    VILLAVICENCIO                                                           
+03203032610521107170791           015022026EDDY BENEDICTO DE JESUS                           SOLORZANO                 RUIZ                                                                    
+03107053860772107200884           019022026MAURICIO ALBERTO                                  MONTERO                   GARITA                                                                  
+03107053360672107320990           016022026RAFAEL ANGEL                                      MARIN                     ZUÑIGA                                                                  
+03107052950590107410603           013022026JOSE FRANCISCO                                    LOPEZ                     GUERRA                                                                  
+03107053020603107440828           014022026WILBERT GERARDO                                   MONGE                     CASTRO                                                                  
+03107052740548107560189           012022026DONEY                                             LOPEZ                     MEJIAS                    DONEYS LOPEZ MEJIA                            
+03107053020604107780228           014022026RAFAEL ANGEL                                      SANDI                     CAMACHO                                                                 
+03107052770554107950638           013022026DIANA MARIA                                       PEREZ                     QUIROS                                                                  
+03107053100619108190180           015022026JOSE MANUEL                                       GARITA                    MARTINEZ                                                                
+03107053730745108250138           018022026JORGE ARTURO                                      RETANA                    SANCHEZ                                                                 
+03107053830765108310266           015022026MARICRUZ                                          AGUERO                    FLORES                                                                  
+03302161360271108610838           019022026GRETTEL ROCIO                                     ZUÑIGA                    SALAS                     GRETTEL ROCIO SALAS                           
+02106864130825108640305           008082024ALBERTO ANTONIO                                   VALVERDE                  VINDAS                                                                  
+03107053920784108790619           000022026MARIA DEL ROCIO                                   ARIAS                     HERNANDEZ                                                               
+03107054160832108830811           019022026CARLOS MARTIN                                     UREÑA                     MENDEZ                                                                  
+03107053350669108850529           016022026SIGIFREDO TERCERO                                 ZUÑIGA                    CASTRO                                                                  
+02105844100820109300603           011111976MARIANELA DEL SOCORRO                             ROMAN                     CALDERON                                                                
+03107053890777109370020           009022026JUAN LUIS                                         VALVERDE                  CALDERON                                                                
+03501412870574109660264           017022026MARCOS GERARDO                                    HIDALGO                   OVIEDO                                                                  
+02701083340667109920085           013012026JONATHAN FRANCISCO                                GUTIERREZ                 ALVARADO                                                                
+03107053570714110240236           003022026LUIS ALBERTO                                      PEREZ                     SOLANO                                                                  
+02601493320663110250680           016102024MANRIQUE ALONSO                                   SEGURA                    GUERRERO                                                                
+02107050700140110390968           026012026RAFAEL ANGEL                                      MONGE                     GUARDIA                                                                 
+02107043480696110510177           001012026LUIS ALBERTO                                      MORA                      BLANCO                                                                  
+02107020100019110710737           026102025RANDALL ALBERTO                                   GAMBOA                    ESQUIVEL                                                                
+03401303640727111240107           015022026BRYAN EFREN                                       MONGE                     ALVARADO                                                                
+03107053040608111240906           015022026CINTHYA                                           MENDEZ                    OVIEDO                                                                  
+03107052760551111840940           013022026JEFFRY GERARDO                                    MONGE                     QUIROS                                                                  
+03107053910782112040297           004022026CHRISTIAN ALBERTO                                 MUÑOZ                     HERNANDEZ                                                               
+03107053600719113160994           006022026SEBASTIAN                                         GARRO                     BONILLA                                                                 
+03401303690738113320852           004022026SILVIA SIDEY                                      ROJAS                     ALPIZAR                                                                 
+03107053600720113460216           006022026YEUDY EDEN                                        ROJAS                     MORA                                                                    
+02601530440087113970072           025012026ANDREI ALEJANDRO                                  VASQUEZ                   CHAVES                                                                  
+03107053690738113980717           017022026ANA GABRIELA                                      CALDERON                  RAMIREZ                                                                 
+03107053640727114240088           008022026ANDREA PRISCILLA                                  MADRIGAL                  JIMENEZ                                                                 
+02107050120024114740158           020012026MICHAEL GIOVANNI                                  MORALES                   CONEJO                                                                  
+03107053610721115590399           006022026ROY RICARDO                                       DIAZ                      RODRIGUEZ                                                               
+03107053950789115610470           010022026JULIO CESAR                                       MORA                      GODINEZ                                                                 
+02302160410082115910538           019012026LUIS JONATHAN                                     FERNANDEZ                 GUTIERREZ                                                               
+03107053620723116050355           007022026BRYAN RICARDO                                     RUIZ                      HERNANDEZ                                                               
+03107053920783116050924           004022026JOSE ANTONIO                                      FLORES                    RAMIREZ                                                                 
+03107053930785116350840           007022026JAVIER ANTONIO                                    LACAYO                    ZUÑIGA                                                                  
+03203032870573117070754           008022026SEIRY MICHELLE                                    LOPEZ                     VALENTIN                                                                
+03107053380676117450359           017022026GEOVANNY FABIAN                                   COS                       ARGUELLO                                                                
+03302161120223117710724           013022026MARCO ANDRES                                      LOPEZ                     ARAYA                                                                   
+03107053590718118240195           006022026STEVEN ENRIQUE                                    MONGE                     VINDAS                                                                  
+03107052860572118440845           000002026WINSTON SCOTT                                     VARGAS                    MORA                                                                    
+02107044480895118570353           007012026STEVEN JOSE                                       DUARTE                    REYES                                                                   
+03601530890178119120270           000012026JONATHAN ABRAHAM                                  FONSECA                   FERNANDEZ                                                               
+03107052850569119280822           000012026KENDALL DAVID                                     CAICEDO                   HERRERA                                                                 
+03401303790757119500203           007022026BANDERLEY ELI                                     SANCHEZ                   LOPEZ                                                                   
+03107052840568119580278           000012026GERRMAY GABRIEL                                   LI                        ROMERO                                                                  
+03107053910781120000092           004022026ROGER MARTIN                                      CERDAS                    AVILA                                                                   
+03401303600720120010271           014022026ARIANA MAITE                                      ELIZONDO                  SANCHEZ                                                                 
+03107053950790120430579           010022026WINDELL JANICK                                    ROJAS                     ELIZONDO                                                                
+03401303660731120950317           016022026ANDIE DANIELA                                     GONZALEZ                  MORALES                                                                 
+03107052780556124360142           013022026LUCIANO                                           FERNANDEZ                 DURAN                                                                   
+03107053200639124570513           011012026DANNY AARON                                       ROCHA                     OLIVAS                                                                  
+03107053210642124570609           014012026KELSEY JOHEVEND                                   FLETES                    GUIDO                                                                   
+03107053190637124580356           026122025NASARI SARA                                       RIOS                      ZUÑIGA                                                                  
+03107053200640124580635           011012026LUCILA DE MILAGROS                                VIVAS                     RUIZ                                                                    
+03107053340667124600101           030012026ANGEL GABRIEL                                     JIMENEZ                   HERRERA                                                                 
+02201963870773200970199           004061995ADEMAR EDUARDO SANTANA DEL SOCORRO                BARRANTES                 SOLIS                                                                   
+01102800000856201020158           028031969OLIVA DEL CARMEN                                  VARGAS                    VINDAS                                                                  
+03102804280856201020158           028031969OLIVA DEL CARMEN                                  VARGAS                    VINDAS                                                                  
+02201933110621201110550           023061993ALBALINA                                          RETANA                    JIMENEZ                                                                 
+02104891020204201130876           011022009FRANCA ESPERANZA DE LAS PIEDADES                  ACUÑA                     SABORIO                                                                 
+01201620000944201230994           024071968ANATOLIA MARIA DEL SOCORRO                        HERNANDEZ                 VEGA                                                                    
+03201624720944201230994           024071968ANATOLIA MARIA DEL SOCORRO                        HERNANDEZ                 VEGA                                                                    
+03203032790558201310201           012022026ALIX                                              MORERA                    SOLANO                    ALICE               MORERA       SOLANO       
+03501413080615201360037           022052020CARLOS                                            BADILLA                   JIMENEZ                                                                 
+03203032900579201400685           015022026EVADINA                                           GAMBOA                    SALAS                                                                   
+03107053740747201400798           013022026SEGUNDO                                           LAZO                      URBINA                                                                  
+03701083920783201520595           011022026GRACIELA                                          NUÑEZ                     PANIAGUA                                                                
+03203032890578201610884           015022026MARIA DEL CARMEN                                  HERNANDEZ                 SEGURA                                                                  
+03107054060811201730536           016022026JOSE ANTONIO                                      MAYORGA                   GONZALEZ                                                                
+03203032790557201740562           012022026ISRAEL                                            MOLINA                    ROJAS                                                                   
+03203032690538201770539           011022026OLGER                                             VARGAS                    ARTAVIA                                                                 
+03107053540708201880262           012022026JOSE MANUEL                                       MONGE                     RODRIGUEZ                                                               
+03203032590517201890928           031012026MANUEL                                            QUIROS                    PORTUGUEZ                                                               
+03203032780556201940705           012022026VIDAL                                             CALERO                    CALERO                                                                  
+03107053990797201980454           014022026FRANCISCO                                         QUESADA                   MOLINA                                                                  
+03203032700539201980991           011022026VIRGINIA                                          ALPIZAR                   CASTRO                                                                  
+03107052930586201990005           012022026ABEL                                              LOBO                      PORRAS                                                                  
+03203032690537202010714           011022026MIGUEL ANGEL                                      ROJAS                     VENEGAS                                                                 
+03203032880575202020031           013022026GUILLERMO                                         CHINCHILLA                CORDERO                   WILLIAM             CHINCHILLA   CORDERO      
+03401303590717202020892           012022026JOSE MARIA                                        CASCANTE                  ALVAREZ                                                                 
+03203032900580202030253           015022026JUAN RAMON                                        ARIAS                     VARGAS                    GERMAN              ARIAS        VARGAS       
+03203032700540202060643           012022026NORMA                                             VEGA                      CASTRO                                                                  
+03203032800559202070084           012022026DAISY                                             SALAS                     UGALDE                                                                  
+03107053210641202080835           006012025ORLANDO                                           RODRIGUEZ                 SALAZAR                                                                 
+03601530770154202090528           003022026BERTA LIA                                         SEGURA                    ALVARADO                                                                
+03203032680536202160339           011022026ALFREDO                                           SOLANO                    HERRERA                                                                 
+03401303830766202180139           018022026OLGA                                              RODRIGUEZ                 ALVAREZ                                                                 
+03203032760551202210581           001022026LIDIA                                             LEON                      CAMBRONERO                                                              
+03401303700740202220059           013022026EDWIN                                             CABEZAS                   GAMBOA                                                                  
+03601530670133202290027           015022026CECILIA                                           CHINCHILLA                PRADO                                                                   
+03601530770153202290895           003022026BLANCA ROSA                                       SOTO                      MONGE                                                                   
+03203032720543202300696           017022026MARIA LUISA                                       ALFARO                    VALVERDE                                                                
+03107054150829202340950           019022026MARIA DEL SOCORRO BETTY                           SALAS                     ALPIZAR                   MARIBETH SALAS ALPIZ                          
+03203032540508202350965           013022026JOSE ALFONSO                                      OVARES                    LOPEZ                                                                   
+03701083830765202360621           015022026CATALINA OLIMPIA                                  SALAS                     GUZMAN                                                                  
+03203032740547202390360           017022026NORBERTO                                          OPORTA                    GARCIA                                                                  
+03203032600519202420999           014022026LUIS FERNANDO                                     ROJAS                     FUENTES                                                                 
+03203032590518202450029           013022026JOSE LUIS DE LOURDES                              BARQUERO                  ARROYO                                                                  
+03601530790157202480453           004022026MARIA CECILIA                                     AVILA                     MAROTO                                                                  
+03203032580515202490574           013022026LEONEL                                            VILLALOBOS                ARGUELLO                                                                
+03203032940588202570091           019022026ELIAS GERARDO                                     ARAYA                     BLANCO                                                                  
+03203032620524202580115           016022026MANUELA                                           ESCAMILLA                 OPORTA                                                                  
+03203032680535202580920           011022026EIDA MARIA                                        MURILLO                   CHAVES                                                                  
+03203032950590202670557           019022026FLORY                                             CORDERO                   BOGANTES                                                                
+03401303670734202670919           016022026EMILCE                                            VILLEGAS                  ROJAS                                                                   
+03203032920583202690268           018022026MARTA EUGENIA                                     HERRERA                   HERNANDEZ                                                               
+03203032740548202710350           017022026MARIA TERESA                                      SOTO                      ARIAS                                                                   
+02102321960391202710701           021121957RAFAEL JACINTO                                    VARGAS                    LEON                                                                    
+03203032810562202730628           017022026ALVARO                                            JIMENEZ                   RODRIGUEZ                                                               
+03107053130625202740302           016022026LUIS ALBERTO                                      SOTO                      SABORIO                                                                 
+03107054150830202840845           019022026MARIA ALICIA                                      BLANCO                    ACUÑA                                                                   
+03203032560512202850225           013022026BLANCA NURIA                                      HERNANDEZ                 ALVARADO                                                                
+03601530750149202920900           001022026IRMA ISABEL                                       JIMENEZ                   ROJAS                                                                   
+03203032580516202950316           013022026JORGE LUIS                                        CHAVARRIA                 CHAVARRIA                                                               
+03107053890778203040358           025122025GERARDO                                           RODRIGUEZ                 CASTRO                                                                  
+03203032560511203110795           013022026ALIA ROSA                                         ARAYA                     HERRERA                                                                 
+03203032570513203170252           013022026LUIS EDUARDO                                      SANCHEZ                   ARROYO                                                                  
+03401303510701203290072           012022026SONIA MARTA                                       MURILLO                   CHAVARRIA                                                               
+03401303760751203350215           018022026MARIA DE LOS ANGELES                              BOLAÑOS                   UGALDE                    MARIELOS BOLAÑOS UGA                          
+03203032960591203370609           019022026ISABEL                                            SANCHEZ                   ARROSTIGUI                ISABEL SANCHEZ ARROS                          
+03601530760152203460539           003022026FLORIBETH MARIA DE JESUS                          SALAZAR                   MORENO                                                                  
+03203032750549203480039           003022026MARTA EDITH DE LOS ANGELES                        ZAMORA                    MORERA                                                                  
+03203032730546203680494           017022026ANGELICA YOLANDA                                  MARTINEZ                  GUTIERREZ                                                               
+03203032550509203680779           013022026MINOR RAMON                                       ARROYO                    JIMENEZ                                                                 
+02107040150030203730839           003012026ROSA AUREA                                        SOTO                      MURILLO                                                                 
+03203032820564203960120           017022026LUIS GUILLERMO                                    VARGAS                    QUESADA                                                                 
+02107052350470203980521           006022026EDUARDO ANTONIO                                   BARRANTES                 HERNANDEZ                                                               
+03203032930585204040812           018022026LUIS ANTONIO                                      CASTRO                    CESPEDES                                                                
+03203032620523204150677           016022026FELIPE CLETO                                      MARTINEZ                  AMADOR                                                                  
+03107053440688204200114           007022026JOSE FRANCISCO                                    BARRANTES                 CAMPOS                                                                  
+03601530940187204610993           018022026BERNARDA DEL SOCORRO                              CORELLA                   MATAMOROS                                                               
+03302161100220204620039           013022026ANGEL DARIO                                       UMAÑA                     FERNANDEZ                                                               
+03203032850570204640595           018022026DAYLA MIREYA                                      GUTIERREZ                 ARREDONDO                                                               
+03203032710542204670843           016022026ANA CATALINA                                      RODRIGUEZ                 RODRIGUEZ                                                               
+03401303520704204780818           013022026RANDALL DE JESUS                                  PORRAS                    SALAZAR                                                                 
+03401303750750204910178           017022026OSCAR ANTONIO                                     ESCOBAR                   ALVARADO                                                                
+02501404790958205120296           013112025GUILLERMO RAMON                                   GARAY                     ROMERO                                                                  
+03107052940587205190747           013022026MAURICIO GERARDO                                  RAMIREZ                   CASTRO                                                                  
+03701083940788205200887           016022026CAROLINA DEL CARMEN                               CARMONA                   CALVO                                                                   
+03501412860572205540208           016022026EXANIA                                            RIVAS                     RUIZ                                                                    
+03107053630726206730659           007022026KEVIN FABIAN                                      DURAN                     GOMEZ                                                                   
+03601530860171206890674           010022026JESUS ALBERTO                                     JIMENEZ                   AVILA                                                                   
+03203032870574207040438           009022026EDWIN ANDRES                                      CHAVES                    BENAVIDES                                                               
+03107053620724208370597           006022026REYNER DAVID                                      OCAMPO                    RODRIGUEZ                                                               
+03203032860572208390476           002022026GREIVIN JAVIER                                    AGUILAR                   PEREZ                                                                   
+03107053880775208660020           019022026KENDALL JOSUE                                     MORA                      BARRANTES                                                               
+02107043060612209430787           017012026ISMAEL                                            ANCHIA                    CORDERO                                                                 
+03107053190638211200537           019122025EDRICK                                            REYES                     AVALOS                                                                  
+03301362480496300179659           005101979ANA JOSEFA JOAQUINA                               RIVERA                    PEREIRA                   ANITA                                         
+01300940000986300203183           020081946JUAN BAUTISTA                                     CARPIO                    CORDERO                                                                 
+03300944930986300203183           020081946JUAN BAUTISTA                                     CARPIO                    CORDERO                                                                 
+02301532220444300235658           006101998JOSE AGUSTIN FRANCISCO ROSARIO                    RIVERA                    PEREIRA                                                                 
+02400870710141300303640           028012002CLEMENTE CELINO                                   SOJO                      ORTEGA                                                                  
+03301400230046300325561           027081984RAFAEL JOSE HERIBERTO                             RIVERA                    PEREIRA                                                                 
+01301430000302300347435           013101988MARIA IGNACIA DE JESUS                            OVARES                    OVARES                                                                  
+03301431510302300347435           013101988MARIA IGNACIA DE JESUS                            OVARES                    OVARES                                                                  
+01700470000501300369035           017081973VICTOR MANUEL                                     SORIO                     VILLEGAS                                                                
+03700472510501300369035           017081973VICTOR MANUEL                                     SORIO                     VILLEGAS                                                                
+02301150390077300547111           002091961DOLORES JOSEFA                                    MIRANDA                   SALAS                                                                   
+02400883660731300557673           004102003LUZ DE LOS ANGELES ARCELIA                        CORDERO                   BARQUERO                                                                
+01103270000387300660084           004051980ANIBAL ISABEL                                     GOMEZ                     NUÑEZ                                                                   
+03103271940387300660084           004051980ANIBAL ISABEL                                     GOMEZ                     NUÑEZ                                                                   
+03107053270653300780499           007022026JUAN LUIS ANTONIO                                 VARGAS                    FERNANDEZ                                                               
+02103772640527300880318           007061991ELIBERTO OTILIO DEL CARMEN                        LEANDRO                   MONTENEGRO                HERIBERTO           LEANDRO      MONTENEGRO   
+02103493850770300890718           020091985MARIA EDUVINA DE LOS ANGELES                      BRENES                    SOLANO                                                                  
+02104464090818300960633           021122002CARMEN DE LA TRINIDAD                             RAMIREZ                   GUILLEN                                                                 
+03107053970793300980519           014022026MARIA LUISA                                       MALAVASI                  JIMENEZ                                                                 
+03302161210241301000821           011022026MARIA DEL CARMEN DE LA CRUZ                       SANCHEZ                   SANCHEZ                                                                 
+03302161330266301090768           013022026JUAN RAFAEL NICOLAS                               SANCHEZ                   DELGADO                                                                 
+03203032890577301140905           015022026CONSUELO                                          MORA                      MONESTEL                                                                
+03302161320263301160493           012022026DINORAH                                           CORTES                    MEZA                                                                    
+03107053330666301160908           011022026MARIA EULOLIA                                     HERRERA                   GARCIA                    MARY                HERRERA      GARCIA       
+03107053770753301200767           013022026CLARA ROSA                                        VELAZCO                   BRENES                                                                  
+03302161190238301230456           010022026ARNOLDO                                           GONZALEZ                  HERNANDEZ                                                               
+03107053510702301250947           012022026IRMA                                              COTO                      VALERIN                                                                 
+03701084050810301270011           012022026ADILIA                                            UREÑA                     DURAN                                                                   
+03302161200240301290349           011022026PEDRO                                             AGUILAR                   GUZMAN                                                                  
+03302161210242301330211           012022026MIRIAM                                            CORELLA                   ARCE                                                                    
+03302161290257301330358           014022026MARIA DE LA TRINIDAD                              QUESADA                   CAMPOS                                                                  
+03302161270254301330493           013022026JUAN DE DIOS                                      QUIROS                    SANABRIA                                                                
+03701083910781301360393           011022026JOSE ANTONIO                                      PANIAGUA                  RAMIREZ                                                                 
+03302161330265301370607           013022026OLGA MARIA                                        MONTENEGRO                GOMEZ                                                                   
+03701084010801301370672           015022026VITALINA MARIA                                    ARAYA                     SOLANO                                                                  
+03203032710541301380506           012022026TAIS                                              VARELA                    ROJAS                                                                   
+03107053520703301420247           012022026ORLANDO                                           CASTRILLO                 CORDOBA                                                                 
+03107053610722301430528           006022026JOSE FRANCISCO                                    SANABRIA                  QUESADA                                                                 
+03302161190237301510481           009022026MIRIAM                                            GOMEZ                     ALVAREZ                                                                 
+03107053430686301520283           024012026DINORAH                                           UMAÑA                     ARIAS                                                                   
+03302161220243301530990           016022026JORGE                                             SOLANO                    GARRO                                                                   
+03701083950790301540551           017022026MARIA CECILIA                                     RODRIGUEZ                 MARIN                                                                   
+03302151570313301560759           017022026VICTOR MANUEL                                     ROJAS                     CHACON                                                                  
+03701084140827301610943           019022026GLADYS                                            ARAYA                     GRANADOS                                                                
+03107053870774301620333           019022026MANUEL                                            BRENES                    CAMPOS                                                                  
+03107052980596301680254           014022026MIGUEL ANGEL                                      VARELA                    PACHECO                                                                 
+03107053030606301680993           014022026BERTA MARIA                                       PEREZ                     LOAIZA                                                                  
+03300962550509301700097           005021948MARIA ELENA DE LOS ANGELES                        GOMEZ                     BRENES                                                                  
+03107053640728301740474           010022026MARCO ALCIDES                                     SOLANO                    CERDAS                    ALDEMAR             SOLANO       CERDAS       
+03302161160231301760647           016022026MANUEL                                            DELGADO                   QUIROS                                                                  
+03300990020004301770679           005091949MARIA ELENA DE LOS ANGELES                        GOMEZ                     BRENES                                                                  
+03302161300259301780683           003022026ROBERTO                                           LEIVA                     MONGE                     MARIO ROBERTO       LEIVA        MONGE        
+03401303610721301810608           014022026ZULAY                                             MEZA                      MARTINEZ                                                                
+03300984990997301820586           024091949GERARDO ARTURO                                    GOMEZ                     BRENES                                                                  
+03302161120224301830896           014022026LUIS ALFREDO                                      QUIROS                    CALVO                                                                   
+03302161240248301860825           017022026DINORAH                                           MONTOYA                   ALVARADO                                                                
+03107053560711301870061           013022026ANA LORENA                                        SANCHEZ                   MADRIGAL                                                                
+03107052970593301900266           014022026SERGIO ALBERTO                                    RODRIGUEZ                 MILLER                                                                  
+03302161170234301910487           016022026LIDIA MARIA                                       GOMEZ                     QUIROS                                                                  
+03107054170834301920162           019022026JOSE ANTONIO                                      PEREZ                     MORALES                                                                 
+03701084020804301920415           022012026MARIA CECILIA                                     RAMIREZ                   FONSECA                                                                 
+03302161340267301941122           017022026CARLOS LUIS                                       SOLANO                    TORRES                                                                  
+03302161230246302000187           016022026MARIA TERESA                                      FERNANDEZ                 MOLINA                                                                  
+01301060000416302010909           001081954FRANCISCO ALEXIS DE LA TRINIDAD                   MENDEZ                    FERNANDEZ                                                               
+03301061390416302010909           001081954FRANCISCO ALEXIS DE LA TRINIDAD                   MENDEZ                    FERNANDEZ                                                               
+03302161140228302110629           015022026ANA LORENA                                        RIVERA                    RAMIREZ                                                                 
+03302161230245302180214           016022026GERARDO RUBEN                                     QUIROS                    VALVERDE                                                                
+03302161240247302210029           016022026ABELARDO                                          BLANCO                    ARTAVIA                                                                 
+03203032920584302240876           018022026JOSE ELBERT                                       BARQUERO                  MADRIGAL                                                                
+03302161260252302310987           008022026MARTIN                                            JIMENEZ                   AVENDAÑO                                                                
+03701084100819302570144           018022026JOSE ANTONIO                                      BATISTA                   NUÑEZ                                                                   
+03401303620723302600332           014022026JUAN BOSCO                                        MOLINA                    HERNANDEZ                                                               
+02302160330066302610590           027012026LUIS ANGEL DE LA TRINIDAD                         SANCHEZ                   CORDERO                                                                 
+03302161280256302610806           014022026ALEXANDER                                         ZUÑIGA                    ZUÑIGA                                                                  
+03302161140227302660696           015022026MARTIN GERARDO DE LOS ANGELES                     SOLANO                    MOYA                                                                    
+03302161170233302730014           016022026DANILO REINALDO                                   GONZALEZ                  BRENES                                                                  
+03302161130225302930686           015022026GRACE LORENA DE JESUS                             JIMENEZ                   ROJAS                                                                   
+03701084090818303030617           018022026ROLANDO ALEXANDER                                 OVIEDO                    ROMAN                                                                   
+03302161250249303080184           017022026MARIA TERESA DE JESUS                             QUIROS                    ROJAS                                                                   
+02401302600519303400773           009012026CARLOS JEFFRY                                     MONTEALEGRE               FALLAS                                                                  
+03107053850770303510281           018022026LAURA MARCELA                                     CAMACHO                   SOLIS                                                                   
+03107053360671303620622           016022026JUAN GABRIEL                                      ZUÑIGA                    SALAS                                                                   
+02701080840167303870984           016112025OSCAR GABRIEL                                     BRENES                    ABDALLAH                                                                
+03107052800559304210054           009032025CARLOS ALBERTO                                    GARITA                    ALVARADO                                                                
+03302161100219304410773           013022026ELENA AUXILIADORA                                 QUIROS                    ZUÑIGA                                                                  
+02302160020004305500247           000012026AXEL EDGARDO                                      CAMACHO                   MONTENEGRO                                                              
+03302161220244305690200           016022026JEFFERSON FABIAN                                  VALDIVIA                  DELGADO                                                                 
+03107053580716305690539           004022026JOSUE  ANTONIO                                    CASTILLO                  NAVARRO                                                                 
+02302160420083305800674           019012026ESTEBAN JOSE                                      AGUILAR                   CASTRO                                                                  
+02302154690938306840658           009012026PABLO JULIAN                                      SOLIS                     ZUMBADO                                                                 
+03302161260251306850152           025012026THIAGO DANIEL                                     ROJAS                     FUENTES                                                                 
+02104081640328400313666           011101996JUAN IGNACIO                                      TORRES                    MURILLO                                                                 
+03401303740747400470580           012022026MARIA ELIZABETH                                   SEQUEIRA                  VARGAS                    BETTY               SEQUEIRA     VARGAS       
+03107053530705400520741           012022026RAFAELA GERARDA ISABEL                            RAMIREZ                   HERNANDEZ                                                               
+03401303580715400580358           011022026HORACIO NICOLAS DEL CARMEN                        VARGAS                    HIDALGO                                                                 
+03107054090817400630003           017022026MARIO DANILO DE JESUS                             VARGAS                    SALAZAR                                                                 
+03401303810761400630756           015022026GONZALO EDUARDO DEL SOCORRO                       FONSECA                   QUIROS                                                                  
+03401303830765400650241           017022026JOSEFA CARIDAD                                    BOLAÑOS                   SANCHEZ                                                                 
+03401303800760400650922           014022026ODILIE MARIA CRISTINA                             BOGANTES                  CAMACHO                                                                 
+03401303820764400680575           017022026MERCEDES DE LA TRINIDAD                           MONTERO                   VILLALOBOS                                                              
+03401303740748400750494           012022026MAURA TERESA                                      HERRERA                   SANCHEZ                                                                 
+03401303580716400770440           012022026MARINO BENIGNO ORLANDO                            MADRIGAL                  CHACON                                                                  
+03401303800759400780314           013022026GUIDO JUAN                                        VILLALOBOS                CAMPOS                                                                  
+03401303720743400780874           015022026RODRIGO EDUARDO                                   PANIAGUA                  PANIAGUA                                                                
+03401303720744400790754           016022026LIOBE ZOEDHA DE LA TRINIDAD                       VILLALOBOS                SANCHEZ                   SOBEIBY             VILLALOBOS   SANCHEZ      
+03107053760751400800636           013022026ELIZABETH MARIA CECILIA                           VILLALOBOS                RODRIGUEZ                                                               
+03401303810762400840131           016022026RAFAEL ANGEL DE JESUS                             CAMACHO                   ROJAS                                                                   
+03107053660731400850060           017022026MOISES OLIVER                                     RAMIREZ                   ZAMORA                                                                  
+03401303760752400850235           018022026RAFAEL ANGEL                                      ZAMORA                    BENAVIDES                                                               
+03401303770753400860785           018022026MIGUEL ANGEL GERARDO                              GONZALEZ                  ARCE                                                                    
+03401303530706400880152           013022026GERARDO ANTONIO                                   RAMIREZ                   ARAYA                                                                   
+03401303690737400910371           017022026BLANCA LUZ DE LOS ANGELES                         GONZALEZ                  MIRANDA                                                                 
+03401303840768400940154           019022026EMILIA MARIA DE LA TRINIDAD                       CAMACHO                   BADILLA                                                                 
+03401303650730400940250           015022026JORGE AUGUSTO DE LAS PIEDADES                     ARCE                      VARGAS                                                                  
+03203032850569400990129           018022026SERGIO ANTONIO DE JESUS                           RODRIGUEZ                 RODRIGUEZ                                                               
+03401303530705401010740           013022026JOSE SALVADOR                                     ZAMORA                    FONSECA                                                                 
+03107053680735401060630           017022026MARCOS FAUSTO JOSE                                GUTIERREZ                 LEON                                                                    
+03401303660732401060680           016022026MARIA DE LOS ANGELES                              BONILLA                   SALAS                                                                   
+03401303520703401110353           013022026JOSE FRANCISCO DE JESUS                           ESPINOZA                  BENAVIDES                                                               
+03107052950589401250413           013022026JOSE ANTONIO DE LA TRINIDAD                       ARCE                      SOLANO                                                                  
+03401303680736401270807           016022026GISELLE MARIA GABRIELA                            VILLALOBOS                ULLOA                                                                   
+03401303650729401510135           015022026LESMES JOSE DEL SOCORRO                           ACOSTA                    SALAS                                                                   
+03401303780755401510801           018022026LUZMILDA JUANA                                    HURTADO                   FLORES                                                                  
+03401303710741401740984           014022026MARIBELL DE LOS ANGELES                           NARANJO                   JIMENEZ                                                                 
+03601530850169401910313           008022026LUIS DIEGO                                        BARQUERO                  BENAVIDES                                                               
+02401294780955402280648           004112025LORENZO ANTONIO                                   RAMIREZ                   SANCHEZ                                                                 
+03401303670733402580515           016022026JEANNETTE TERESA                                  MATAMOROS                 SANCHEZ                                                                 
+01201610000890500320832           019121967PAULINO FAUSTO DEL SOCORRO                        PORRAS                    CASTRO                                                                  
+03201614450890500320832           019121967PAULINO FAUSTO DEL SOCORRO                        PORRAS                    CASTRO                                                                  
+03501413110621500430277           015022026MARIA PETRONILA                                   OBANDO                    ROSALES                                                                 
+03501413030605500600190           013022026MARIA VICTORIA                                    PEREZ                     FAJARDO                                                                 
+03501413120623500600738           016022026OLGA                                              LOPEZ                     CASTRILLO                                                               
+03501413100620500660183           014022026MARIA ALICIA DE LAS PIEDADES                      MENA                      HERNANDEZ                                                               
+03107053310662500660978           010022026EMILCE PRIMITIVA DE JESUS                         ARIAS                     JIMENEZ                                                                 
+02104142820564500760439           022051996LUZ MARIA DEL SOCORRO                             FERNANDEZ                 CHAVARRIA                                                               
+03203032810561500760961           013022026RAMON AGRIPINO                                    SEQUEIRA                  SEQUEIRA                                                                
+03601530800159500770859           002022026JOSE CANDIDO DIGNO                                PEREZ                     CASTRILLO                                                               
+03501413100619500850075           014022026CASTULO EVELIO DE MARIA                           CASTRO                    ARTAVIA                                                                 
+03501412890578500870601           012022026JOSE TEODORO VALERIO                              RODRIGUEZ                 SANTANA                                                                 
+03107052890577500880822           011022026NOEMY DEL CARMEN                                  CHAVES                    UGALDE                                                                  
+03107053330665500890180           011022026FELIX                                             MATARRITA                 ALEMAN                    MARIA FELIX         MATARRITA    ALEMAN       
+03501413130625500890304           016022026ALVARO JESUS DEL SOCORRO                          CHAVES                    ROJAS                                                                   
+03701083900780500890329           010022026LUZMILDA DOMINGA DEL CARMEN                       MOLINA                    RODRIGUEZ                 LUZMILDA            SABORIO      MOLINA       
+03701084070813500900015           012022026ANGEL JESUS DEL CARMEN                            ARAYA                     MOLINA                                                                  
+03501413110622500910625           015022026ALFONSO                                           ESPINOZA                  MENDEZ                                                                  
+03107053840767500930760           016022026MARTA ELENA SOCORRO DE JESUS                      ZAMORA                    MURILLO                                                                 
+03107053760752500970182           013022026MARIA CRISTINA                                    OBANDO                    OBANDO                                                                  
+02104024770954500970716           007011996MARGARITA                                         MEKBEL                    ACHIT                                                                   
+03701083900779500980503           010022026JOSE MARCOS AURELIO DE JESUS                      RODRIGUEZ                 RODRIGUEZ                                                               
+03701084010802500990734           015022026SOCORRO EVANGELISTA                               ORTEGA                    BUSANO                                                                  
+03107053060611501050281           015022026SANTOS EULALIO                                    ALI                       MUÑOZ                                                                   
+03701083810761501070521           013022026JOSE MARCIAL                                      HERNANDEZ                 HERNANDEZ                                                               
+03107053440687501100954           029012026CARLOS ALBERTO                                    ARTOLA                    CERDAS                                                                  
+03203032930586501110611           018022026LORENZO VICTORIANO                                VILLALOBOS                MENDEZ                                                                  
+03501412850569501150178           014022026JOSE ROSA ELEPIS                                  HERNANDEZ                 FAJARDO                   RAMON HERNANDEZ FAJA                          
+03302161150229501160274           016022026MARIA ADELA                                       MONESTEL                  GUTIERREZ                                                               
+03601530690137501250301           017022026PAULINA EMILCE DE LOS ANGELES                     DELGADO                   CAMPOS                                                                  
+03501412830566501270071           013022026MARIO ABADI                                       CASCANTE                  ROSALES                                                                 
+03501412850570501290509           015022026MARIA MAGDALENA                                   MATA                      MATA                                                                    
+03501412870573501390032           016022026ANA MIRIAM GERARDA                                GALLO                     HERNANDEZ                                                               
+03701083800760501410204           013022026MARCOS EVANGELISTA SAN GERARDO                    GONZALEZ                  HERRA                                                                   
+03203032630525501460917           016022026MARIA GERARDA MERCEDES                            VARGAS                    JIMENEZ                                                                 
+03501412830565501500366           013022026RENE JACINTO                                      RODRIGUEZ                 GOMEZ                                                                   
+03501413070614501540364           001011959JOSE PORFIRIO DEL CARMEN                          RIVAS                     VILLALOBOS                                                              
+03501413060612501630279           019022026MARIA BERTA                                       MONTIEL                   CARRILLO                                                                
+03203032570514501640927           013022026NORMA JUSTINA                                     PADILLA                   CHAVARRIA                 NORMA CHAVARRIA CHAV                          
+03601530830166501660219           004022026DANIEL DE JESUS                                   CORTES                    MIRANDA                                                                 
+03401303700739501670859           005022026PRIMO GREVIN                                      BRIZUELA                  LOPEZ                     PRIMO GREIVIN       BRIZUELA     LOPEZ        
+03501413070613501700676           019022026SERGIO FABIAN                                     GUTIERREZ                 MENDOZA                                                                 
+03701084150829501700811           019022026GERARDINA                                         PEREZ                     MATARRITA                                                               
+03601530800160501710822           003022026EDWIN GERARDO                                     PEREZ                     RETANA                                                                  
+03203032830565501850728           017022026MARLENE LILIETTE DEL SOCORRO                      VARGAS                    CALVO                     MARLEN VARGAS CALVO                           
+03501413040607502080132           015022026SANTOS AURELIO                                    ANGULO                    MONTES                                                                  
+03701084020803502170003           015022026MARIA ANTONIA                                     MEZA                      LARA                                                                    
+03203032860571502200053           031012026ALEXANDER DEL CARMEN                              ROJAS                     CASTRO                                                                  
+03501413040608502200064           017022026MARIA DEL CARMEN                                  SERRANO                   CARAVACA                                                                
+03501412880575502310780           017022026HANNIA MARIA                                      CARRERA                   ROSALES                                                                 
+02203031100219502330562           011012026ALVARO DEL CARMEN                                 CABEZAS                   RAMOS                                                                   
+03107053130626502360753           016022026MAYNOR RAFAEL DE JESUS                            GUERRERO                  BADILLA                   MINOR GUERRERO BADIL                          
+03401303620724502380927           014022026JUAN GERARDO                                      RUIZ                      MUÑOZ                                                                   
+03107053030605502410429           014022026LEDA VIANNEY                                      PERAZA                    VASQUEZ                                                                 
+03601530670134502420070           015022026JERONIMO                                          BALTODANO                 RIVAS                                                                   
+03501413050609502490485           018022026FERNANDO ANTONIO                                  MOJICA                    SOLIS                                                                   
+03501412840568502540391           014022026JOSE CAMILO                                       RUIZ                      CASTRILLO                                                               
+03501412840567502590786           013022026MAYRA DE LOS ANGELES                              NAVARRO                   VILLEGAS                                                                
+03701084030805502600511           025012026NELSON                                            BLANDON                   LOPEZ                                                                   
+03501412880576502680419           017022026VERA VIRGINIA                                     RUIZ                      CANTILLANO                                                              
+03501413050610502690401           018022026YAMILETH DEL CARMEN                               SIBAJA                    CRUZ                                                                    
+03501413000599503590152           003022026DENNIS ALBERTO                                    GUZMAN                    DE LA O                                                                 
+03601530910182503710452           000012026GREHIVIN                                          MORALES                   CHACON                                                                  
+02501404280856503720788           007112025DENY ADRIEL                                       GOMEZ                     MATARRITA                                                               
+03501413000600504240847           007022026KEINER                                            ROJAS                     ALEMAN                                                                  
+02501412450489504590779           024012026DANNY JOSUE                                       ALVARADO                  VALLEJOS                                                                
+03107054140828505740233           019022026SOFIA                                             RESTREPO                  MENA                                                                    
+03501413130626600250880           018022026PETRONILA ANGELA RAMONA                           CRUZ                      CUBERO                    AURIA               CRUZ         CUBERO       
+03107053810761600290326           015022026LUZ JESUS PAULINA                                 DE LA O                   DE LA O                   LUZ                 YOUNG        DE LA O      
+03601530730145600390826           003022026ZOILA JULIANA                                     ALVARADO                  CAMBRONERO                                                              
+03701084050809600430840           012022026MARIA NICOLASA                                    MORALES                   MORALES                                                                 
+03601530860172600440396           014022026LUIS ALBERTO                                      SOSA                      VELASQUEZ                                                               
+03501412890577600460138           012022026NORMA                                             CARUSO                    RIVERA                                                                  
+03203032800560600460991           012022026DANIEL DE JESUS                                   MORALES                   GRANADOS                                                                
+02106892130425600500156           024102024GERMAN EMILIO DE LA TRINIDAD                      VALERIN                   QUIROS                                                                  
+03601530930186600520054           011022026MIGUEL ANTONIO                                    REYES                     REYES                                                                   
+03701084130825600540980           017022026EMILCE                                            CERVANTES                 ARBUROLA                                                                
+03701084000800600550994           014022026VICTORIA SOCORRO DE JESUS                         NUÑEZ                     MEJIAS                                                                  
+03107053790758600570076           015022026EDELMA JOSEFA                                     CASANOVA                  PACO                                                                    
+03401303570713600590100           011022026MARIA ISABEL DE LAS PIEDADES                      GONZALEZ                  CORDERO                                                                 
+03601530740148600600447           031012026APOLONIO SEGUNDA                                  MORALES                   AGUILAR                                                                 
+03601530870173600620176           015022026JUVENAL DEL CARMEN                                FONSECA                   ARCE                                                                    
+03601530810161600620224           004022026FELIX RIGOBERTO                                   CAMBRONERO                BLANCO                                                                  
+03601530710142600640453           006022026JOSE EDUARDO                                      DELGADO                   DIAZ                                                                    
+03601530680135600640813           016022026TOMAS DE JESUS                                    SOSA                      SOSA                      TOMAS JESUS CARVAJAL                          
+03107053110622600670511           016022026SOLEDAD DEL ROSARIO                               ESQUIVEL                  VALVERDE                                                                
+03701083820764600730058           015022026FLOR DEL CARMEN                                   ROSALES                   ENRIQUEZ                                                                
+03107053140628600750987           016022026CARLOS ROBERTO GERARDO                            VARGAS                    VARELA                                                                  
+03401303840767600760499           019022026PILAR ANALICIA DE LA TRINIDAD                     PORRAS                    NARANJO                                                                 
+03601530940188600800897           019022026ALBERTINA LEONICIA DEL CARMEN                     PORRAS                    CAMPOS                                                                  
+03107052750549600870221           013022026JUVEN RAMON                                       MIRANDA                   ARREDONDO                                                               
+03701084100820600870845           004022026JOSE MIGUEL ELEUTERIO                             RAMIREZ                   RAMIREZ                                                                 
+03302161350269600900081           019022026GERARDO ARISTIDES ALI                             PORRAS                    JIMENEZ                   ARISTIDES CORRALES J                          
+03203032880576600900685           013022026GONZALO                                           LACAYO                    MIRANDA                                                                 
+03601530700139601000611           031012026TEODORICO SILVERIO                                CAMPOS                    SALAS                                                                   
+03107052970594601070100           014022026JOSE JOAQUIN                                      VARGAS                    RUIZ                                                                    
+03701083960791601070738           017022026BENITO                                            MATARRITA                 CARRILLO                                                                
+03203032820563601090707           017022026ANA MARIA                                         ROJAS                     DURAN                                                                   
+03203032840568601120229           018022026MARINA RAFAELA DE LA TRINIDAD                     BERMUDEZ                  CORDERO                                                                 
+03601530680136601220402           016022026DOMINGO NATIVIDAD DE JESUS                        FALLAS                    PIEDRA                                                                  
+03107053750749601250959           013022026SALVADOR MAURICIO                                 HIDALGO                   SANCHEZ                                                                 
+03601530880175601290383           017022026FRANCISCO                                         NIETO                     LOPEZ                     FRANCISCO NIETO NIET                          
+02106950250050601310687           011042025RITA JULIA DEL CARMEN                             PEREZ                     HERRERA                                                                 
+03107052960591601330743           014022026JOSE OMAR                                         LEAL                      SANCHEZ                                                                 
+03107053010602601350402           014022026ALBERTO                                           ROJAS                     VARGAS                                                                  
+01107034840968601350713           030122025HIGINIO                                           NOEL                      SOBALBARRO                                                              
+03701084070814601410357           017022026LIZBETH MARIA                                     CALDERON                  ESPINOZA                                                                
+03601530950189601460753           019022026RODOLFO CAYETANO                                  BLANDON                   JIMENEZ                   ADOLFO CHAVARRIA JIM                          
+03302161160232601510201           016022026MARIA DEL CARMEN                                  PEÑA                      GOMEZ                                                                   
+03107052770553601570718           013022026MAURICIO                                          ESPINOZA                  VARGAS                                                                  
+03107052810562601720659           015092021MARCOS NOE                                        WALLACE                   SCHWAB                                                                  
+03601530790158601830995           005022026RUFINO ENRIQUE DE LA TRINIDAD                     LOPEZ                     RAMIREZ                                                                 
+03701083970794601940604           005022026RONAL ANTONIO                                     JIMENEZ                   GONZALEZ                                                                
+03601530780155601990825           004022026WILBER MANUEL                                     RODRIGUEZ                 ESQUIVEL                                                                
+03401303640728601990841           015022026DORIS MAYELA DEL CARMEN                           RAMIREZ                   VILLALOBOS                                                              
+03601530910181602170154           030012026JUAN ANTONIO                                      ORTEGA                    ZAMORA                                                                  
+03701083810762602180187           013022026JOSE DERIC                                        SEQUEIRA                  GRIJALBA                                                                
+02104073190638602240340           008091996RUTH MERY DE LOS ANGELES                          JIMENEZ                   CAMPOS                                                                  
+03107052790558602500992           013022026LUIS CARLOS                                       MARTINEZ                  BARBOZA                                                                 
+03401303510702602540795           013022026RICARDO FRANCISCO                                 NOGUERA                   QUIROS                                                                  
+03601530720144602620294           029012026MAGALI                                            GONZALEZ                  SANCHEZ                                                                 
+03107053570713602680806           003022026FELIX ALFONSO                                     AZOFEIFA                  RIOS                                                                    
+03302161250250602740878           017022026MELVIN GERARDO                                    ORTIZ                     UREÑA                                                                   
+03601530690138602980602           030012026ANTONIO                                           HERRERA                   ROSALES                                                                 
+03203032600520603230653           014022026MARIA MARLENE                                     LOBO                      MURILLO                                                                 
+02601530560112603380467           029012026JAIRO JOSE                                        HERNANDEZ                 DUARTES                                                                 
+03601530820164603450294           003022026LESTER GERARDO                                    AMADOR                    AGUERO                                                                  
+02601530430085603540868           025012026RUDY JESUS                                        CORDERO                   MORALES                                                                 
+03601530840168603620496           007022026JOSE MISAEL                                       FIGUEROA                  FIGUEROA                                                                
+02601530200040604120581           020012026JOSE DANIEL                                       CORTES                    ESPINOZA                                                                
+03601530830165604680909           004022026JOSUE DANIEL                                      GRANADOS                  PORRAS                                                                  
+02601530190037604920053           010012026MARIA ALEXANDRA                                   AMADOR                    VARGAS                                                                  
+03601530840167605060125           005022026DEREK JORDETH                                     MENDEZ                    RAMIREZ                                                                 
+02103953030606700130489           019091994MARIA DINORAH DE LOS ANGELES                      SANCHO                    QUESADA                                                                 
+03701084060812700260267           012022026SIDNEY                                            FARQUHARSON               BARKER                                                                  
+03701083990798700270455           013022026OSCAR                                             VARGAS                    VARGAS                    OSCAR               SORIO        PRADO        
+03501412990598700300024           011022026MARGARITA MARIA                                   VIALES                    VIALES                                                                  
+03701084000799700310034           013022026ISHMEAILE LEWIS                                   NEEDHAM                   NEEDHAM                                                                 
+03701084130826700320342           017022026VERONA ROSITA                                     VINCENT                   VINCENT                   VERONICA ROSITA VICE                          
+03107053070614700390238           015022026CARL WESTON                                       WATTS                     WILLIAMS                                                                
+02103900920184700390578           018091993PATRICIA ANN                                      BROWN                     CHICKERY                                                                
+03501412860571700420609           016022026ZOILA ROSA                                        AGUILAR                   AGUILAR                                                                 
+03701083940787700440364           016022026HAYDEE DE LOS ANGELES                             FONSECA                   FONSECA                                                                 
+03701084080816700450169           018022026SANDRA                                            MILLS                     MOODIE                                                                  
+03302161130226700501155           015022026ZAIDA DE LOS ANGELES                              ROJAS                     VEGA                                                                    
+03701082910582700510628           024122025NICOLAS                                           MORALES                   MORALES                                                                 
+02700343590717700520988           024061954INNOMINADO                                        GOMEZ                     BRENES                                                                  
+03701083950789700700431           017022026CARL ANTONIO                                      MICHEL                    REID                      CARL ANTONIO MITCHEL                          
+03701083930785700740785           016022026ZAIDA SOLEIDA DE LA TRINIDAD                      CHACON                    ROJAS                                                                   
+01301250000153700750272           005111967MIREYA GERARDINA                                  JARA                      SERRANO                                                                 
+01301250000143700790521           002111967MARIA GERARDINA                                   JARA                      SERRANO                                                                 
+03301250720143700790521           002111967MARIA GERARDINA                                   JARA                      SERRANO                                                                 
+03107053370674700870968           016022026WILBER DE LOS ANGELES                             MARTINEZ                  ALVARADO                                                                
+01701082910582701080582           024122025JEANNETTE                                         CHRISTIE                  SAMUELS                                                                 
+01701083350669701080669           016012026ALVARO ALBERTO                                    HERRERA                   PEREZ                                                                   
+03701084120823701090304           000022026GERARDO JENARO                                    GONZALEZ                  VARGAS                                                                  
+03501413090618701180706           000002026GEINER DE JESUS                                   ROJAS                     ALVARADO                                                                
+03701084090817701230123           018022026MELODY YORLENY                                    JAMES                     LEWIS                                                                   
+03701083820763701250397           014022026GABRIELA MARIA                                    VEGA                      REID                                                                    
+03701083870773701380502           002022026DEIKEL                                            VALVERDE                  NUÑEZ                                                                   
+03701083970793701480094           004022026JOHAN                                             MONTERO                   CORDERO                                                                 
+03601530850170701480457           009022026LOURDES GELEN                                     PORRAS                    BADILLA                                                                 
+03107053350670701560506           016022026LEONOR MAGALLY                                    CASASOLA                  RIED                                                                    
+03701084080815701870846           017022026ZIANY MARCELA                                     HERNANDEZ                 MORA                                                                    
+03501412940587702190323           029012026RANDY LEONARDO                                    BRIONES                   SEQUEIRA                                                                
+03701083980796702390061           006022026HEYLIN PAMELA                                     ARGUETA                   AVILA                                                                   
+03701083870774702400687           002022026ESTEBAN                                           OTOYA                     BARRANTES                                                               
+03701083350669702580883           016012026RAUL AURELIO                                      GRANADOS                  ALFARO                                                                  
+03701083980795702920382           005022026STEVEN                                            AGUERO                    ALVAREZ                                                                 
+02701083480695703020032           022012026JADIR YORHANI                                     RUGAMA                    MARTINEZ                                                                
+03701083990797703170317           007022026MAIKEL KANNETH                                    PEREZ                     SOTO                                                                    
+03107053220643704540709           002012026FELIX FARIT                                       VALERIO                   LEIVA                                                                   
+03701083830766704560554           015012026EMMA YARITH                                       MOYA                      JIMENEZ                                                                 
+03701083920784704560842           025112025JOHAN                                             PEREIRA                   BUITRAGO                                                                
+03107053780755800240668           014022026JUANA                                             LEE                       YON                                                                     
+02600871910381800350008           027121983JOSE ANGEL                                        MORA                      ALVARADO                                                                
+03107053900780800390122           007022026AMALIA                                            RANGEL                    JIRON                                                                   
+03203032720544800460139           017022026MANUEL SALVADOR                                   PERNUDI                   PERNUDI                                                                 
+03107054140827800470457           018022026DELFA                                             CASTILLO                  MENA                                                                    
+03107054080816800480193           017022026YOLANDA                                           DURAN                     CAÑEDO                                                                  
+02104224880976800490348           005041999MARIA DE LOS DOLORES                              SUAREZ                    LOPEZ                                                                   
+03203032780555800520308           012022026RAMON                                             LANZAS                    NUÑEZ                                                                   
+02106901240247800520354           025112024SONIA DEL CARMEN                                  AGUILAR                   MARTINEZ                                                                
+03107053960792800530020           014022026SOBEIDA                                           ZAPATA                    TORRES                                                                  
+02700673050610800540338           022012006SOFIA                                             FLORES                    BARRERA                                                                 
+03203032830566800590922           018022026JUAN RAMON                                        CABRERA                   REYES                                                                   
+03107054110821800670840           017022026FELIPA HAYDEE                                     MEDINA                    SUAREZ                    CONY PEREZ CASSAR                             
+03601530820163800700329           003022026JOAQUIN                                           RODRIGUEZ                 RODRIGUEZ                                                               
+03107053040607800800268           014022026AURA LUZ                                          LOVO                      SELVA                                                                   
+03203032750550800800472           030012026CRISTINO DE JESUS                                 RUIZ                      ZEAS                                                                    
+03601530710141800890422           005022026LEONOR                                            VANEGAS                   GRIJALBA                  LEONOR              GRIJALBA     RIVERA       
+03601530720143801200354           006022026EDWARD JACKSON                                    OREM                      HIGGINS                                                                 
+03107053450689801290929           008022026JUAN RAFAEL                                       RAVEN                     WITHFORD                                                                
+03501412950589801440240           002022026BAYARDO JOSE                                      SILVA                     GAZO                                                                    
+03401303590718801470162           013022026SERGIO FRANCISCO                                  FIGUEROA                  GONZALEZ                                                                
+03501413030606801600951           015022026CARLOS                                            ROJAS                     CRUZ                                                                    
+03107053730746900010470           018022026JOSEFA MARIA JULIA                                FLORES                    ARTAVIA                                                                 
+03302161290258900040755           014022026ROBERTO MIGUEL                                    LOPEZ                     MIRANDA                                                                 
+03107053700739900090336           018022026GILBERT ANTONIO DE JESUS                          GROSSI                    DOMENECK                  GILBERT GROSSI DOMEN                          
+03107053980795900090612           014022026FRANCISCO YAMIL DE JESUS                          ARTAVIA                   LOPEZ                                                                   
+03107053530706900120205           012022026JOSE DEL SOCORRO                                  MORA                      MADRIGAL                                                                
+03302161110221900230792           013022026MARIA CECILIA                                     VARGAS                    CAMARENO                                                                
+03501413020604900280646           013022026JOSE OSCAR                                        ZUÑIGA                    JIRON                                                                   
+03401303710742900340253           014022026OLGA LUISA DEL SOCORRO                            CAMACHO                   VILLEGAS                                                                
+03601530750150900350453           001022026LORENZO JUSTINIANO                                GOMEZ                     GONZALEZ                                                                
+03107053050609900410701           015022026JOSE ENRIQUE                                      SEGURA                    BARBOZA                                                                 
+03501413120624900470692           016022026ALEXIS                                            GOMEZ                     GUILLEN                                                                 
+02202994180835900580227           024052025JULIO JOSE                                        RODRIGUEZ                 MIRANDA                                                                 
+03302161320264900620550           012022026MARIA DEL PILAR                                   MASIS                     CAMPOS                                                                  
+03701083930786900650882           016022026MIGUEL ANGEL                                      MONGE                     LOBO                                                                    
+03401303680735900670270           016022026ARMANDO DE JESUS                                  ARAYA                     CHACON                                                                  
+03401303780756900740576           018022026NICOLASA EMERITA                                  OROZCO                    GARCIA                                                                  
+03107053090618900750091           015022026ABILIO AGUSTIN                                    ELIZONDO                  PORRAS                                                                  
+03203032950589900770117           019022026YOLANDA MARIA                                     BOGANTES                  BOLAÑOS                                                                 
+03701084140828900770885           019022026ABIZAY                                            QUIROS                    GAMBOA                    ABIZAI RAMOS QUIROS                           
+03501413060611900790424           018022026JOSEFA ANTONIA                                    BUSTOS                    BUSTOS                                                                  
+02501412250449900840395           018012026FELIX ANTONIO                                     GADEA                     GONZALEZ                                                                
+03107052990598900900192           014022026OLGA LILLIANA                                     RODRIGUEZ                 SOTO                                                                    
+03601530700140900970130           001022026JORGE ENRIQUE                                     CUBILLO                   COLLADO                   JORGE ENRIQUE       TORRES       COLLADO      
+03401303630726900980287           014022026CARLOS LUIS                                       ARTAVIA                   AGUILAR                                                                 
+01107053300660DI025923291         009022026ADELA OLINDA                                      PAREJA                    PACHECO                                                                 
+03501412970594DI060381596         005022026FERMINA DEL CARMEN                                SIERRA                    CASTILLO                                                                
+03203032660531DI112400027905      031012026JOHN ANDREW                                       HONEYMAN                  NO INDICA                                                               
+03401303550710DI112400114408      001022026KLAUS DIETER                                      HUCKE                     NO INDICA                                                               
+03107054030806DI112400142522      015022026OLIVE ELIZABETH                                   WORSFOLD                  NO INDICA                                                               
+03401303540707DI115600844409      022012026ZECHAO                                            FENG                      NO INDICA                                                               
+03107053240647DI117000647325      003022026ALEJANDRO                                         ARISTIZABAL               GIRALDO                                                                 
+03107053900779DI117001982033      027012026EDITH YADIRA                                      SALAZAR                   PARRA                                                                   
+03107053230646DI119200419604      031012026LOURDES                                           VALLS                     HERNANDEZ                                                               
+03107053940787DI12746720          000002026IVAN                                              SANTO                     PALACIO                                                                 
+02107042050409DI127600085017      027122025INGEBORG PAULA MARIA                              MATOS                     WASEM                                                                   
+03203032650530DI1301710011000U    001022026DEYBIN ELIEZER                                    SUAREZ                    NO INDICA                                                               
+03701083880776DI138000018105      006022026MARCO                                             BOTTI                     NO INDICA                                                               
+03107053280655DI152800045023      007022026RUDY                                              HENDRIKS                  RISTJOUW                                                                
+02302154310861DI155800139816      005012026JOSE ANTONIO                                      CORTEZ                    ESPINOZA                                                                
+03701083840768DI155800577319      021012026JOSE DE JESUS                                     VARGAS                    RIOS                                                                    
+03501412950590DI155800653032      030012026CELINA DEL CARMEN                                 CRUZ                      CRUZ                                                                    
+03701084040807DI155801737215      005022026MARCIAL                                           GONZALEZ                  NOVOA                                                                   
+03107053510701DI155804519130      009022026RAFAEL                                            VANEGAS                   LOPEZ                                                                   
+03107053470694DI155806010907      005022026EDELMIRA                                          CABALCETA                 SEVILLA                                                                 
+03107053230645DI155807140426      030012026CANDIDA JOSHINA                                   MIRANDA                   NAVARRO                                                                 
+03601530730146DI155808063429      026012026SEBASTIAN                                         CERROS                    GONZALEZ                                                                
+03107052820564DI155810522623      022012026WALTER ANTONIO                                    MENDOZA                   REYES                                                                   
+03302161300260DI155811553420      009022026RONALDO                                           GAITAN                    OBANDO                                                                  
+03107053220644DI155812247010      028012026JUANA EVANGELINA                                  ALEMAN                    ORTEGA                                                                  
+03203032770554DI155812720102      008022026SANTO HUMBERTO                                    PEREZ                     MENDOZA                                                                 
+03107053480695DI155813203423      005022026ZORAIDA                                           VALENZUELA                RODRIGUEZ                                                               
+03107053180635DI155813213710      028012026FATIMA                                            VICTOR                    BRIZUELA                                                                
+03701084030806DI155813338230      004022026ILARIO                                            JARQUIN                   REYES                                                                   
+03501412930585DI155813408014      020012026NOEL ANTONIO                                      LOPEZ                     NO INDICA                                                               
+03701084040808DI155815211035      007022026TERESA                                            LOPEZ                     ARCEDA                                                                  
+03501413010601DI155815255726      009022026MARINA DEL SOCORRO                                RODRIGUEZ                 CAMPOS                                                                  
+03601530900180DI155816883134      028012026ISAEL                                             SOZA                      CHAVARRIA                                                               
+03107053470693DI155817099232      004022026VALENTINA                                         MIRANDA                   TELLEZ                                                                  
+03107053460691DI155817595831      008022026MARVIN BENITO                                     HERNANDEZ                 TELLES                                                                  
+03107053280656DI155818748406      007022026FRANCISCO JOSE                                    JIRON                     NO INDICA                                                               
+03107053960791DI155820745007      012022026CARMENZA                                          GOMEZ                     GONZALEZ                                                                
+03501412960592DI155821891310      002022026ROBERTO JOSE                                      MIRANDA                   PARRALES                                                                
+03107053650730DI155822714106      010022026PEDRO AROLDO                                      LOPEZ                     REYES                                                                   
+02106663320664DI155825034210      001122022FAUSTO FELIPE                                     PEREZ                     NO INDICA                                                               
+03107053480696DI155826578332      006022026CLEMENTE                                          QUIROS                    MENA                                                                    
+03203032650529DI155826984001      025012026JACKSON JOSE                                      CARMONA                   ALVARADO                                                                
+03107052830566DI155832773908      028012026MIGUEL ANGEL                                      COCA                      OCON                                                                    
+03501412910581DI155835474607      028012026MARIA DE LOS ANGELES                              MARTINEZ                  GONZALEZ                                                                
+03107053240648DI155835837128      003022026ZENEYDA                                           GAGO                      BOJORGE                                                                 
+02107050460092DI155837631110      020012026FATIMA KARINA                                     ZELEDON                   DIAZ                                                                    
+03107053650729DI155839553220      010022026MARIA ANTONIA                                     JIRON                     BORGE                                                                   
+03107053940788DI155840021917      009022026NORWING                                           MARTINEZ                  CAMPOS                                                                  
+03501412920583DI155840562714      013012026EMILIA BENITA                                     HERNANDEZ                 LOPEZ                                                                   
+03203032770553DI155841769131      005022026GLENDA LILY                                       GONZALEZ                  MATUTE                                                                  
+03302161180236DI155844185415      028012026JOSE GABRIEL                                      LEON                      LOAISIGA                                                                
+03501412960591DI155844264308      031012026ALEJANDRO ANTONIO                                 ROMERO                    SILVA                                                                   
+03107050480095DI155845675304      024012026MIGUEL ANGEL                                      UMAÑA                     MENDOZA                                                                 
+03107052870573DI155846022212      001022026MARLON ADONIS                                     HERNANDEZ                 AGUIRRE                                                                 
+03107053500700DI155848664801      008022026NORMA LISETH                                      ESPINOZA                  JIRON                                                                   
+03107053490698DI155856135228      007022026MARIA ELENA                                       RUIZ                      JARQUIN                                                                 
+03107053500699DI155856838136      008022026IGNACIO VICTORINO                                 SALAZAR                   OBANDO                                                                  
+02107024110822DI159100018901      013112025ASUNCION ELVIA                                    HALL                      DE GONZALEZ                                                             
+03601530920183DI159100035122      006022026FLORENTINO                                        MARTINEZ                  ESPINOZA                                                                
+03107053300660DI160400259906      009022026ADELA OLINDA                                      PAREJA                    PACHECO                                                                 
+02107020810162DI1606118570920     023102025CARLOS JOEL                                       VICENTE                   CHANCHAVAC                                                              
+03302161270253DI162000001703      011022026EDUARDO                                           RIBEIRO                   DA SILVA                                                                
+03302161180235DI1641511890001Y    021012026SANTOS ALBERTO                                    MIRANDA                   CRUZ                                                                    
+02401303430686DI184000137021      007022026MICHAEL STEVEN                                    PESIN                     NO INDICA                                                               
+03203032640527DI184000209733      002022026ADOLFO                                            PUENTE DE LA VEGA         NO INDICA                                                               
+03302161310261DI184001095706      010022026JOHN DENNIS                                       O LEARY                   NO INDICA                                                               
+03601530810162DI184001677423      007022026RUSSELL JACKSON                                   BOWEN                     NO INDICA                                                               
+03107053460692DI184001784430      004022026DONNA LEE                                         DUCKMAN                   NO INDICA                                                               
+02401300500100DI184001947505      022112025BERNARDA                                          FIGUEROA                  NO INDICA                                                               
+03401303790758DI184002032900      011022026DAVID ALAN                                        LANDO                     NO INDICA                                                               
+03203032760552DI184002280820      004012026ROBERT                                            CURTICE                   ULLMAN                                                                  
+03401303730745DI186202465812      005022026MARIA LUISA                                       MEDINA                    DE YEPEZ                                                                
+03107052830565DI189500054802      000012026JORGE                                             JIMENEZ                   RAMIREZ                                                                 
+03601530920184DI226496767         009022026MARTHA DELIA                                      MORALES                   SANTOS DE ORTEGA                                                        
+03107053290657DI366325605         008022026HUANTI                                            TO                        NO INDICA                                                               
+02601524840968DI4174126           008012026ENILSO                                            DEGRACIA                  MARTINEZ                                                                
+03501412920584DI4491611790002N    020012026RENE ANTONIO                                      ALBIZUGA                  SOZA                                                                    
+03107053300659DI561282012         009022026SHIRLEY ANN                                       RODRIGUEZ                 BADER                                                                   
+03203032640528DI6153105840001Q    000012026PABLO ANTONIO                                     ALONZO                    LIRA                                                                    
+03107053270654DI704170173         007022026ZOILA TELMA                                       HERRERA                   ROBLES                                                                  
+03501412990597DI715423266         008022026BRADLEY CARROLL                                   SCHMIDT                   NOINDICAOTRO              BRADLEY             CARROLL      SCHM         
+02106521440287DI717611886         022072021ANGEL DOLORES                                     DORMUS                    ESPINOZA                                                                
+02107034200839DIA33533372         017122025MARILYN KAY                                       BOCKEMUELHL               NO INDICA                                                               
+03701083860772P17DH79724          029012026ERIC ANDRE ROBERT                                 DUBOIS                    NO INDICA                                                               
+03701083840767P542538531          019012026IAN LAWRENCE                                      LLOYD                     NO INDICA                                                               
+03701084110822P5533315279         016012026KEVIN DOUGLAS                                     VAUGHAN                   NO INDICA                                                               
+03501412940588P558144975          031012026KEITH AARRON                                      HARRIS                    NO INDICA                                                               
+03701083850769PA10790510          025012026JASON DESHON                                      JONES                     NO INDICA                                                               
+03401303540708PA3630861           028012026ORLANDO RICARDO                                   HOBSON                    NO INDICA                                                               
+03701083880775PA51245893          004022026DONALD MORRISON                                   SWARTZ                    NO INDICA                                                               
+03107052840567PA74944725          028012026DARREN SCOTT                                      MOORE                     NO INDICA                                                               
+03601530900179PAAL610047          000012026IGNACIO ALBERTO                                   NOVO                      NO INDICA                                                               
+03701083850770PAB670518           028012026IVAN                                              BORCHANU                  NO INDICA                                                               
+03701083860771PAM403763           000012026ALLAN LESLIE                                      HENDRICKS                 NO INDICA                                                               
+03107053930786PB02804040          000022026ENRIQUE ANTONIO                                   ALVANEZ                   FERMAN                                                                  
+03107053170634PC01572114          028012026BRYAN JOSUE                                       SILVA                     PARRALES                                                                
+03501412930586PC01796719          029012026FRANCISCO JAVIER                                  FLORES                    BARRIOS                                                                 
+03501412900580PC01805729          026012026JUAN                                              MORA                      LOPEZ                                                                   
+03401303730746PC02824151          010022026SARA                                              HIDALGO                   MARTINEZ                                                                
+03107052880575PC02859932          001022026RICARDO                                           SANCHEZ                   RIVERA                                                                  
+03107053290658PC03894106          009022026MIREYRA ESMILDA                                   MARTINEZ                  JARQUIN                                                                 
+03501412900579PC1777807           025012026ELIO SABAS                                        TRUJILLO                  MARTINEZ                                                                
+03701083890778PC73T6R8LJ          007022026PETRA                                             KOKNAT                    BOHNING                                                                 
+03501413010602PCGN5NF4NX          011022026CHRISTIAN                                         LOCH                      NO INDICA                                                               
+02401303550709PEB6610842          000012026ANALIZA                                           NEBLA                     MANLIGOY                                                                
+03107053160631PXOF61A26           028012026PETER MAX                                         MUSIL                     NO INDICA                                                               
