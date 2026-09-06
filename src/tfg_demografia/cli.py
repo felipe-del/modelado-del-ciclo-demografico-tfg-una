@@ -6,6 +6,7 @@ from pathlib import Path
 from .errors import TSEError
 from .ingestion.dat02 import process_batch, verify_dat02
 from .ingestion.processor import process
+from .ingestion.source_profile import DATASETS as PROFILE_DATASETS, build_profile, write_profile
 from .ingestion.tse_sync import DATASETS, DEFAULT_SOURCE_PAGE, sync_tse
 from .persistence.sqlite import connect, history, save_summary
 from .schema_loader import load_schema
@@ -74,6 +75,12 @@ def main() -> None:
     verify_dat02_parser.add_argument("--extraction-root", type=Path, default=Path("data/extracted/tse"))
     verify_dat02_parser.add_argument("--manifest", type=Path, default=Path("data/work/dat02_manifest.jsonl"))
     verify_dat02_parser.add_argument("--report", type=Path, default=Path("docs/evidencias/DAT-02_reporte_ingesta.md"))
+    profile = subparsers.add_parser("profile-sources")
+    profile.add_argument("--dataset", choices=[*PROFILE_DATASETS, "all"], default="all")
+    profile.add_argument("--manifest", type=Path, default=Path("data/manifests/tse_manifest.csv"))
+    profile.add_argument("--profile", type=Path, default=Path("data/profiles/fue04_profile.json"))
+    profile.add_argument("--table", type=Path, default=Path("docs/fuentes/caracterizacion_acontecimientos.csv"))
+    profile.add_argument("--report", type=Path, default=Path("docs/fuentes/perfil_datos_tse.md"))
     args = parser.parse_args()
     try:
         if args.command == "read":
@@ -92,6 +99,11 @@ def main() -> None:
         elif args.command == "ingest-batch":
             results = process_batch(args.source_root, args.extraction_root, args.manifest)
             print(json.dumps([result.to_manifest_record() for result in results], ensure_ascii=False, indent=2))
+        elif args.command == "profile-sources":
+            datasets = PROFILE_DATASETS if args.dataset == "all" else (args.dataset,)
+            profile = build_profile(PROJECT_ROOT / args.manifest, ROOT / "schemas", datasets)
+            write_profile(profile, PROJECT_ROOT / args.profile, PROJECT_ROOT / args.table, PROJECT_ROOT / args.report)
+            print(f"Perfil FUE-04 generado: {len(profile['profiles'])} acontecimiento(s).")
         else:
             with connect(args.db) as database:
                 rows = [dict(row) for row in history(database)]

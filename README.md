@@ -66,6 +66,17 @@ python -m tfg_demografia sync-tse --dataset nacimientos --local-only
 
 DAT-02 no reconstruye registros, no interpreta códigos de movimiento y no genera un dataset analítico o anonimizado definitivo.
 
+## FUE-04 — Caracterización de fuentes seleccionadas
+
+`profile-sources` genera un perfil agregado desde el manifiesto DAT-02 y los esquemas técnicos, sin leer ni almacenar valores individuales. Documenta por acontecimiento la cobertura de publicación, periodicidad observada, codificación, longitudes, inconsistencias estructurales y riesgos de privacidad.
+
+```powershell
+python -m tfg_demografia profile-sources
+python -m tfg_demografia profile-sources --dataset nacimientos
+```
+
+Genera `data/profiles/fue04_profile.json`, `docs/fuentes/caracterizacion_acontecimientos.csv` y `docs/fuentes/perfil_datos_tse.md`. Como los esquemas actuales no contienen posiciones de campos ni existe un diccionario oficial TSE, las fechas internas, territorialidad, identificadores y faltantes por campo se declaran `NO DETERMINADO` o `NO DOCUMENTADO EN LA FUENTE CONSULTADA`; el período del ZIP se interpreta solo como publicación del movimiento.
+
 ## Alcance y privacidad
 
 RAW conserva las fuentes originales. DAT-01 solo produce conteos, metadatos de trazabilidad, hashes, estados e incidencias técnicas seguras. La capa canónica, anonimización analítica, PostgreSQL, API, frontend y pronósticos pertenecen a etapas posteriores.

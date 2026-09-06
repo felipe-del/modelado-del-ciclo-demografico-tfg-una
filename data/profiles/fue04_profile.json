@@ -1,0 +1,93 @@
+{
+  "profile_version": "1.0",
+  "generated_at_utc": "2026-09-06T01:10:11.797070+00:00",
+  "source": "Manifiesto DAT-02 y esquemas tecnicos del proyecto",
+  "profiles": [
+    {
+      "dataset": "nacimientos",
+      "txt_filename": "MOVWEBNAC.txt",
+      "zip_pattern": "nac_*.zip",
+      "expected_record_length": 281,
+      "schema_encoding": "latin-1",
+      "encodings_observed": {
+        "latin-1": 30,
+        "utf-8": 1
+      },
+      "publication_period_start": "2026-02-01",
+      "publication_period_end": "2026-08-06",
+      "file_count": 31,
+      "total_rows": 47705,
+      "valid_length_rows": 47705,
+      "short_rows": 0,
+      "long_rows": 0,
+      "empty_rows": 0,
+      "apparent_gap_days": 0,
+      "configured_fields": [],
+      "movement_configured": false,
+      "event_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "marginal_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "application_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA; la fecha del nombre ZIP representa el periodo de publicacion del movimiento.",
+      "territorial_level": "NO DETERMINADO",
+      "potential_identifiers": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "privacy_risk": "ALTO: los TXT registrales pueden contener datos identificables; el perfil no conserva valores ni lineas.",
+      "field_missingness": "NO DETERMINADO: no hay campos con posiciones oficialmente documentadas o configuradas."
+    },
+    {
+      "dataset": "matrimonios",
+      "txt_filename": "MOVWEBMAT.txt",
+      "zip_pattern": "mat_*.zip",
+      "expected_record_length": 328,
+      "schema_encoding": "latin-1",
+      "encodings_observed": {
+        "latin-1": 30,
+        "utf-8": 1
+      },
+      "publication_period_start": "2026-02-01",
+      "publication_period_end": "2026-08-06",
+      "file_count": 31,
+      "total_rows": 20546,
+      "valid_length_rows": 20546,
+      "short_rows": 0,
+      "long_rows": 0,
+      "empty_rows": 0,
+      "apparent_gap_days": 0,
+      "configured_fields": [],
+      "movement_configured": false,
+      "event_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "marginal_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "application_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA; la fecha del nombre ZIP representa el periodo de publicacion del movimiento.",
+      "territorial_level": "NO DETERMINADO",
+      "potential_identifiers": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "privacy_risk": "ALTO: los TXT registrales pueden contener datos identificables; el perfil no conserva valores ni lineas.",
+      "field_missingness": "NO DETERMINADO: no hay campos con posiciones oficialmente documentadas o configuradas."
+    },
+    {
+      "dataset": "defunciones",
+      "txt_filename": "MOVWEBDEF.txt",
+      "zip_pattern": "def_*.zip",
+      "expected_record_length": 191,
+      "schema_encoding": "latin-1",
+      "encodings_observed": {
+        "latin-1": 31
+      },
+      "publication_period_start": "2026-02-01",
+      "publication_period_end": "2026-08-06",
+      "file_count": 31,
+      "total_rows": 18719,
+      "valid_length_rows": 18719,
+      "short_rows": 0,
+      "long_rows": 0,
+      "empty_rows": 0,
+      "apparent_gap_days": 0,
+      "configured_fields": [],
+      "movement_configured": false,
+      "event_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "marginal_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "application_date": "NO DOCUMENTADO EN LA FUENTE CONSULTADA; la fecha del nombre ZIP representa el periodo de publicacion del movimiento.",
+      "territorial_level": "NO DETERMINADO",
+      "potential_identifiers": "NO DOCUMENTADO EN LA FUENTE CONSULTADA",
+      "privacy_risk": "ALTO: los TXT registrales pueden contener datos identificables; el perfil no conserva valores ni lineas.",
+      "field_missingness": "NO DETERMINADO: no hay campos con posiciones oficialmente documentadas o configuradas."
+    }
+  ]
+}

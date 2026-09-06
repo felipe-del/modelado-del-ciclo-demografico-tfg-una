@@ -188,6 +188,21 @@ Verificar el lote completo:
 
 python -m tfg_demografia verify-dat02 --source-root "data/raw/tse" --extraction-root "data/extracted/tse" --manifest "data/work/dat02_manifest.jsonl" --report "docs/evidencias/DAT-02_reporte_ingesta.md"
 
+
+18. GENERAR PERFIL FUE-04
+-------------------------
+
+Generar el perfil agregado de fuentes desde el manifiesto DAT-02:
+
+python -m tfg_demografia profile-sources
+
+Generar el perfil de un único acontecimiento:
+
+python -m tfg_demografia profile-sources --dataset nacimientos
+
+El comando no imprime ni persiste registros individuales. Genera el perfil JSON,
+la tabla de caracterización CSV y el documento técnico bajo data/profiles y docs/fuentes.
+
 RESULTADOS ESPERADOS
 ====================
 

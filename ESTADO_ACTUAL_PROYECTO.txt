@@ -27,6 +27,7 @@ Etapas ya construidas:
 - DAT-01: lectura segura de ZIP/TXT del TSE, validación de ancho fijo, cálculo de SHA-256, generación de estructuras SQLite técnicas y CLI de verificación.
 - DAT-02: ingesta automática por lote de ZIP/TXT del TSE, extracción aislada por archivo, detección de codificación, cálculo de hash, manifest JSONL, generación de reporte y verificación final del lote.
 - FUE-02: inventario documental de fuentes TSE y diferenciación entre movimientos, documentos institucionales y archivos maestros potenciales.
+- FUE-04: perfil técnico y semántico agregado de las fuentes seleccionadas, generado desde el manifiesto DAT-02 y los esquemas técnicos sin exponer datos personales.
 - FUE-03: investigación y artefactos documentales construidos; cierre pendiente de evidencia real de la gestión por correo ante el TSE.
 
 Etapas en desarrollo:
@@ -69,6 +70,14 @@ Se registran únicamente tareas con evidencia verificable en el repositorio actu
   Evidencia principal: `python -m pytest -q`; `python -m tfg_demografia verify-dat02`; `docs/evidencias/DAT-02_reporte_ingesta.md`; `data/work/dat02_manifest.jsonl`
   Resultado logrado: procesamiento automático de ZIP del TSE con extracción aislada, validación de estructura, cálculo de SHA-256, detección de codificación, manifest JSONL y verificación final de lote.
   Limitaciones: no se almacenan líneas RAW ni datos personales; la reconstrucción histórica y el diccionario oficial siguen fuera del alcance de este incremento técnico.
+
+- Jira: FUE-04
+  Nombre: Caracterización de fuentes seleccionadas
+  Objetivo específico relacionado: Objetivo 1
+  Producto formal relacionado: Producto 1
+  Evidencia principal: docs/fuentes/perfil_datos_tse.md; docs/fuentes/caracterizacion_acontecimientos.csv; data/profiles/fue04_profile.json; docs/evidencias/FUE-04_resumen.md
+  Resultado logrado: perfil agregado de 93 ZIP, cobertura de publicación, codificación, longitudes, inconsistencias estructurales y riesgos de privacidad para los tres acontecimientos.
+  Limitaciones: las fechas internas, territorialidad, identificadores y faltantes por campo permanecen NO DETERMINADOS sin diccionario oficial TSE.
 
 - Jira: FUE-02
   Nombre: Inventario de fuentes oficiales del TSE

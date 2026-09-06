@@ -88,6 +88,22 @@ def test_local_sync_manifest_idempotency_conflict_and_report(tmp_path):
     assert conflict[0]["download_status"] == "HASH_CONFLICT"
 
 
+def test_report_uses_period_start_for_minimum_and_period_end_for_maximum(tmp_path):
+    raw = tmp_path / "raw"
+    first = raw / "nacimientos" / "nac_febrero2026_27_28.zip"
+    last = raw / "nacimientos" / "nac_agosto2026_01_06.zip"
+    first.parent.mkdir(parents=True)
+    create_zip(first, "MOVWEBNAC.txt", b"abcd\n")
+    create_zip(last, "MOVWEBNAC.txt", b"abcd\n")
+    manifest, report = tmp_path / "manifest.csv", tmp_path / "report.md"
+
+    sync_tse(raw, tmp_path / "work", manifest, report, schema_root(tmp_path), local_only=True)
+
+    report_text = report.read_text(encoding="utf-8")
+    assert "Periodo minimo detectado: 2026-02-27" in report_text
+    assert "Periodo maximo detectado: 2026-08-06" in report_text
+
+
 def test_dry_run_does_not_write_files(tmp_path):
     raw = tmp_path / "raw"
     zip_path = raw / "defunciones" / "def_julio2026_01_07.zip"

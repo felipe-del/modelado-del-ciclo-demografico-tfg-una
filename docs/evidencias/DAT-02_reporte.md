@@ -1,6 +1,6 @@
 # DAT-02 - Reporte de ingesta
 
-Fecha de ejecucion: 2026-09-05T23:17:56.422334+00:00
+Fecha de ejecucion: 2026-09-06T00:06:48.061633+00:00
 
 Fuente oficial:
 https://www.tse.go.cr/descarga_movimientos.html
@@ -17,7 +17,7 @@ https://www.tse.go.cr/descarga_movimientos.html
 
 - Cantidad de ZIP: 31
 - Periodo minimo detectado: 2026-02-01
-- Periodo maximo detectado: 2026-08-01
+- Periodo maximo detectado: 2026-08-06
 - Filas totales: 47705
 - Errores estructurales de longitud: 0
 - Codificaciones detectadas: latin-1, utf-8
@@ -27,7 +27,7 @@ https://www.tse.go.cr/descarga_movimientos.html
 
 - Cantidad de ZIP: 31
 - Periodo minimo detectado: 2026-02-01
-- Periodo maximo detectado: 2026-08-01
+- Periodo maximo detectado: 2026-08-06
 - Filas totales: 20546
 - Errores estructurales de longitud: 0
 - Codificaciones detectadas: latin-1, utf-8
@@ -37,7 +37,7 @@ https://www.tse.go.cr/descarga_movimientos.html
 
 - Cantidad de ZIP: 31
 - Periodo minimo detectado: 2026-02-01
-- Periodo maximo detectado: 2026-08-01
+- Periodo maximo detectado: 2026-08-06
 - Filas totales: 18719
 - Errores estructurales de longitud: 0
 - Codificaciones detectadas: latin-1
