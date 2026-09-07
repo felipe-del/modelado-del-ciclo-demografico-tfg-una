@@ -8,6 +8,7 @@ from .ingestion.dat02 import process_batch, verify_dat02
 from .ingestion.processor import process
 from .ingestion.source_profile import DATASETS as PROFILE_DATASETS, build_profile, write_profile
 from .ingestion.tse_sync import DATASETS, DEFAULT_SOURCE_PAGE, sync_tse
+from .normalization import append_log, load_rules, normalize_source
 from .persistence.sqlite import connect, history, save_summary
 from .schema_loader import load_schema
 
@@ -81,6 +82,14 @@ def main() -> None:
     profile.add_argument("--profile", type=Path, default=Path("data/profiles/fue04_profile.json"))
     profile.add_argument("--table", type=Path, default=Path("docs/fuentes/caracterizacion_acontecimientos.csv"))
     profile.add_argument("--report", type=Path, default=Path("docs/fuentes/perfil_datos_tse.md"))
+    normalize = subparsers.add_parser("normalize")
+    normalize.add_argument("--source", type=Path)
+    normalize.add_argument("--dataset", choices=[*DATASETS], required=True)
+    normalize.add_argument("--schema-root", type=Path, default=Path("src/tfg_demografia/schemas"))
+    normalize.add_argument("--rules", type=Path)
+    normalize.add_argument("--output", type=Path)
+    normalize.add_argument("--log", type=Path, default=Path("data/manifests/transformation_log.csv"))
+    normalize.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     try:
         if args.command == "read":
@@ -104,6 +113,16 @@ def main() -> None:
             profile = build_profile(PROJECT_ROOT / args.manifest, ROOT / "schemas", datasets)
             write_profile(profile, PROJECT_ROOT / args.profile, PROJECT_ROOT / args.table, PROJECT_ROOT / args.report)
             print(f"Perfil FUE-04 generado: {len(profile['profiles'])} acontecimiento(s).")
+        elif args.command == "normalize":
+            if args.source is None:
+                parser.error("normalize requiere --source")
+            rules_path = args.rules or Path("config/transformations") / f"{args.dataset}.json"
+            rules = load_rules(rules_path, args.dataset)
+            output = args.output or Path("data/work/normalized") / args.dataset / f"{args.dataset}.jsonl"
+            result = normalize_source(args.source, load_schema(args.schema_root / f"{args.dataset}.json"), rules, output, args.dry_run)
+            if not args.dry_run:
+                append_log(result, args.log)
+            print(json.dumps(result.__dict__, ensure_ascii=False, indent=2))
         else:
             with connect(args.db) as database:
                 rows = [dict(row) for row in history(database)]

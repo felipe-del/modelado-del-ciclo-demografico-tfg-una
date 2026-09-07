@@ -1,0 +1,7 @@
+{
+  "dataset": "nacimientos",
+  "version": "1.0",
+  "status": "BLOQUEADA_POR_DOCUMENTACION",
+  "fields": [],
+  "blocked_fields": ["campos internos", "fechas", "categorías", "códigos", "unidades", "territorialidad"]
+}

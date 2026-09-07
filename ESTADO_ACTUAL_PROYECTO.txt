@@ -93,7 +93,20 @@ Se registran únicamente tareas con evidencia verificable en el repositorio actu
   Resultado verificado: análisis de cobertura pública TSE, identificación de movimientos y relación maestro/movimientos documentada.
   Limitaciones: no existe evidencia real de envío del correo a TSE en este workspace; la respuesta institucional sigue pendiente; el diccionario oficial sigue pendiente.
 
-No se evidencian con verificación real en este repositorio: GES-01, GES-02, DOC-01, WEB-01, WEB-02, WEB-03, FUE-01 y FUE-03 como cerrada.
+
+--------------------------------------------------
+3. DAT-03
+--------------------------------------------------
+
+- Jira: DAT-03
+  Nombre: Programar limpieza y normalización
+  Objetivo específico relacionado: Objetivo 2
+  Producto formal relacionado: Producto 2 (primera capa de transformación)
+  Estado: CUMPLIDO CON LIMITACIÓN
+  Evidencia principal: docs/evidencias/DAT-03_reporte.md; docs/evidencias/criterios_aceptacion_dat03.md; docs/datos/reglas_transformacion.md; tests/test_dat03.py
+  Resultado logrado: capa declarativa de transformación separada de RAW, salida JSONL, dry-run, hashes de entrada/reglas/salida, bitácora sin valores RAW y pruebas sintéticas.
+  Limitaciones: sin diccionario oficial no se aplican reglas semánticas de nombres, fechas, categorías, códigos, unidades o territorialidad.
+ No se evidencian con verificación real en este repositorio: GES-01, GES-02, DOC-01, WEB-01, WEB-02, WEB-03, FUE-01 y FUE-03 como cerrada.
 
 --------------------------------------------------
 3. DAT-01
