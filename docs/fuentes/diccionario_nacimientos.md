@@ -2,12 +2,12 @@
 
 - ZIP analizados: 31
 - Periodo cubierto: febrero-agosto de 2026, con bloques publicados del 01 de febrero al 06 de agosto.
-- Cada ZIP contiene exactamente un TXT y un DOCX de definici?n.
-- M?todo: lectura de `word/document.xml` dentro del DOCX sin modificar ni extraer permanentemente RAW.
+- Cada ZIP contiene exactamente un TXT y un DOCX de definición.
+- Método: lectura de `word/document.xml` dentro del DOCX sin modificar ni extraer permanentemente RAW.
 - Firma estructural: `445ae4c469e6ba2b`
 - Schema drift: ausente; firma equivalente en los 31 ZIP.
 
-| orden | campo | longitud | inicio | fin | tipo | formato | cat?logo/observaciones |
+| orden | campo | longitud | inicio | fin | tipo | formato | catálogo/observaciones |
 |---:|---|---:|---:|---:|---|---|---|
 | 1 | Cita de Nacimiento | 12 | 1 | 12 | Numérico | Formato PTTTTFFFAAAAP = Provincia T = Tomo F = FolioA = Asiento | Formato PTTTTFFFAAAAP = Provincia T = Tomo F = FolioA = Asiento |
 | 2 | Cédula del Progenitor/a 1 | 9 | 13 | 21 | Numérico |  |  |
@@ -38,4 +38,4 @@
 
 - Suma total documentada: **281**.
 - Longitud observada del TXT asociado: **[281]** en los 31 ZIP.
-- Conclusi?n: la suma documentada coincide exactamente con la longitud observada y no se detecta drift estructural.
+- Conclusión: la suma documentada coincide exactamente con la longitud observada y no se detecta drift estructural.
