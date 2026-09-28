@@ -66,6 +66,11 @@ def test_movement_states():
     assert classify("I         ", schema()) == Movement.NOT_CONFIGURED
 
 
+def test_movement_classifier_accepts_zero_padded_fixed_width_code():
+    configured = Schema("sintetico", "1.0", 2, "utf-8", {"configured": True, "field": {"name": "movement", "start": 1, "end": 2}, "codes": {"inclusion_codes": ["3"], "change_codes": ["2"], "exclusion_codes": ["1"]}}, (FieldSpec("movement", 1, 2),))
+    assert classify("03", configured) == Movement.INCLUSION
+
+
 def test_strict_mode_and_documented_movement_shape(tmp_path):
     source = tmp_path / "records.txt"
     source.write_text("I         \n", encoding="utf-8")

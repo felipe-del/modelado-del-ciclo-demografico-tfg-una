@@ -39,7 +39,7 @@ Evidencia principal:
 - docs/fuentes/matriz_fuentes_oficiales.md
 
 Limitaciones:
-- No se documentó un diccionario oficial completo del TSE para ancho fijo ni códigos de movimiento.
+- La estructura de campos, longitudes, tipos, formatos y códigos de movimiento quedó documentada posteriormente mediante los DOCX internos de los 93 ZIP; véanse `TSE_schema_audit.md` y los diccionarios TSE.
 - Los archivos maestros no se encuentran físicamente en el repositorio y se mantienen como fuente administrativa potencial.
 - La evidencia técnica local de DAT-01 se diferencia claramente de la documentación oficial del TSE.
 

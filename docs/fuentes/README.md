@@ -69,8 +69,9 @@ Esto aplica especialmente a cobertura histórica completa, formato exacto del ar
 
 ## Limitaciones de la investigación
 
-- La página oficial del TSE documenta la descarga de movimientos y la solicitud de archivos maestros, pero no publica el diccionario completo de campos ni los códigos oficiales de movimiento en la página consultada.
-- No se localizó diccionario oficial del TSE para ancho fijo ni de códigos de movimiento dentro del repositorio del proyecto ni en la fuente institucional consultada.
+- La página oficial del TSE documenta la descarga de movimientos y la solicitud de archivos maestros. El layout publicado está documentado en los DOCX internos incluidos en cada ZIP, aunque la página web no lo reproduzca como una matriz independiente.
+- Los 93 ZIP locales contienen DOCX de definición de campos. Su contenido fue leído desde `word/document.xml` y quedó materializado en `diccionario_nacimientos.md`, `diccionario_matrimonios.md`, `diccionario_defunciones.md` y `data/manifests/tse_schema_registry.csv`.
+- La documentación interna respalda el layout, los tipos declarados, las fechas documentadas y Tipo de Movimiento. Siguen pendientes las reglas completas de aplicación a un archivo maestro, la cobertura histórica y la semántica territorial.
 - Los archivos maestros no se encontraron físicamente en el repositorio; se documentan como potenciales y no como fuentes accesibles por descarga directa.
 - La evidencia técnica local corresponde a DAT-01 y no debe atribuirse a una documentación oficial del TSE si la fuente no lo estipula.
 

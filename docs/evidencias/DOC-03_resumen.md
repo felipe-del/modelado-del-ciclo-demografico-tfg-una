@@ -27,11 +27,10 @@ Los movimientos del TSE son el insumo registral primario del proyecto. El INEC n
 
 ## Limitaciones decisivas
 
-- No hay diccionario oficial verificable de campos, posiciones y codigos.
-- Fechas internas, identificadores, faltantes por variable y territorialidad permanecen no determinados.
+- Los DOCX internos de los 93 ZIP documentan campos, posiciones, tipos, códigos de movimiento y fechas; la calidad semántica completa, faltantes por variable y territorialidad permanecen limitadas.
 - Los movimientos no demuestran historia completa desde un estado vacio; FUE-03 establece `REQUIERE_MAESTRO_INICIAL`.
 - No se localizo archivo maestro TSE en el repositorio.
-- FUE-03 contiene estados contradictorios sobre el envio del correo y no hay evidencia primaria verificable del envio en este repositorio; se trata como **NO VERIFICADA / PENDIENTE**.
+- FUE-03 queda como **GESTIÓN DOCUMENTADA / EVIDENCIA PRIMARIA PENDIENTE**: no existe PDF, captura, export de correo ni otro artefacto verificable del envío.
 
 ## Artefactos
 
@@ -41,10 +40,10 @@ Los movimientos del TSE son el insumo registral primario del proyecto. El INEC n
 
 ## Estado del Producto 1
 
-**CASI COMPLETO.** El informe esta redactado y sus evidencias estan enlazadas, pero no se declara cerrado por la ausencia del Documento 18 completo, FUE-01 independiente y evidencia primaria verificable de FUE-03.
+**CERRADO.** El informe y la evidencia estructural TSE están consolidados como análisis académico de fuentes. La ausencia de comprobante primario del envío FUE-03, de un artefacto separado de obtención inicial y del Documento 18 completo queda declarada como limitación institucional/documental, no como bloqueo del Producto 1.
 
 ## Estado DOC-03
 
 DOC-03 queda documentalmente cumplida con limitaciones: procedencia, estructura, cobertura, calidad, privacidad, seleccion, comparacion TSE-INEC, referencias y trazabilidad estan incorporadas. La calificacion propuesta es **95/100**.
 
-La sincronizacion posterior con Documento 18 debera incluir objetivo, procedimiento, tablas de fuentes y caracterizacion, cobertura, comparacion TSE-INEC, seleccion, exclusiones, limitaciones y decision de alcance. No se edito Documento 18.
+La sincronizacion posterior con Documento 18 deberá incluir objetivo, procedimiento, tablas de fuentes y caracterización, cobertura, comparación TSE-INEC, selección, exclusiones, limitaciones y decisión de alcance. No se editó Documento 18.

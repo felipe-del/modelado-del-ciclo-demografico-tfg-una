@@ -1,1 +1,22 @@
-{"dataset":"matrimonios","schema_version":"1.0","expected_record_length":328,"encoding":"latin-1","movement":{"configured":false,"field":null,"inclusion":[],"change":[],"exclusion":[]},"fields":[]}
+{
+	"dataset":"matrimonios","schema_version":"MAT-S01","expected_record_length":328,"encoding":"latin-1",
+	"movement":{"configured":true,"field":{"name":"Tipo de Movimiento","start":1,"end":2,"type":"text"},"codes":{"inclusion_codes":["3"],"change_codes":["2"],"exclusion_codes":["1"]}},
+	"fields":[
+		{"name":"Tipo de Movimiento","start":1,"end":2,"type":"text","enum":["01","02","03"]},
+		{"name":"Tipo de Suceso","start":3,"end":3,"type":"text","enum":["1","2","3"]},
+		{"name":"Cita de Matrimonio","start":4,"end":16,"type":"text","format":"PTTTTFFFAAAARP"},
+		{"name":"Fecha del Suceso","start":17,"end":24,"type":"date","format":"AAAAMMDD"},
+		{"name":"Identificación de la Persona Contrayente 1","start":25,"end":44,"type":"text"},
+		{"name":"Relleno 1","start":45,"end":45,"type":"text"},
+		{"name":"Identificación de la Persona Contrayente 2","start":46,"end":65,"type":"text"},
+		{"name":"Relleno 2","start":66,"end":66,"type":"text"},
+		{"name":"Nombre de la Persona Contrayente 1","start":67,"end":116,"type":"text"},
+		{"name":"Primer Apellido de la Persona Contrayente 1","start":117,"end":142,"type":"text"},
+		{"name":"Segundo Apellido de la Persona Contrayente 1","start":143,"end":168,"type":"text"},
+		{"name":"Conocido como de la Persona Contrayente 1","start":169,"end":197,"type":"text"},
+		{"name":"Nombre de la Persona Contrayente 2","start":198,"end":247,"type":"text"},
+		{"name":"Primer Apellido de la Persona Contrayente 2","start":248,"end":273,"type":"text"},
+		{"name":"Segundo Apellido de la Persona Contrayente 2","start":274,"end":299,"type":"text"},
+		{"name":"Conocido como de la Persona Contrayente 2","start":300,"end":328,"type":"text"}
+	]
+}

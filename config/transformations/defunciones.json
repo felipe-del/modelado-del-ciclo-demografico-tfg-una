@@ -1,7 +1,17 @@
 {
-  "dataset": "defunciones",
-  "version": "1.0",
-  "status": "BLOQUEADA_POR_DOCUMENTACION",
-  "fields": [],
-  "blocked_fields": ["campos internos", "fechas", "categorías", "códigos", "unidades", "territorialidad"]
+  "dataset":"defunciones","version":"DEF-S01","status":"SEMANTICA_DOCUMENTADA_CON_LIMITACION",
+  "fields":[
+    {"name":"Relleno 1","normalized_name":"relleno_1","operations":["strip"]},
+    {"name":"Tipo de Movimiento","normalized_name":"tipo_movimiento_codigo","operations":["strip"]},
+    {"name":"Cita de Defunción","normalized_name":"cita_defuncion","operations":["strip"]},
+    {"name":"Cédula","normalized_name":"cedula","operations":["strip"]},
+    {"name":"Relleno 2","normalized_name":"relleno_2","operations":["strip"]},
+    {"name":"Fecha","normalized_name":"fecha","operations":["strip","date_dmy"]},
+    {"name":"Nombre","normalized_name":"nombre","operations":["strip"]},
+    {"name":"Primer Apellido","normalized_name":"primer_apellido","operations":["strip"]},
+    {"name":"Segundo Apellido","normalized_name":"segundo_apellido","operations":["strip"]},
+    {"name":"Nombre (Conocido como)","normalized_name":"nombre_conocido_como","operations":["strip"]},
+    {"name":"Primer apellido (conocido como)","normalized_name":"primer_apellido_conocido_como","operations":["strip"]},
+    {"name":"Segundo apellido (Conocido como)","normalized_name":"segundo_apellido_conocido_como","operations":["strip"]}
+  ]
 }

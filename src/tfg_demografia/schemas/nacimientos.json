@@ -1,1 +1,39 @@
-{"dataset":"nacimientos","schema_version":"1.0","expected_record_length":281,"encoding":"latin-1","movement":{"configured":false,"field":null,"inclusion":[],"change":[],"exclusion":[]},"fields":[]}
+{
+	"dataset": "nacimientos",
+	"schema_version": "NAC-S01",
+	"expected_record_length": 281,
+	"encoding": "latin-1",
+	"movement": {
+		"configured": true,
+		"field": {"name": "Tipo de Movimiento", "start": 247, "end": 247, "type": "text"},
+		"codes": {"inclusion_codes": ["3"], "change_codes": ["2"], "exclusion_codes": ["1"]}
+	},
+	"fields": [
+		{"name":"Cita de Nacimiento","start":1,"end":12,"type":"text","format":"PTTTTFFFAAAAP"},
+		{"name":"Cédula del Progenitor/a 1","start":13,"end":21,"type":"text"},
+		{"name":"Cédula del Progenitor/a 2","start":22,"end":30,"type":"text"},
+		{"name":"Código de Hospital","start":31,"end":33,"type":"text"},
+		{"name":"Hora del Suceso","start":34,"end":37,"type":"text"},
+		{"name":"Fecha del Suceso","start":38,"end":45,"type":"date","format":"AAAAMMDD"},
+		{"name":"Relleno 1","start":46,"end":46,"type":"text"},
+		{"name":"Relleno 2","start":47,"end":48,"type":"text"},
+		{"name":"Nacionalidad del Hijo","start":49,"end":49,"type":"text","enum":["0","1","2","3","4","5"]},
+		{"name":"Marca de Defunción","start":50,"end":50,"type":"text","enum":["0","1"]},
+		{"name":"País del Progenitor/a 1","start":51,"end":53,"type":"text"},
+		{"name":"País del Progenitor/a 2","start":54,"end":56,"type":"text"},
+		{"name":"Indicador de Advertencia","start":57,"end":57,"type":"text"},
+		{"name":"Primer Apellido","start":58,"end":83,"type":"text"},
+		{"name":"Segundo Apellido","start":84,"end":109,"type":"text"},
+		{"name":"Nombre","start":110,"end":159,"type":"text"},
+		{"name":"Nombre del Progenitor/a 1","start":160,"end":188,"type":"text"},
+		{"name":"Nombre del Progenitor/a 2","start":189,"end":217,"type":"text"},
+		{"name":"Lugar de Nacimiento","start":218,"end":246,"type":"text"},
+		{"name":"Tipo de Movimiento","start":247,"end":247,"type":"text","enum":["1","2","3"]},
+		{"name":"Fecha de Marginal","start":248,"end":255,"type":"date","format":"AAAAMMDD"},
+		{"name":"Hora de Marginal","start":256,"end":261,"type":"text"},
+		{"name":"Fecha de Naturalización","start":262,"end":269,"type":"date","format":"AAAAMMDD"},
+		{"name":"Indicador de extensión","start":270,"end":270,"type":"text"},
+		{"name":"Provincia y Cantón de Procedencia del Progenitor/a 2","start":271,"end":273,"type":"text"},
+		{"name":"Fecha de Aplicación","start":274,"end":281,"type":"date","format":"AAAAMMDD"}
+	]
+}

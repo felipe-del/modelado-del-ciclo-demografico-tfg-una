@@ -29,7 +29,8 @@ def validate(line: str, schema: Schema) -> list[ValidationIssue]:
                 issues.append(ValidationIssue("INVALID_FIELD_TYPE", field.name, "El campo no tiene el tipo esperado."))
         if field.type == "date" and value.strip():
             try:
-                datetime.strptime(value.strip(), "%d%m%Y")
+                date_format = "%Y%m%d" if field.format == "AAAAMMDD" else "%d%m%Y"
+                datetime.strptime(value.strip(), date_format)
             except ValueError:
                 issues.append(ValidationIssue("INVALID_DATE", field.name, "La fecha no tiene el formato esperado."))
         if field.enum is not None and value.strip() not in field.enum:

@@ -42,7 +42,7 @@ def load_schema(path: Path) -> Schema:
         start, end = raw["start"], raw["end"]
         if not isinstance(start, int) or not isinstance(end, int) or start < 1 or end < start or end > length:
             raise SchemaError("Rango de campo fuera del registro")
-        fields.append(FieldSpec(raw["name"], start, end, bool(raw.get("required", False)), raw.get("type"), raw.get("enum")))
+        fields.append(FieldSpec(raw["name"], start, end, bool(raw.get("required", False)), raw.get("type"), raw.get("enum"), raw.get("format")))
     movement_field = movement.get("field")
     if configured:
         if isinstance(movement_field, dict):
@@ -51,7 +51,9 @@ def load_schema(path: Path) -> Schema:
             start, end = movement_field["start"], movement_field["end"]
             if not isinstance(start, int) or not isinstance(end, int) or start < 1 or end < start or end > length:
                 raise SchemaError("Rango del campo de movimiento fuera del registro")
-            fields.append(FieldSpec(movement_field["name"], start, end, bool(movement_field.get("required", False)), movement_field.get("type"), movement_field.get("enum")))
+            movement_spec = FieldSpec(movement_field["name"], start, end, bool(movement_field.get("required", False)), movement_field.get("type"), movement_field.get("enum"), movement_field.get("format"))
+            if not any(field.name == movement_spec.name and field.start == start and field.end == end for field in fields):
+                fields.append(movement_spec)
         elif not isinstance(movement_field, str):
             raise SchemaError("Un movimiento configurado requiere el campo de clasificacion")
     return Schema(data["dataset"], str(data["schema_version"]), length, data["encoding"], movement, tuple(fields))

@@ -4,9 +4,9 @@
 
 | Acontecimiento | Decision | Cobertura de publicacion verificada | Bloques | Continuidad | Calidad estructural | Calidad semantica |
 |---|---|---|---:|---|---|---|
-| Nacimientos | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 47.705 filas validas; 0 cortas, largas o vacias | NO EVALUADA sin diccionario oficial |
-| Matrimonios | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 20.546 filas validas; 0 cortas, largas o vacias | NO EVALUADA sin diccionario oficial |
-| Defunciones | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 18.719 filas validas; 0 cortas, largas o vacias | NO EVALUADA sin diccionario oficial |
+| Nacimientos | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 47.705 filas validas; 0 cortas, largas o vacias | Estructura documentada; calidad semántica completa pendiente |
+| Matrimonios | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 20.546 filas validas; 0 cortas, largas o vacias | Estructura documentada; calidad semántica completa pendiente |
+| Defunciones | SELECCIONADO CON LIMITACION | 2026-02-01 a 2026-08-06 | 31 | 0 huecos aparentes; bloques parciales | 18.719 filas validas; 0 cortas, largas o vacias | Estructura documentada; calidad semántica completa pendiente |
 
 La matriz detallada, con la fuente, las longitudes, la frecuencia y las dependencias, esta en `matriz_seleccion_fue05.csv`.
 
@@ -32,7 +32,7 @@ No se excluye ningun acontecimiento por su cantidad de filas. Los volumenes dife
 
 ## Nivel territorial
 
-El alcance inicial se declara **nacional agregado**, siempre que la futura capa canonica use el total de cada acontecimiento sin interpretar posiciones desconocidas. No se declaran provincia, canton ni distrito. Cualquier analisis subnacional queda pendiente del diccionario oficial, la identificacion verificable de variables territoriales y la estabilidad de sus codigos.
+El alcance inicial se declara **nacional agregado**, siempre que la futura capa canónica use el total de cada acontecimiento sin interpretar dominios territoriales no documentados suficientemente. No se declaran provincia, cantón ni distrito. Cualquier análisis subnacional queda pendiente de validación territorial y estabilidad de códigos.
 
 ## Evidencia base
 

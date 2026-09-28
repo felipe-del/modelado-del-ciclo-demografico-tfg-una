@@ -1,1 +1,18 @@
-{"dataset":"defunciones","schema_version":"1.0","expected_record_length":191,"encoding":"latin-1","movement":{"configured":false,"field":null,"inclusion":[],"change":[],"exclusion":[]},"fields":[]}
+{
+	"dataset":"defunciones","schema_version":"DEF-S01","expected_record_length":191,"encoding":"latin-1",
+	"movement":{"configured":true,"field":{"name":"Tipo de Movimiento","start":2,"end":2,"type":"text"},"codes":{"inclusion_codes":["3"],"change_codes":["2"],"exclusion_codes":["1"]}},
+	"fields":[
+		{"name":"Relleno 1","start":1,"end":1,"type":"text"},
+		{"name":"Tipo de Movimiento","start":2,"end":2,"type":"text","enum":["1","2","3"]},
+		{"name":"Cita de Defunción","start":3,"end":14,"type":"text","format":"PTTTTFFFAAAAP"},
+		{"name":"Cédula","start":15,"end":34,"type":"text"},
+		{"name":"Relleno 2","start":35,"end":35,"type":"text"},
+		{"name":"Fecha","start":36,"end":43,"type":"date","format":"DDMMAAAA"},
+		{"name":"Nombre","start":44,"end":93,"type":"text"},
+		{"name":"Primer Apellido","start":94,"end":119,"type":"text"},
+		{"name":"Segundo Apellido","start":120,"end":145,"type":"text"},
+		{"name":"Nombre (Conocido como)","start":146,"end":165,"type":"text"},
+		{"name":"Primer apellido (conocido como)","start":166,"end":178,"type":"text"},
+		{"name":"Segundo apellido (Conocido como)","start":179,"end":191,"type":"text"}
+	]
+}

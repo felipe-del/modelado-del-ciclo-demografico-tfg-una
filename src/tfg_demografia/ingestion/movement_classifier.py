@@ -11,10 +11,11 @@ def classify(line: str, schema: Schema) -> Movement:
     if field is None:
         return Movement.NOT_CONFIGURED
     code = line[field.start - 1:field.end].strip()
+    normalized_code = code.lstrip("0") or "0"
     code_config = config.get("codes", config)
     code_names = {Movement.INCLUSION: "inclusion_codes", Movement.CHANGE: "change_codes", Movement.EXCLUSION: "exclusion_codes"}
     for movement, key in code_names.items():
         values = code_config.get(key, code_config.get(movement.value.lower(), []))
-        if code in {str(value) for value in values}:
+        if code in {str(value) for value in values} or normalized_code in {str(value) for value in values}:
             return movement
     return Movement.UNKNOWN

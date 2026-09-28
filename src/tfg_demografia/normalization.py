@@ -60,6 +60,8 @@ def _normalize_value(value: str, rule: dict[str, Any]) -> Any:
             result = int(result) if result != "" else None
         elif operation == "date_dmy":
             result = datetime.strptime(result, "%d%m%Y").date().isoformat() if result else None
+        elif operation == "date_ymd":
+            result = datetime.strptime(result, "%Y%m%d").date().isoformat() if result else None
         elif operation == "map":
             catalog = rule.get("catalog")
             if not isinstance(catalog, dict) or result not in catalog:

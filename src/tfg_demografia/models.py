@@ -19,6 +19,7 @@ class FieldSpec:
     required: bool = False
     type: str | None = None
     enum: list[str] | None = None
+    format: str | None = None
 
 
 @dataclass(frozen=True)

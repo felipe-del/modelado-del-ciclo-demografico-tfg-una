@@ -1,7 +1,31 @@
 {
-  "dataset": "nacimientos",
-  "version": "1.0",
-  "status": "BLOQUEADA_POR_DOCUMENTACION",
-  "fields": [],
-  "blocked_fields": ["campos internos", "fechas", "categorías", "códigos", "unidades", "territorialidad"]
+  "dataset":"nacimientos","version":"NAC-S01","status":"SEMANTICA_DOCUMENTADA_CON_LIMITACION",
+  "fields":[
+    {"name":"Cita de Nacimiento","normalized_name":"cita_nacimiento","operations":["strip"]},
+    {"name":"Cédula del Progenitor/a 1","normalized_name":"cedula_progenitor_1","operations":["strip"]},
+    {"name":"Cédula del Progenitor/a 2","normalized_name":"cedula_progenitor_2","operations":["strip"]},
+    {"name":"Código de Hospital","normalized_name":"codigo_hospital","operations":["strip"]},
+    {"name":"Hora del Suceso","normalized_name":"hora_suceso","operations":["strip"]},
+    {"name":"Fecha del Suceso","normalized_name":"fecha_suceso","operations":["strip","date_ymd"]},
+    {"name":"Relleno 1","normalized_name":"relleno_1","operations":["strip"]},
+    {"name":"Relleno 2","normalized_name":"relleno_2","operations":["strip"]},
+    {"name":"Nacionalidad del Hijo","normalized_name":"nacionalidad_hijo_codigo","operations":["strip"]},
+    {"name":"Marca de Defunción","normalized_name":"marca_defuncion_codigo","operations":["strip"]},
+    {"name":"País del Progenitor/a 1","normalized_name":"pais_progenitor_1","operations":["strip"]},
+    {"name":"País del Progenitor/a 2","normalized_name":"pais_progenitor_2","operations":["strip"]},
+    {"name":"Indicador de Advertencia","normalized_name":"indicador_advertencia","operations":["strip"]},
+    {"name":"Primer Apellido","normalized_name":"primer_apellido","operations":["strip"]},
+    {"name":"Segundo Apellido","normalized_name":"segundo_apellido","operations":["strip"]},
+    {"name":"Nombre","normalized_name":"nombre","operations":["strip"]},
+    {"name":"Nombre del Progenitor/a 1","normalized_name":"nombre_progenitor_1","operations":["strip"]},
+    {"name":"Nombre del Progenitor/a 2","normalized_name":"nombre_progenitor_2","operations":["strip"]},
+    {"name":"Lugar de Nacimiento","normalized_name":"lugar_nacimiento","operations":["strip"]},
+    {"name":"Tipo de Movimiento","normalized_name":"tipo_movimiento_codigo","operations":["strip"]},
+    {"name":"Fecha de Marginal","normalized_name":"fecha_marginal","operations":["strip","date_ymd"]},
+    {"name":"Hora de Marginal","normalized_name":"hora_marginal","operations":["strip"]},
+    {"name":"Fecha de Naturalización","normalized_name":"fecha_naturalizacion","operations":["strip","date_ymd"]},
+    {"name":"Indicador de extensión","normalized_name":"indicador_extension","operations":["strip"]},
+    {"name":"Provincia y Cantón de Procedencia del Progenitor/a 2","normalized_name":"procedencia_progenitor_2","operations":["strip"]},
+    {"name":"Fecha de Aplicación","normalized_name":"fecha_aplicacion","operations":["strip","date_ymd"]}
+  ]
 }

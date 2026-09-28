@@ -2,16 +2,16 @@
 
 ## Estado
 
-ESTADO_CONSULTA_TSE = ENVIADO
+ESTADO_CONSULTA_TSE = GESTIÓN DOCUMENTADA / EVIDENCIA PRIMARIA PENDIENTE
 
-Se cuenta con evidencia verificable de envío del correo al TSE. La respuesta institucional sigue pendiente y no se declara recibida.
+Este archivo conserva el borrador de la consulta. No constituye evidencia primaria del envío. La respuesta institucional sigue pendiente.
 
 ## Evidencia de envío
 
 - Fecha real de envío: [registrar la fecha real del envío en la evidencia física]
 - Destinatario: Tribunal Supremo de Elecciones (TSE) / secretariadtic@tse.go.cr
 - Asunto: Solicitud técnica académica: disponibilidad de archivos maestros, cobertura histórica y documentación técnica para nacimientos, matrimonios y defunciones
-- Evidencia adjunta: FUE-03_correo_TSE_enviado.pdf
+- Evidencia primaria del envío: no localizada en el repositorio.
 
 ## Cuerpo del correo
 
@@ -53,7 +53,7 @@ La consulta busca resolver la última limitación documentada para FUE-03: la fa
 
 ## Observaciones importantes
 
-- No se debe marcar como enviado.
+- No se debe marcar como enviado o verificado.
 - No se debe asumir respuesta ni documentación adicional no recibida.
 - La consulta debe mantenerse como borrador hasta que exista evidencia real de entrega o respuesta institucional.
-- Una vez que el correo se envíe y se cuente con prueba verificable, se actualizará ESTADO_CONSULTA_TSE = ENVIADO.
+- Una vez que exista prueba verificable, se actualizará el estado con referencia al archivo exacto.

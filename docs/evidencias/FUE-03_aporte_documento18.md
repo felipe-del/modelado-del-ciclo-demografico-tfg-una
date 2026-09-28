@@ -27,13 +27,13 @@ Este aporte documenta la investigación de fuentes históricas del TSE y la gest
 - Evalúa la disponibilidad de archivos maestros y el mecanismo institucional para solicitarlos.
 - Documenta la relación entre archivo maestro y movimientos sin afirmar más de lo que la fuente permite comprobar.
 - Concluye que la reconstrucción de un estado registral completo requiere disponer de un archivo maestro o estado inicial: REQUIERE_MAESTRO_INICIAL.
-- Registra la gestión formal ante el TSE como evidencia de cumplimiento documental, sin declarar respuesta institucional recibida.
+- Registra la gestión formal ante el TSE como actividad documentada, pero no como envío verificado: no existe evidencia primaria del correo en el repositorio.
 
 ## Qué no cambia
 
 - El proyecto sigue utilizando exclusivamente fuentes del TSE.
 - DAT-01 no se modifica ni se reinterpreta.
-- El diccionario oficial de posiciones, códigos y tipos de movimiento continúa documentado como limitación pendiente.
+- El layout de posiciones, tipos y códigos está documentado en los DOCX internos de los 93 ZIP; las reglas de aplicación al maestro continúan pendientes.
 - La respuesta institucional del TSE permanece pendiente como limitación, no como hecho conocido.
 
 ## Conclusión del aporte

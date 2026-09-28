@@ -10,7 +10,7 @@ Las longitudes verificadas son nacimientos `281`, matrimonios `328` y defuncione
 
 ## Arquitectura
 
-`src/tfg_demografia/` separa modelos, carga de esquemas, lectura de archivos, validación, clasificación configurable, procesamiento y persistencia SQLite. Los tres JSON en `schemas/` contienen las longitudes, codificación `latin-1` y campos preparados para crecer.
+`src/tfg_demografia/` separa modelos, carga de esquemas, lectura de archivos, validación, clasificación configurable, procesamiento y persistencia SQLite. Los tres JSON en `schemas/` contienen ahora los layouts documentados por los DOCX internos TSE, con versiones `NAC-S01`, `MAT-S01` y `DEF-S01`.
 
 Los ZIP originales de `data/raw/tse/` permanecen intactos. `data/db/imports.sqlite` contiene `import_runs` e `import_issues`; no existen columnas para nombres, apellidos, cédulas, identificaciones, líneas RAW o valores RAW. Las incidencias se limitan a 100 por ejecución y no incluyen el valor problemático.
 
@@ -44,11 +44,11 @@ python -m tfg_demografia verify-dat01
 
 Este comando orquesta la lectura existente, muestra conteos, comprueba el esquema SQLite y verifica que Git no reporte modificaciones bajo `data/raw/tse/`. La evidencia de aceptación está en `docs/evidencias/criterios_aceptacion_dat01.md`.
 
-Cuando exista el diccionario oficial, cada esquema podrá configurar `movement.field` con `name`, `start`, `end` y opcionalmente `type`/`required`, junto con `movement.codes.inclusion_codes`, `change_codes` y `exclusion_codes`. Los códigos deben estar respaldados por documentación verificable y no se deben inferir desde los registros.
+Cada ZIP TSE incluye un DOCX de definición leído desde `word/document.xml`. La evidencia versionada está en `docs/fuentes/diccionario_*.md` y `data/manifests/tse_schema_registry.csv`. Cada esquema configura `movement.field` y los códigos respaldados por esos DOCX.
 
 ## Clasificación de movimientos
 
-No se encontró diccionario oficial en este workspace. Por eso los esquemas no inventan posiciones ni códigos: inclusión, cambio y exclusión se muestran como `NO CONFIGURADO`. El motor sí soporta `INCLUSION`, `CHANGE`, `EXCLUSION` y `UNKNOWN` cuando el esquema reciba una configuración documentada.
+Los DOCX internos documentan Tipo de Movimiento: `1 = Exclusión`, `2 = Cambio`, `3 = Inclusión`. El motor soporta `INCLUSION`, `CHANGE`, `EXCLUSION` y `UNKNOWN`; la configuración ya está materializada, aunque la verificación real mantiene incidencias de fechas no documentadas como relleno.
 
 ## DAT-02 — Descarga, extracción e inspección
 
@@ -75,7 +75,7 @@ python -m tfg_demografia profile-sources
 python -m tfg_demografia profile-sources --dataset nacimientos
 ```
 
-Genera `data/profiles/fue04_profile.json`, `docs/fuentes/caracterizacion_acontecimientos.csv` y `docs/fuentes/perfil_datos_tse.md`. Como los esquemas actuales no contienen posiciones de campos ni existe un diccionario oficial TSE, las fechas internas, territorialidad, identificadores y faltantes por campo se declaran `NO DETERMINADO` o `NO DOCUMENTADO EN LA FUENTE CONSULTADA`; el período del ZIP se interpreta solo como publicación del movimiento.
+Genera `data/profiles/fue04_profile.json`, `docs/fuentes/caracterizacion_acontecimientos.csv` y `docs/fuentes/perfil_datos_tse.md`. Las posiciones, tipos, fechas y catálogos documentados por ZIP se encuentran en los diccionarios TSE; territorialidad, faltantes por campo y significado temporal definitivo siguen limitados.
 
 ## Alcance y privacidad
 

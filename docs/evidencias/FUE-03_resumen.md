@@ -17,7 +17,7 @@ El proyecto utiliza exclusivamente fuentes del Tribunal Supremo de Elecciones (T
 3. Evaluar la existencia y disponibilidad de archivos maestros.
 4. Registrar el mecanismo institucional para solicitar archivos maestros.
 5. Documentar la relación entre archivo maestro y movimientos sin afirmar más de lo que la fuente oficial permite comprobar.
-6. Mantener el diccionario de códigos y posiciones como limitación técnica documentada, sin convertirlo en un criterio de cierre automático de FUE-03.
+6. Incorporar los DOCX internos de cada ZIP como evidencia estructural primaria del layout publicado.
 
 ## Evidencia pública del TSE revisada
 
@@ -60,36 +60,37 @@ CONCLUSION_RECONSTRUCCION = REQUIERE_MAESTRO_INICIAL
 ## Limitaciones pendientes
 
 - No existe un archivo maestro público descargable en la página oficial revisada.
-- No se documenta un diccionario oficial del TSE para posiciones, longitudes, códigos y relaciones entre archivos maestros y movimientos.
+- Las posiciones, longitudes, tipos y códigos del layout de movimientos están documentados en los DOCX internos de los ZIP; las reglas de relación con archivos maestros siguen sin documentarse.
 - No se ha verificado la cobertura histórica completa anterior a los bloques del 2026 mediante una fuente oficial pública accesible.
-- La falta de diccionario oficial no bloquea por sí sola FUE-03, pero sí debe dejarse documentada como dependencia técnica para tareas posteriores.
+- La documentación pública no sustituye las reglas institucionales de relación maestro/movimientos; el layout de los movimientos sí está documentado en los DOCX internos.
 
 ## Gestión ante el TSE
 
-ESTADO_CONSULTA_TSE = ENVIADO
+ESTADO_CONSULTA_TSE = GESTIÓN DOCUMENTADA / EVIDENCIA PRIMARIA PENDIENTE
 
-La gestión formal ante el TSE fue efectivamente realizada y queda documentada con evidencia de envío. La respuesta institucional sigue pendiente y no se declara recibida ni respondida.
+El repositorio conserva el texto de la consulta y el objetivo de la gestión, pero no contiene PDF, captura, export de correo ni otro artefacto verificable del envío. La respuesta institucional tampoco está disponible.
 
 ## Próximos pasos
 
-1. Mantener la evidencia del envío como trazabilidad formal.
-2. Incorporar la respuesta institucional recibida únicamente si se obtenga de manera verificable.
+1. Incorporar evidencia primaria del envío únicamente si se obtiene de forma verificable.
+2. Incorporar la respuesta institucional recibida únicamente si se obtiene de manera verificable.
 3. Mantener DAT-01 sin reinterpretar ni alterar su estado.
-4. Conservar la limitación técnica del diccionario oficial como dependencia para etapas posteriores.
+4. Conservar como dependencias el maestro inicial y las reglas operativas de reconstrucción.
 
 ## Matriz de cumplimiento
 
 | Criterio Jira | Estado |
 |---|---|
-| Gestión ante TSE documentada | CUMPLE |
+| Gestión ante TSE documentada | DOCUMENTADA; evidencia primaria pendiente |
 | Períodos TSE disponibles identificados | CUMPLE |
 | Disponibilidad de maestros investigada | CUMPLE |
 | Necesidad maestro/movimientos evaluada | CUMPLE |
 | Fuentes históricas TSE registradas | CUMPLE |
-| Diccionario oficial | LIMITACIÓN DOCUMENTADA / PENDIENTE PARA ETAPAS POSTERIORES |
+| Layout de movimientos | DOCUMENTADO en DOCX internos de los 93 ZIP |
+| Maestro y reglas de reconstrucción | LIMITACIÓN DOCUMENTADA / PENDIENTE |
 
 ## Estado final
 
-FUE-03 = LISTA_PARA_CERRAR
+FUE-03 = GESTIÓN DOCUMENTADA / EVIDENCIA PRIMARIA PENDIENTE
 
-La respuesta institucional del TSE continúa pendiente, pero la traza documental y la evidencia de gestión formal ya están cumplidas. La limitación del diccionario oficial permanece documentada para etapas posteriores y no invalida el cierre documental de FUE-03.
+El análisis de cobertura y la necesidad de un maestro inicial están documentados. No se declara enviado ni cerrada la gestión institucional porque falta evidencia primaria verificable.

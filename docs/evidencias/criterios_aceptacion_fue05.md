@@ -7,7 +7,7 @@
 | Frecuencia definida | CUMPLIDO | Ingesta semanal por bloques; procesamiento por ejecucion; analitica mensual propuesta y condicional | `FUE-05_decision_alcance.md` |
 | Nivel territorial definido | CUMPLIDO | Nacional agregado para el alcance inicial; subnacional pendiente | `FUE-05_decision_alcance.md`; `perfil_datos_tse.md` |
 | Cobertura evaluada | CUMPLIDO | 31 bloques por acontecimiento; misma interseccion temporal | `FUE-04_resumen.md`; `tse_manifest.csv` |
-| Calidad evaluada | CUMPLIDO | Cero filas cortas, largas y vacias; longitudes verificadas | `caracterizacion_acontecimientos.csv`; `criterios_aceptacion_dat02.md` |
+| Calidad evaluada | CUMPLIDO CON LIMITACION | Cero filas cortas, largas y vacias; longitudes y layout DOCX verificados | `caracterizacion_acontecimientos.csv`; `TSE_schema_audit.md` |
 | Continuidad evaluada | CUMPLIDO CON LIMITACION | 0 huecos aparentes; se conservan bloques parciales y se marca SIN ARCHIVO fuera del rango | `FUE-04_resumen.md`; `matriz_seleccion_fue05.md` |
 | Comparabilidad evaluada | CUMPLIDO CON LIMITACION | Comparable en fuente, intervalo y nivel agregado; semantica no evaluada | `matriz_seleccion_fue05.md` |
 | Exclusiones justificadas | CUMPLIDO | Se excluyen periodos no verificados, maestros no disponibles, territorios no documentados, INEC como relleno y PII innecesaria | `FUE-05_decision_alcance.md` |
@@ -17,7 +17,7 @@
 
 ## Calificacion
 
-**95/100.** FUE-05 queda documentalmente completa para el corte actual. Se reservan 5 puntos por dependencias externas no resueltas: diccionario oficial, semantica de fechas y movimientos, variables territoriales y archivo maestro o estado inicial para sostener una cobertura historica completa.
+**95/100.** FUE-05 queda documentalmente completa para el corte actual con limitaciones. Se reservan puntos por validación semántica completa, significado temporal definitivo, variables territoriales y archivo maestro o estado inicial para sostener una cobertura histórica completa.
 
 ## Limitaciones de la calificacion
 

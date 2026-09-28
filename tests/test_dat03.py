@@ -1,8 +1,13 @@
 import json
 import zipfile
+from pathlib import Path
 
 from tfg_demografia.models import FieldSpec, Schema
 from tfg_demografia.normalization import append_log, normalize_source, transform_record
+from tfg_demografia.schema_loader import load_schema
+from tfg_demografia.ingestion.movement_classifier import classify
+from tfg_demografia.models import Movement
+from tfg_demografia.ingestion.validator import validate
 
 
 def schema_with_code():
@@ -25,6 +30,51 @@ def test_transform_supports_explicit_date_and_catalog_and_rejects_unknown_catalo
         assert str(error) == "VALUE_NOT_IN_CATALOG"
     else:
         raise AssertionError("un codigo fuera del catalogo debe generar una excepcion controlada")
+
+
+def test_real_schemas_have_documented_layouts_and_movement_codes():
+    root = Path(__file__).parents[1] / "src/tfg_demografia/schemas"
+    expected = {"nacimientos": (281, 247, 247), "matrimonios": (328, 1, 2), "defunciones": (191, 2, 2)}
+    for dataset, (length, movement_start, movement_end) in expected.items():
+        schema = load_schema(root / f"{dataset}.json")
+        assert sum(field.end - field.start + 1 for field in schema.fields) == length
+        movement = next(field for field in schema.fields if field.name == "Tipo de Movimiento")
+        assert (movement.start, movement.end) == (movement_start, movement_end)
+        def record(code):
+            return " " * (movement_start - 1) + code.ljust(movement_end - movement_start + 1) + " " * (length - movement_end)
+        assert classify(record("3"), schema) == Movement.INCLUSION
+        assert classify(record("2"), schema) == Movement.CHANGE
+        assert classify(record("1"), schema) == Movement.EXCLUSION
+
+
+def test_documented_date_formats_are_supported():
+    ymd = Schema("nacimientos", "test", 8, "latin-1", {}, (FieldSpec("fecha", 1, 8, type="date", format="AAAAMMDD"),))
+    dmy = Schema("defunciones", "test", 8, "latin-1", {}, (FieldSpec("fecha", 1, 8, type="date", format="DDMMAAAA"),))
+    assert transform_record("20260201", ymd, {"fields": [{"name": "fecha", "operations": ["date_ymd"]}]}) == {"fecha": "2026-02-01"}
+    assert transform_record("01022026", dmy, {"fields": [{"name": "fecha", "operations": ["date_dmy"]}]}) == {"fecha": "2026-02-01"}
+
+
+def test_real_schema_catalogs_accept_documented_values_and_reject_unknown_values():
+    schema = load_schema(Path(__file__).parents[1] / "src/tfg_demografia/schemas/nacimientos.json")
+    valid = [" "] * schema.expected_record_length
+    valid[48] = "0"
+    valid[49] = "1"
+    valid[246] = "3"
+    assert validate("".join(valid), schema) == []
+    invalid = valid.copy()
+    invalid[48] = "9"
+    assert any(issue.code == "INVALID_ENUM" for issue in validate("".join(invalid), schema))
+
+
+def test_semantic_jsonl_uses_documented_fields_and_keeps_codes_as_text(tmp_path):
+    source = tmp_path / "birth.txt"
+    source.write_text("2026-02-01".replace("-", "") + "\n", encoding="latin-1")
+    schema = Schema("nacimientos", "test", 8, "latin-1", {}, (FieldSpec("fecha", 1, 8, type="date", format="AAAAMMDD"),))
+    rules = {"dataset": "nacimientos", "fields": [{"name": "fecha", "normalized_name": "fecha_suceso", "operations": ["date_ymd"]}]}
+    output = tmp_path / "normalized.jsonl"
+    result = normalize_source(source, schema, rules, output)
+    assert result.rows_normalized == 1
+    assert output.read_text(encoding="utf-8") == '{"fecha_suceso":"2026-02-01"}\n'
 
 
 def test_normalization_is_idempotent_and_dry_run_writes_nothing(tmp_path):

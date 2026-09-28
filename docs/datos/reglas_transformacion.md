@@ -1,22 +1,24 @@
 # DAT-03 - Reglas de transformación
 
-## Estado actual
+Las reglas son declarativas y versionadas en `config/transformations/`. Su fuente estructural es el DOCX incluido en cada ZIP TSE. Las firmas estables son `NAC-S01`, `MAT-S01` y `DEF-S01`.
 
-Las reglas son declarativas, versionadas en `config/transformations/` y no ejecutan código dinámico. Los tres esquemas TSE actuales tienen `fields: []`; por eso no se inventan nombres, posiciones ni significados y la transformación semántica está `BLOQUEADA_POR_DOCUMENTACION`.
-
-| Regla | Dataset | Campo | Transformación | Justificación | Estado |
-|---|---|---|---|---|---|
-| DAT03-STRUCT-001 | nacimientos, matrimonios, defunciones | Ninguno configurado | Validar longitud, conservar registros válidos como estructura JSON vacía y registrar conteos | No existe diccionario oficial de campos | ACTIVA |
-| DAT03-TEXT-001 | Todos | Campos futuros documentados | Conservar texto y ceros iniciales; `strip` solo si se declara | Los códigos e identificadores no deben convertirse automáticamente a entero | NO_CONFIGURADA |
-| DAT03-DATE-001 | Todos | Fechas internas | Convertir solo con formato y significado documentados | FUE-04 declara fechas internas no determinadas | BLOQUEADA_POR_DOCUMENTACION |
-| DAT03-CODE-001 | Todos | Códigos/categorías | Conservar código y aplicar catálogo cerrado solo si existe | No hay catálogo oficial verificable | BLOQUEADA_POR_DOCUMENTACION |
-| DAT03-NULL-001 | Todos | Campos futuros | Distinguir vacío, espacio y null solo con regla documentada | No se convierten `0`, `0000` o `999` automáticamente | BLOQUEADA_POR_DOCUMENTACION |
-| DAT03-UNIT-001 | Todos | Unidades futuras | Sin conversiones | No hay unidades documentadas | BLOQUEADA_POR_DOCUMENTACION |
+| Regla | Estado | Fuente | Aplicación |
+|---|---|---|---|
+| Layout fixed-width | ACTIVA | Diccionarios DOCX TSE | Posiciones 1-based calculadas y validadas |
+| Texto | ACTIVA | Tipo Alfanumérico/identificadores DOCX | `strip`, conservando representación y ceros |
+| Códigos | ACTIVA CON LIMITACIÓN | DOCX TSE | Se conservan como texto; enums validan dominios explícitos |
+| Tipo de Movimiento | ACTIVA | DOCX TSE | 1 exclusión, 2 cambio, 3 inclusión |
+| Fecha AAAAMMDD | ACTIVA | DOCX TSE | `date_ymd` en nacimientos y matrimonios |
+| Fecha DDMMYYYY | ACTIVA | DOCX TSE | `date_dmy` en defunciones |
+| Vacíos | NO AUTOMÁTICA | No hay regla TSE explícita | No se aplica `empty_to_null` |
+| Unidades | BLOQUEADA | No documentadas | No convertir |
+| Territorialidad | BLOQUEADA | No documentada | No interpretar |
+| Anonimización | FUERA DE DAT-03 | DAT-04 | No eliminar ni publicar PII en este incremento |
+| Reconstrucción | FUERA DE DAT-03 | DAT-05 | No aplicar movimientos a un maestro |
 
 ## Política
 
-- `data/raw/` y `data/work/extracted/` son entradas inmutables.
+- `data/raw/` permanece inmutable.
 - La salida se escribe en `data/work/normalized/`.
-- La bitácora contiene hashes, conteos y códigos agregados; nunca valores de registros.
-- Una excepción incrementa `exception_count` y no expone el valor que la causó.
-- No hay correcciones manuales ocultas.
+- La bitácora contiene hashes, conteos, excepciones y estados, nunca valores de registros.
+- Los campos PII se reconocen técnicamente, pero su uso analítico queda sujeto a DAT-04.

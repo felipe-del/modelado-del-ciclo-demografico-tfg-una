@@ -17,12 +17,12 @@
 | Preguntas de defensa incluidas | CUMPLIDO | Informe, seccion 21, 20 preguntas con evidencia |
 | No se modifico procesamiento ni sistema web | CUMPLIDO | Cambio documental solamente |
 | No se reprodujeron registros RAW | CUMPLIDO | Informe y evidencias basados en metadatos agregados |
-| Estado de FUE-03 tratado con rigor | CUMPLIDO CON LIMITACION | Informe, seccion 17; se declara NO VERIFICADA / PENDIENTE por falta de evidencia primaria |
-| Informe terminado | CUMPLIDO CON LIMITACION | `producto1_informe_analisis_fuentes.md`; requiere sincronizacion posterior con Documento 18 |
+| Estado de FUE-03 tratado con rigor | CUMPLIDO CON LIMITACION | Informe y FUE-03; se declara GESTIÓN DOCUMENTADA / EVIDENCIA PRIMARIA PENDIENTE |
+| Informe terminado | CUMPLIDO CON LIMITACION | `producto1_informe_analisis_fuentes.md`; el Documento 18 completo queda como limitación documental externa |
 
 ## Estado de DOC-03
 
-**CUMPLIDO CON LIMITACION.** El informe de analisis de fuentes esta terminado como artefacto tecnico versionado. No se marca Producto 1 como CERRADO porque permanecen pendientes la evidencia primaria de FUE-03, el Documento 18 completo, FUE-01 independiente y la documentacion institucional del maestro/diccionario.
+**CUMPLIDO CON LIMITACION.** El informe está consolidado como artefacto técnico versionado. Producto 1 queda **CERRADO** como entregable académico de análisis de fuentes. FUE-03, FUE-01 y el Documento 18 conservan limitaciones de trazabilidad institucional/documental, sin bloquear este producto.
 
 ## Calificacion
 

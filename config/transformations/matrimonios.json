@@ -1,7 +1,21 @@
 {
-  "dataset": "matrimonios",
-  "version": "1.0",
-  "status": "BLOQUEADA_POR_DOCUMENTACION",
-  "fields": [],
-  "blocked_fields": ["campos internos", "fechas", "categorías", "códigos", "unidades", "territorialidad"]
+  "dataset":"matrimonios","version":"MAT-S01","status":"SEMANTICA_DOCUMENTADA_CON_LIMITACION",
+  "fields":[
+    {"name":"Tipo de Movimiento","normalized_name":"tipo_movimiento_codigo","operations":["strip"]},
+    {"name":"Tipo de Suceso","normalized_name":"tipo_suceso_codigo","operations":["strip"]},
+    {"name":"Cita de Matrimonio","normalized_name":"cita_matrimonio","operations":["strip"]},
+    {"name":"Fecha del Suceso","normalized_name":"fecha_suceso","operations":["strip","date_ymd"]},
+    {"name":"Identificación de la Persona Contrayente 1","normalized_name":"identificacion_contrayente_1","operations":["strip"]},
+    {"name":"Relleno 1","normalized_name":"relleno_1","operations":["strip"]},
+    {"name":"Identificación de la Persona Contrayente 2","normalized_name":"identificacion_contrayente_2","operations":["strip"]},
+    {"name":"Relleno 2","normalized_name":"relleno_2","operations":["strip"]},
+    {"name":"Nombre de la Persona Contrayente 1","normalized_name":"nombre_contrayente_1","operations":["strip"]},
+    {"name":"Primer Apellido de la Persona Contrayente 1","normalized_name":"primer_apellido_contrayente_1","operations":["strip"]},
+    {"name":"Segundo Apellido de la Persona Contrayente 1","normalized_name":"segundo_apellido_contrayente_1","operations":["strip"]},
+    {"name":"Conocido como de la Persona Contrayente 1","normalized_name":"conocido_como_contrayente_1","operations":["strip"]},
+    {"name":"Nombre de la Persona Contrayente 2","normalized_name":"nombre_contrayente_2","operations":["strip"]},
+    {"name":"Primer Apellido de la Persona Contrayente 2","normalized_name":"primer_apellido_contrayente_2","operations":["strip"]},
+    {"name":"Segundo Apellido de la Persona Contrayente 2","normalized_name":"segundo_apellido_contrayente_2","operations":["strip"]},
+    {"name":"Conocido como de la Persona Contrayente 2","normalized_name":"conocido_como_contrayente_2","operations":["strip"]}
+  ]
 }
